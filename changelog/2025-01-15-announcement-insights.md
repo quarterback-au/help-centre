@@ -29,7 +29,3 @@ The AI analyzes all activities linked to your announcement and synthesizes them 
 3. View the **AI Summary** section
 
 The summary updates as new activities are linked to the announcement.
-
----
-
-*Questions? Contact [support@qback.au](mailto:support@qback.au)*

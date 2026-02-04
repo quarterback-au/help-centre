@@ -29,13 +29,13 @@ For a gold mining company, stock movements are often driven by gold prices rathe
 ### Technical Details
 
 When commodities are enabled:
-```
-Expected Return = α + β × Commodity Return
-Abnormal Return = Actual Return - Expected Return
-```
+
+$$
+\text{Expected Return} = \alpha + \beta \times \text{Commodity Return}
+$$
+
+$$
+\text{Abnormal Return} = \text{Actual Return} - \text{Expected Return}
+$$
 
 This replaces the default AXJO benchmark with your selected commodity.
-
----
-
-*Questions? Contact [support@qback.au](mailto:support@qback.au)*

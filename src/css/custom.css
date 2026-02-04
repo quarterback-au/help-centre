@@ -1087,6 +1087,129 @@ table tr:last-child td {
    Blog / Changelog - Dub.co Style Two-Column Layout
    ============================================ */
 
+/* Geometric grid background for changelog */
+.blog-list-page .main-wrapper {
+    position: relative;
+    background:
+        /* Vertical lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 79px,
+            var(--qb-border) 79px,
+            var(--qb-border) 80px
+        ),
+        /* Horizontal lines */
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 79px,
+            var(--qb-border) 79px,
+            var(--qb-border) 80px
+        ),
+        /* Subtle color gradient underneath */
+        linear-gradient(
+            34deg,
+            rgba(255, 255, 255, 1) 28%,
+            rgba(227, 195, 243, 0.11) 66%,
+            rgba(238, 184, 192, 0.16) 76%,
+            rgba(148, 187, 233, 0.2) 100%
+        );
+    background-size: 80px 80px, 80px 80px, 100% 100%;
+    background-position: left top, left top, center;
+    background-attachment: scroll, scroll, fixed;
+}
+
+/* Fade out the grid on the sides, keep center clean but show gradient */
+.blog-list-page .main-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.92) 20%,
+        rgba(255, 255, 255, 0.92) 80%,
+        transparent 100%
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+
+.blog-list-page .main-wrapper > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Top border line above header */
+.blog-list-page main {
+    border-top: 1px solid var(--qb-border);
+}
+
+/* Changelog Header - Dub.co style */
+.changelog-header {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
+    padding-top: 3rem;
+}
+
+.changelog-title {
+    font-size: 3rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.03em !important;
+    color: var(--qb-text) !important;
+    margin: 0 0 0.75rem 0 !important;
+    line-height: 1.1 !important;
+}
+
+.changelog-subtitle {
+    font-size: 1.125rem !important;
+    color: var(--qb-text-muted) !important;
+    margin: 0 0 1.5rem 0 !important;
+    line-height: 1.5 !important;
+}
+
+.changelog-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.changelog-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--qb-text);
+    background: var(--qb-bg);
+    border: 1px solid var(--qb-border);
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.changelog-btn:hover {
+    border-color: var(--qb-text-muted);
+    background: var(--qb-bg-subtle);
+    text-decoration: none;
+    color: var(--qb-text);
+}
+
+.changelog-btn--icon {
+    padding: 0.5rem;
+}
+
+.changelog-separator {
+    margin-top: 2.5rem;
+    border: none;
+    border-top: 1px dashed var(--qb-border);
+    width: 100%;
+}
+
 /* Blog page container - centered with max-width */
 .blog-list-page .container,
 .blog-post-page .container {
@@ -1249,9 +1372,20 @@ table tr:last-child td {
 }
 
 /* Code blocks in changelog */
-.blog-list-page article .markdown pre {
+.blog-list-page article .markdown pre,
+.blog-post-page article .markdown pre {
     margin: 1.5rem 0 !important;
     border-radius: 0.5rem !important;
+}
+
+/* KaTeX math styling */
+.blog-list-page .katex-display,
+.blog-post-page .katex-display {
+    margin: 1.5rem 0 !important;
+    padding: 1rem !important;
+    background: var(--qb-bg-subtle) !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid var(--qb-border) !important;
 }
 
 /* Tags - pill style with light backgrounds and bold colored text */
@@ -1273,68 +1407,99 @@ table tr:last-child td {
     margin: 0 !important;
 }
 
+/* Tags - bordered style with emoji prefix */
 .blog-list-page footer li a,
 .blog-post-page footer li a {
-    font-size: 0.75rem !important;
-    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
     text-decoration: none !important;
-    padding: 0.375rem 0.875rem !important;
+    padding: 0.375rem 0.75rem !important;
     border-radius: 9999px !important;
-    border: none !important;
-    display: inline-block !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
     text-transform: capitalize !important;
-    /* Default - purple */
-    background: #EDE9FE !important;
-    color: #6D28D9 !important;
+    /* Default style */
+    background: transparent !important;
+    color: var(--qb-text) !important;
+    border: 1px solid var(--qb-border) !important;
+    transition: all 0.15s ease !important;
 }
 
-/* Feature tag - green */
+/* Default emoji */
+.blog-list-page footer li a::before,
+.blog-post-page footer li a::before {
+    content: '🏷️';
+    font-size: 0.85em;
+}
+
+/* Feature tag - green border */
 .blog-list-page footer li a[href*="feature"],
 .blog-post-page footer li a[href*="feature"] {
-    background: #D1FAE5 !important;
-    color: #047857 !important;
+    border-color: #10B981 !important;
+}
+.blog-list-page footer li a[href*="feature"]::before,
+.blog-post-page footer li a[href*="feature"]::before {
+    content: '✨';
 }
 
-/* AI tag - purple */
+/* AI tag - purple border */
 .blog-list-page footer li a[href*="/ai"],
 .blog-post-page footer li a[href*="/ai"] {
-    background: #E9D5FF !important;
-    color: #7C3AED !important;
+    border-color: #8B5CF6 !important;
+}
+.blog-list-page footer li a[href*="/ai"]::before,
+.blog-post-page footer li a[href*="/ai"]::before {
+    content: '🤖';
 }
 
-/* Market-analysis tag - blue */
+/* Market-analysis tag - blue border */
 .blog-list-page footer li a[href*="market"],
 .blog-post-page footer li a[href*="market"] {
-    background: #DBEAFE !important;
-    color: #1D4ED8 !important;
+    border-color: #3B82F6 !important;
+}
+.blog-list-page footer li a[href*="market"]::before,
+.blog-post-page footer li a[href*="market"]::before {
+    content: '📊';
 }
 
-/* Announcements tag - pink */
+/* Announcements tag - pink border */
 .blog-list-page footer li a[href*="announcement"],
 .blog-post-page footer li a[href*="announcement"] {
-    background: #FCE7F3 !important;
-    color: #BE185D !important;
+    border-color: #EC4899 !important;
+}
+.blog-list-page footer li a[href*="announcement"]::before,
+.blog-post-page footer li a[href*="announcement"]::before {
+    content: '📢';
 }
 
-/* Bug fix tag - red/pink */
+/* Bug fix tag - red border */
 .blog-list-page footer li a[href*="bug"],
 .blog-post-page footer li a[href*="bug"],
 .blog-list-page footer li a[href*="fix"],
 .blog-post-page footer li a[href*="fix"] {
-    background: #FEE2E2 !important;
-    color: #B91C1C !important;
+    border-color: #EF4444 !important;
+}
+.blog-list-page footer li a[href*="bug"]::before,
+.blog-post-page footer li a[href*="bug"]::before,
+.blog-list-page footer li a[href*="fix"]::before,
+.blog-post-page footer li a[href*="fix"]::before {
+    content: '🐛';
 }
 
-/* Improvement tag - teal */
+/* Improvement tag - teal border */
 .blog-list-page footer li a[href*="improvement"],
 .blog-post-page footer li a[href*="improvement"] {
-    background: #CCFBF1 !important;
-    color: #0F766E !important;
+    border-color: #14B8A6 !important;
+}
+.blog-list-page footer li a[href*="improvement"]::before,
+.blog-post-page footer li a[href*="improvement"]::before {
+    content: '📈';
 }
 
 .blog-list-page footer li a:hover,
 .blog-post-page footer li a:hover {
-    opacity: 0.8 !important;
+    background: var(--qb-bg-subtle) !important;
 }
 
 /* Hide reading time, author avatar, and "Tags:" label */
@@ -1423,13 +1588,38 @@ table tr:last-child td {
         margin-left: 0 !important;
     }
 
-    /* Mobile sidebar/menu - solid background */
+    /* Completely hide the desktop sidebar on mobile */
+    .theme-doc-sidebar-container {
+        display: none !important;
+    }
+
+    /* Mobile navbar sidebar - slide-in panel */
     .navbar-sidebar {
         background: var(--qb-bg) !important;
+        --ifm-navbar-sidebar-width: 80vw !important;
+        max-width: 320px !important;
+    }
+
+    /* Force all text in sidebar to be visible */
+    .navbar-sidebar,
+    .navbar-sidebar * {
+        color: var(--qb-text) !important;
+    }
+
+    /* Force all containers to have proper background */
+    .navbar-sidebar div,
+    .navbar-sidebar nav,
+    .navbar-sidebar ul,
+    .navbar-sidebar li,
+    .navbar-sidebar a,
+    .navbar-sidebar button {
+        background-color: var(--qb-bg) !important;
     }
 
     .navbar-sidebar__items {
         background: var(--qb-bg) !important;
+        height: 100% !important;
+        padding: 0.5rem 0 !important;
     }
 
     .navbar-sidebar__item {
@@ -1438,16 +1628,97 @@ table tr:last-child td {
 
     .navbar-sidebar__back {
         background: var(--qb-bg) !important;
+        color: var(--qb-text) !important;
+        font-weight: 500 !important;
+        padding: 0.75rem 1rem !important;
     }
 
     /* Mobile menu container */
-    .menu {
+    .navbar-sidebar .menu {
         background: var(--qb-bg) !important;
+        padding: 0 0.5rem !important;
     }
 
-    /* Mobile sidebar backdrop */
-    .navbar-sidebar--show .navbar-sidebar {
-        background: var(--qb-bg) !important;
+    /* Mobile menu links - ensure text is visible */
+    .navbar-sidebar .menu__link {
+        color: var(--qb-text) !important;
+        font-size: 0.9rem !important;
+        padding: 0.625rem 1rem !important;
+        border-radius: 0.375rem !important;
+        display: block !important;
+    }
+
+    .navbar-sidebar .menu__link:hover {
+        background: var(--qb-bg-subtle) !important;
+        color: var(--qb-text) !important;
+    }
+
+    .navbar-sidebar .menu__link--active {
+        background: var(--qb-bg-subtle) !important;
+        color: var(--qb-text) !important;
+        font-weight: 500 !important;
+    }
+
+    /* Mobile category labels */
+    .navbar-sidebar .menu__link--sublist,
+    .navbar-sidebar .menu__list-item-collapsible > .menu__link {
+        color: var(--qb-text-muted) !important;
+        font-size: 0.7rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+        font-weight: 500 !important;
+    }
+
+    /* Mobile navbar items container - ensure visible */
+    .navbar-sidebar .navbar__items {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0.5rem !important;
+    }
+
+    .navbar-sidebar .navbar__item {
+        display: block !important;
+    }
+
+    /* Mobile navbar links (Documentation, Changelog) */
+    .navbar-sidebar .navbar__link {
+        color: var(--qb-text) !important;
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        padding: 0.75rem 1rem !important;
+        display: block !important;
+        border-radius: 0.375rem !important;
+    }
+
+    .navbar-sidebar .navbar__link:hover {
+        background: var(--qb-bg-subtle) !important;
+    }
+
+    /* Docs sidebar menu in mobile - ensure visible */
+    .navbar-sidebar .theme-doc-sidebar-menu {
+        display: block !important;
+    }
+
+    .navbar-sidebar .menu__list {
+        display: block !important;
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .navbar-sidebar .menu__list-item {
+        display: block !important;
+    }
+
+    /* Close button - ensure it's visible */
+    .navbar-sidebar .clean-btn {
+        color: var(--qb-text) !important;
+        background: transparent !important;
+    }
+
+    /* Backdrop overlay */
+    .navbar-sidebar__backdrop {
+        background: rgba(0, 0, 0, 0.5) !important;
     }
 }
 
