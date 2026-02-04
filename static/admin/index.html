@@ -72,13 +72,15 @@
     }
   </style>
 
-  <!-- Outseta Widget - Update YOUR_DOMAIN with your Outseta domain -->
+  <!-- Outseta Widget -->
   <script>
     var o_options = {
-      domain: 'quarterback.outseta.com', // UPDATE THIS
+      domain: 'quarterback.outseta.com',
       load: 'auth',
       auth: {
-        widgetMode: 'login'
+        widgetMode: 'login',
+        authenticationCallbackUrl: window.location.href,
+        skipPlanSelect: true
       }
     };
   </script>
