@@ -26,20 +26,15 @@ const config: Config = {
         locales: ['en']
     },
 
-    // Netlify Identity widget for CMS authentication + Outseta support
+    // Netlify Identity widget for CMS authentication
     scripts: [
         {
             src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
             async: true
-        },
-        {
-            src: 'https://cdn.outseta.com/outseta.min.js',
-            async: true,
-            'data-options': 'o_options'
         }
     ],
 
-    // Outseta configuration
+    // Outseta support widget - options must be defined before script loads
     headTags: [
         {
             tagName: 'script',
@@ -48,6 +43,13 @@ const config: Config = {
                 domain: 'quarterback.outseta.com',
                 load: 'support'
             };`
+        },
+        {
+            tagName: 'script',
+            attributes: {
+                src: 'https://cdn.outseta.com/outseta.min.js',
+                'data-options': 'o_options'
+            }
         }
     ],
 
@@ -71,7 +73,7 @@ const config: Config = {
                     routeBasePath: 'changelog',
                     blogTitle: 'Changelog',
                     blogDescription: 'Latest updates and features in Quarterback',
-                    showReadingTime: true,
+                    showReadingTime: false,
                     feedOptions: {
                         type: ['rss', 'atom', 'json'],
                         xslt: true

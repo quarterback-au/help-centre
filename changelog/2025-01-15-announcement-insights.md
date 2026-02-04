@@ -9,8 +9,6 @@ tags: [feature, ai, announcements]
 
 Get instant AI-generated summaries of how your announcements were received by the market.
 
-<!-- truncate -->
-
 ### What's New
 
 When viewing an announcement with linked activities, Quarterback now generates an AI summary that includes:

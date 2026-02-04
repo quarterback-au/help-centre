@@ -9,8 +9,6 @@ tags: [feature, market-analysis]
 
 Resources companies can now benchmark their stock performance against relevant commodities instead of market indices.
 
-<!-- truncate -->
-
 ### What's New
 
 - **Commodity Selection** - Choose from Gold, Silver, Iron Ore, Copper, Lithium, Oil, and Natural Gas
