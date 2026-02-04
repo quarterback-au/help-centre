@@ -17,7 +17,7 @@ const createSidebarFooter = () => {
         <line x1="10" y1="14" x2="21" y2="3"/>
       </svg>
     </a>
-    <button type="button" class="qb-footer-link submit-help-request">
+    <button type="button" class="qb-footer-link" data-o-support-request>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <circle cx="12" cy="12" r="10"/>
         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>

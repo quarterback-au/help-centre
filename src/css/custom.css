@@ -1422,6 +1422,33 @@ table tr:last-child td {
     .main-wrapper {
         margin-left: 0 !important;
     }
+
+    /* Mobile sidebar/menu - solid background */
+    .navbar-sidebar {
+        background: var(--qb-bg) !important;
+    }
+
+    .navbar-sidebar__items {
+        background: var(--qb-bg) !important;
+    }
+
+    .navbar-sidebar__item {
+        background: var(--qb-bg) !important;
+    }
+
+    .navbar-sidebar__back {
+        background: var(--qb-bg) !important;
+    }
+
+    /* Mobile menu container */
+    .menu {
+        background: var(--qb-bg) !important;
+    }
+
+    /* Mobile sidebar backdrop */
+    .navbar-sidebar--show .navbar-sidebar {
+        background: var(--qb-bg) !important;
+    }
 }
 
 /* ============================================
