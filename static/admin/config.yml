@@ -2,11 +2,8 @@
 # Documentation: https://decapcms.org/docs/
 
 backend:
-  name: github
-  repo: quarterback-au/help-centre
+  name: git-gateway
   branch: main
-  # For GitHub OAuth, you'll need to set up an OAuth app
-  # See: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
 
 # For local development, uncomment this:
 # local_backend: true
