@@ -26,6 +26,17 @@ const config: Config = {
         locales: ['en']
     },
 
+    // Netlify Identity widget for CMS authentication
+    scripts: [
+        {
+            src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+            async: true
+        }
+    ],
+
+    // Handle Netlify Identity redirects after email confirmation
+    clientModules: [require.resolve('./src/netlifyIdentityRedirect.js')],
+
     presets: [
         [
             'classic',
