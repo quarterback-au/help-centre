@@ -97,7 +97,7 @@
   <div id="auth-required">
     <h1>Admin Access Required</h1>
     <p>You need to be logged in with a team account to access the content manager.</p>
-    <button class="login-btn" onclick="Outseta.auth.open({ widgetMode: 'login' })">
+    <button class="login-btn" onclick="document.getElementById('auth-required').style.display='none'; Outseta.auth.open({ widgetMode: 'login' })">
       Log in with Outseta
     </button>
   </div>
