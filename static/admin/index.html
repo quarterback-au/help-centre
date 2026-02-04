@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Quarterback Help Center - Content Manager</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 1rem;
+    }
+    #loading p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #e5e7eb;
+      border-top-color: #4f46e5;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    #auth-required, #access-denied {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 1.5rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    #auth-required h1, #access-denied h1 {
+      font-size: 1.5rem;
+      color: #111827;
+      margin: 0;
+    }
+    #auth-required p, #access-denied p {
+      color: #6b7280;
+      margin: 0;
+      max-width: 400px;
+    }
+    #access-denied h1 {
+      color: #dc2626;
+    }
+    .login-btn {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-btn:hover {
+      background: #4338ca;
+    }
+  </style>
+
+  <!-- Outseta Widget - Update YOUR_DOMAIN with your Outseta domain -->
+  <script>
+    var o_options = {
+      domain: 'quarterback.outseta.com', // UPDATE THIS
+      load: 'auth',
+      auth: {
+        widgetMode: 'login'
+      }
+    };
+  </script>
+  <script src="https://cdn.outseta.com/outseta.min.js" data-options="o_options"></script>
+</head>
+<body>
+  <!-- Loading state -->
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Checking authentication...</p>
+  </div>
+
+  <!-- Auth required state -->
+  <div id="auth-required">
+    <h1>Admin Access Required</h1>
+    <p>You need to be logged in with a team account to access the content manager.</p>
+    <button class="login-btn" onclick="Outseta.auth.open({ widgetMode: 'login' })">
+      Log in with Outseta
+    </button>
+  </div>
+
+  <!-- Access denied state (logged in but not admin) -->
+  <div id="access-denied">
+    <h1>Access Denied</h1>
+    <p>You don't have permission to access the content manager. Admin access is required.</p>
+    <button class="login-btn" onclick="window.location.href='/'">
+      Back to Help Center
+    </button>
+  </div>
+
+  <!-- CMS will load here when authenticated -->
+  <script>
+    // Check if user has admin role
+    // Outseta stores role in PersonAccount array - look for admin role
+    function isAdmin(user) {
+      if (!user) return false;
+
+      // Check PersonAccount for admin role
+      // The role field varies - check common locations
+      if (user.PersonAccount && Array.isArray(user.PersonAccount)) {
+        return user.PersonAccount.some(function(pa) {
+          // Check for 'Admin' role (case-insensitive)
+          var role = pa.Role || pa.role || '';
+          return role.toLowerCase() === 'admin';
+        });
+      }
+
+      // Fallback: check direct Role field
+      if (user.Role) {
+        return user.Role.toLowerCase() === 'admin';
+      }
+
+      // Fallback: check custom fields or account type
+      if (user.AccountType) {
+        return user.AccountType.toLowerCase() === 'admin';
+      }
+
+      return false;
+    }
+
+    // Wait for Outseta to load
+    function checkAuth() {
+      if (typeof Outseta === 'undefined') {
+        setTimeout(checkAuth, 100);
+        return;
+      }
+
+      // Check if user is authenticated
+      const user = Outseta.getUser();
+
+      if (user && user.Email) {
+        // User is logged in - check if admin
+        if (isAdmin(user)) {
+          document.getElementById('loading').style.display = 'none';
+          loadCMS();
+        } else {
+          // Logged in but not admin
+          document.getElementById('loading').style.display = 'none';
+          document.getElementById('access-denied').style.display = 'flex';
+        }
+      } else {
+        // Not logged in - show auth required
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('auth-required').style.display = 'flex';
+
+        // Listen for login
+        Outseta.on('auth.login', function(loggedInUser) {
+          if (isAdmin(loggedInUser)) {
+            document.getElementById('auth-required').style.display = 'none';
+            loadCMS();
+          } else {
+            document.getElementById('auth-required').style.display = 'none';
+            document.getElementById('access-denied').style.display = 'flex';
+          }
+        });
+      }
+    }
+
+    function loadCMS() {
+      // Load Decap CMS
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js';
+      document.body.appendChild(script);
+    }
+
+    // Start auth check
+    checkAuth();
+  </script>
+</body>
+</html>

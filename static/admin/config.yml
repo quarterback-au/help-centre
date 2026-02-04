@@ -1,0 +1,148 @@
+# Decap CMS Configuration for Quarterback Help Center
+# Documentation: https://decapcms.org/docs/
+
+backend:
+  name: github
+  repo: quarterback-au/help-centre
+  branch: main
+  # For GitHub OAuth, you'll need to set up an OAuth app
+  # See: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
+
+# For local development, uncomment this:
+# local_backend: true
+
+# Media files storage
+media_folder: "static/img"
+public_folder: "/img"
+
+# Site URL for previews
+site_url: https://help.qback.au
+display_url: https://help.qback.au
+
+# Logo for CMS
+logo_url: /img/logo.svg
+
+# Slug settings
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Content collections
+collections:
+  # ===========================
+  # Getting Started
+  # ===========================
+  - name: "getting-started"
+    label: "Getting Started"
+    folder: "docs/getting-started"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # Features
+  # ===========================
+  - name: "features"
+    label: "Features"
+    folder: "docs/features"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # Settings
+  # ===========================
+  - name: "settings"
+    label: "Settings"
+    folder: "docs/settings"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # Integrations
+  # ===========================
+  - name: "integrations"
+    label: "Integrations"
+    folder: "docs/integrations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # FAQ (Single file)
+  # ===========================
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - name: "faq"
+        label: "FAQ Page"
+        file: "docs/faq.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Sidebar Position", name: "sidebar_position", widget: "number" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # Changelog (Blog posts)
+  # ===========================
+  - name: "changelog"
+    label: "Changelog"
+    folder: "changelog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+      - label: "Authors"
+        name: "authors"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Quarterback Team", value: "quarterback" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Feature", value: "feature" }
+          - { label: "AI", value: "ai" }
+          - { label: "Announcements", value: "announcements" }
+          - { label: "Market Analysis", value: "market-analysis" }
+          - { label: "Reports", value: "reports" }
+          - { label: "Alerts", value: "alerts" }
+          - { label: "Bug Fix", value: "bug-fix" }
+          - { label: "Improvement", value: "improvement" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # Home Page
+  # ===========================
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "index"
+        label: "Documentation Home"
+        file: "docs/index.mdx"
+        fields:
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
+          - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
