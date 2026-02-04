@@ -26,16 +26,36 @@ const config: Config = {
         locales: ['en']
     },
 
-    // Netlify Identity widget for CMS authentication
+    // Netlify Identity widget for CMS authentication + Outseta support
     scripts: [
         {
             src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
             async: true
+        },
+        {
+            src: 'https://cdn.outseta.com/outseta.min.js',
+            async: true,
+            'data-options': 'o_options'
         }
     ],
 
-    // Handle Netlify Identity redirects after email confirmation
-    clientModules: [require.resolve('./src/netlifyIdentityRedirect.js')],
+    // Outseta configuration
+    headTags: [
+        {
+            tagName: 'script',
+            attributes: {},
+            innerHTML: `var o_options = {
+                domain: 'quarterback.outseta.com',
+                load: 'support'
+            };`
+        }
+    ],
+
+    // Handle Netlify Identity redirects and sidebar customization
+    clientModules: [
+        require.resolve('./src/netlifyIdentityRedirect.js'),
+        require.resolve('./src/sidebarCustomization.js')
+    ],
 
     presets: [
         [
@@ -53,7 +73,7 @@ const config: Config = {
                     blogDescription: 'Latest updates and features in Quarterback',
                     showReadingTime: true,
                     feedOptions: {
-                        type: ['rss', 'atom'],
+                        type: ['rss', 'atom', 'json'],
                         xslt: true
                     },
                     editUrl: undefined,
@@ -64,6 +84,18 @@ const config: Config = {
                     customCss: './src/css/custom.css'
                 }
             } satisfies Preset.Options
+        ]
+    ],
+
+    themes: [
+        [
+            '@easyops-cn/docusaurus-search-local',
+            {
+                hashed: true,
+                docsRouteBasePath: '/',
+                indexBlog: false,
+                highlightSearchTermsOnTargetPage: true
+            }
         ]
     ],
 
@@ -81,82 +113,28 @@ const config: Config = {
         //     indexName: 'quarterback',
         // },
         navbar: {
-            title: 'Quarterback',
+            title: '',
             logo: {
-                alt: 'Quarterback Logo',
-                src: 'img/logo.svg'
+                alt: 'Quarterback',
+                src: 'img/logo-full.png'
             },
             items: [
                 {
                     type: 'docSidebar',
                     sidebarId: 'mainSidebar',
                     position: 'left',
-                    label: 'Docs'
+                    label: 'Documentation'
                 },
                 {
                     to: '/changelog',
                     label: 'Changelog',
                     position: 'left'
-                },
-                {
-                    href: 'https://app.qback.au',
-                    label: 'Go to App',
-                    position: 'right'
                 }
             ]
         },
         footer: {
             style: 'light',
-            links: [
-                {
-                    title: 'Documentation',
-                    items: [
-                        {
-                            label: 'Getting Started',
-                            to: '/getting-started/quick-start'
-                        },
-                        {
-                            label: 'Features',
-                            to: '/features/dashboard'
-                        },
-                        {
-                            label: 'FAQ',
-                            to: '/faq'
-                        }
-                    ]
-                },
-                {
-                    title: 'Resources',
-                    items: [
-                        {
-                            label: 'Changelog',
-                            to: '/changelog'
-                        },
-                        {
-                            label: 'Contact Support',
-                            href: 'mailto:support@qback.au'
-                        }
-                    ]
-                },
-                {
-                    title: 'Company',
-                    items: [
-                        {
-                            label: 'About Quarterback',
-                            href: 'https://qback.au'
-                        },
-                        {
-                            label: 'Privacy Policy',
-                            href: 'https://qback.au/privacy'
-                        },
-                        {
-                            label: 'Terms of Service',
-                            href: 'https://qback.au/terms'
-                        }
-                    ]
-                }
-            ],
-            copyright: `© ${new Date().getFullYear()} Quarterback. All rights reserved.`
+            copyright: `© ${new Date().getFullYear()} Quarterback`
         },
         prism: {
             theme: prismThemes.github,

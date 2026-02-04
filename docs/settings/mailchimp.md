@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 title: MailChimp Integration
 description: Connect MailChimp to track email subscribers
 ---

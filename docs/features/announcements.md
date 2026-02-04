@@ -145,6 +145,6 @@ This helps you understand:
 
 ## Related
 
-- [Key Concepts](/getting-started/key-concepts) - Understanding CAR and AR
+- [Key Concepts](/concepts/key-concepts) - Understanding CAR and AR
 - [Activities](/features/activities) - Track market reactions
 - [Insights](/features/insights) - AI-powered analysis

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 6
 title: Social Media Integrations
 description: Connect your social media accounts
 ---

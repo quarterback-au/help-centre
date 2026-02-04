@@ -13,14 +13,23 @@ const sidebars: SidebarsConfig = {
             collapsed: false,
             items: [
                 'getting-started/quick-start',
-                'getting-started/video-walkthrough',
-                'getting-started/key-concepts'
+                'getting-started/video-walkthrough'
+            ]
+        },
+        {
+            type: 'category',
+            label: 'Guides',
+            collapsed: false,
+            items: [
+                'guides/first-report',
+                'guides/setup-alerts',
+                'guides/track-announcements'
             ]
         },
         {
             type: 'category',
             label: 'Features',
-            collapsed: false,
+            collapsed: true,
             items: [
                 'features/dashboard',
                 'features/activities',
@@ -34,24 +43,30 @@ const sidebars: SidebarsConfig = {
         },
         {
             type: 'category',
-            label: 'Company Settings',
+            label: 'Concepts',
+            collapsed: true,
+            items: [
+                'concepts/key-concepts',
+                'concepts/market-sentiment',
+                'concepts/investor-relations'
+            ]
+        },
+        {
+            type: 'category',
+            label: 'Settings',
             collapsed: true,
             items: [
                 'settings/company-profile',
                 'settings/social-accounts',
                 'settings/market-settings',
-                'settings/team-members'
+                'settings/team-members',
+                'settings/mailchimp',
+                'settings/social-media-integration'
             ]
         },
         {
             type: 'category',
-            label: 'Integrations',
-            collapsed: true,
-            items: ['integrations/mailchimp', 'integrations/social-media']
-        },
-        {
-            type: 'category',
-            label: 'Additional Resources',
+            label: 'Resources',
             collapsed: true,
             items: [
                 {
@@ -59,12 +74,7 @@ const sidebars: SidebarsConfig = {
                     label: 'Changelog',
                     href: '/changelog'
                 },
-                'faq',
-                {
-                    type: 'link',
-                    label: 'Contact Support',
-                    href: 'mailto:support@qback.au'
-                }
+                'faq'
             ]
         }
     ]

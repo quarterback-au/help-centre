@@ -99,6 +99,6 @@ This provides more relevant analysis for resources companies whose stock prices 
 
 ## Related
 
-- [Key Concepts](/getting-started/key-concepts) - Understanding AR and CAR
+- [Key Concepts](/concepts/key-concepts) - Understanding AR and CAR
 - [Announcements](/features/announcements) - Market impact analysis
 - [Company Profile](/settings/company-profile) - Basic settings

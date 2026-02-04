@@ -1,77 +1,129 @@
 ---
 slug: /
 sidebar_position: 1
-title: Documentation
+title: Home
+hide_title: true
 ---
 
 import Link from '@docusaurus/Link';
 
-# Documentation
-
-Learn how to master investor relations intelligence with Quarterback. Track activities, monitor media coverage, and gain insights into how your company is being perceived in the market.
-
-<div className="hero-cards">
-  <Link to="/getting-started/quick-start" className="hero-card hero-card--primary">
-    <div className="hero-card__icon">🚀</div>
-    <div className="hero-card__content">
-      <h3>Quick Start Guide</h3>
-      <p>Get up and running with Quarterback in 10 minutes</p>
-    </div>
-  </Link>
-
-  <Link to="/getting-started/video-walkthrough" className="hero-card hero-card--secondary">
-    <div className="hero-card__icon">🎬</div>
-    <div className="hero-card__content">
-      <h3>Video Walkthrough</h3>
-      <p>Watch a guided tour of the platform</p>
-    </div>
-  </Link>
-
-  <Link to="/features/dashboard" className="hero-card hero-card--tertiary">
-    <div className="hero-card__icon">📊</div>
-    <div className="hero-card__content">
-      <h3>Explore Features</h3>
-      <p>Discover all the tools at your disposal</p>
-    </div>
-  </Link>
+<div className="landing-hero">
+  <h1>Quarterback Help Center</h1>
+  <p>Learn how to master investor relations intelligence with Quarterback</p>
 </div>
 
-## Core Features
-
-<div className="feature-grid">
-  <Link to="/features/activities" className="feature-card">
-    <h3>📝 Activities</h3>
-    <p>Track social media posts, articles, and market chatter about your company</p>
-  </Link>
-
-  <Link to="/features/announcements" className="feature-card">
-    <h3>📢 Announcements</h3>
-    <p>Monitor ASX announcements and analyze their market impact</p>
-  </Link>
-
-  <Link to="/features/media-monitoring" className="feature-card">
-    <h3>📰 Media Monitoring</h3>
-    <p>Stay on top of news coverage and media mentions</p>
-  </Link>
-
-  <Link to="/features/alerts" className="feature-card">
-    <h3>🔔 Alerts</h3>
-    <p>Get notified about important events and sentiment changes</p>
-  </Link>
-
-  <Link to="/features/reports" className="feature-card">
-    <h3>📈 Reports</h3>
-    <p>Generate comprehensive investor relations reports</p>
-  </Link>
-
-  <Link to="/features/insights" className="feature-card">
-    <h3>💡 Insights</h3>
-    <p>AI-powered analysis and recommendations</p>
-  </Link>
+<div className="landing-section">
+  <div className="landing-section-header">
+    <h2>Getting Started</h2>
+    <p>New to Quarterback? Start here</p>
+  </div>
+  <div className="getting-started-cards">
+    <Link to="/getting-started/quick-start" className="gs-card">
+      <div className="gs-card-icon">🚀</div>
+      <div className="gs-card-content">
+        <h3>Quick Start</h3>
+        <p>Get up and running in minutes</p>
+      </div>
+    </Link>
+    <Link to="/getting-started/video-walkthrough" className="gs-card">
+      <div className="gs-card-icon">🎬</div>
+      <div className="gs-card-content">
+        <h3>Video Walkthrough</h3>
+        <p>Watch a guided tour</p>
+      </div>
+    </Link>
+  </div>
 </div>
 
-## Need Help?
+<div className="landing-section">
+  <div className="landing-section-header">
+    <h2>Guides</h2>
+    <p>Step-by-step walkthroughs for common tasks</p>
+  </div>
+  <div className="guide-cards">
+    <Link to="/guides/first-report" className="guide-card">
+      <div className="guide-card-gradient guide-card-gradient--purple"></div>
+      <div className="guide-card-content">
+        <h3>Create Your First Report</h3>
+        <p>Generate comprehensive investor relations reports</p>
+        <div className="guide-card-meta">
+          <span>10 min read</span>
+        </div>
+      </div>
+    </Link>
+    <Link to="/guides/setup-alerts" className="guide-card">
+      <div className="guide-card-gradient guide-card-gradient--teal"></div>
+      <div className="guide-card-content">
+        <h3>Set Up Alerts</h3>
+        <p>Get notified about important sentiment changes</p>
+        <div className="guide-card-meta">
+          <span>5 min read</span>
+        </div>
+      </div>
+    </Link>
+    <Link to="/guides/track-announcements" className="guide-card">
+      <div className="guide-card-gradient guide-card-gradient--orange"></div>
+      <div className="guide-card-content">
+        <h3>Track Announcements</h3>
+        <p>Monitor and analyze ASX announcement impact</p>
+        <div className="guide-card-meta">
+          <span>8 min read</span>
+        </div>
+      </div>
+    </Link>
+  </div>
+</div>
 
-- **[FAQ](/faq)** - Frequently asked questions
-- **[Changelog](/changelog)** - Latest updates and features
-- **[Contact Support](mailto:support@qback.au)** - Get in touch with our team
+<div className="landing-section">
+  <div className="landing-section-header">
+    <h2>Features</h2>
+    <p>Explore all the tools at your disposal</p>
+  </div>
+  <div className="feature-grid">
+    <Link to="/features/dashboard" className="feature-card">
+      <h3>📊 Dashboard</h3>
+      <p>Your central hub for all metrics and insights</p>
+    </Link>
+    <Link to="/features/activities" className="feature-card">
+      <h3>📝 Activities</h3>
+      <p>Track mentions, posts, and market chatter</p>
+    </Link>
+    <Link to="/features/announcements" className="feature-card">
+      <h3>📢 Announcements</h3>
+      <p>Monitor ASX announcements and market impact</p>
+    </Link>
+    <Link to="/features/media-monitoring" className="feature-card">
+      <h3>📰 Media Monitoring</h3>
+      <p>Stay on top of news coverage</p>
+    </Link>
+    <Link to="/features/alerts" className="feature-card">
+      <h3>🔔 Alerts</h3>
+      <p>Get notified about important events</p>
+    </Link>
+    <Link to="/features/reports" className="feature-card">
+      <h3>📈 Reports</h3>
+      <p>Generate comprehensive IR reports</p>
+    </Link>
+  </div>
+</div>
+
+<div className="landing-section">
+  <div className="landing-section-header">
+    <h2>Concepts</h2>
+    <p>Understand the fundamentals</p>
+  </div>
+  <div className="concept-links">
+    <Link to="/concepts/key-concepts" className="concept-link">
+      <span className="concept-link-icon">📚</span>
+      <span>Key Concepts</span>
+    </Link>
+    <Link to="/concepts/market-sentiment" className="concept-link">
+      <span className="concept-link-icon">📉</span>
+      <span>Market Sentiment</span>
+    </Link>
+    <Link to="/concepts/investor-relations" className="concept-link">
+      <span className="concept-link-icon">🤝</span>
+      <span>Investor Relations</span>
+    </Link>
+  </div>
+</div>
