@@ -21,7 +21,7 @@ Use this data to spot unusual market movements and understand whether share pric
 
 Choose an index instead if sector performance matters more than commodity exposure. Either way, correlation analysis runs automatically so you can separate signal from noise.
 
-→ [Benchmarking] (/features/benchmarking)  · [Commodities](/features/commodities) · [Benchmark Indices](/features/benchmark-indices) · [Correlation Analysis](/concepts/correlation)
+→ [Benchmarking](/features/benchmarking) · [Correlation Analysis](/concepts/correlation)
 
 ---
 
@@ -31,7 +31,7 @@ Prominent people, influential activities, and unusual patterns now surface autom
 
 People are flagged based on their reach, engagement history, and market impact. Activities are scored for influence so you can prioritise what deserves attention. Announcements are categorised automatically and compared against historical performance for similar announcement types—so you know whether a drilling result outperformed or underperformed relative to past disclosures.
 
-→ [Prominent People](/features/prominent-people) · [Activity Scoring](/features/activity-scoring) · [Announcement Categories](/features/announcement-categories)
+→ [People](/features/people) · [Activities](/features/activities) · [Key Concepts](/concepts/key-concepts#announcement-categorisation)
 
 ---
 
@@ -43,7 +43,7 @@ Announcement insights reference commodity movements and benchmark performance on
 
 The underlying models have been tuned for IR-specific language, so summaries read like they were written by someone who understands the market.
 
-→ [AI Insights](/features/ai-insights)
+→ [Insights](/features/insights)
 
 ---
 
@@ -53,7 +53,7 @@ Search now combines semantic understanding with keyword matching. Describe what 
 
 Results appear in a split panel layout. Browse the list on the left, preview details on the right without losing your place. Filter across announcements, activities, media, and people from one unified experience.
 
-→ [Search](/features/search)
+→ [Activities](/features/activities)
 
 ---
 
@@ -63,7 +63,7 @@ The announcements page has been rebuilt around how IR teams actually work. Brows
 
 Each announcement includes an insights panel showing market reaction, trading context, and key themes. Compare performance against historical announcements of the same type to see whether the market response was typical or unusual.
 
-→ [Announcements](/features/announcements) · [Exporting Reports](/guides/exporting-reports)
+→ [Announcements](/features/announcements) · [Reports](/features/reports)
 
 ---
 
@@ -71,7 +71,7 @@ Each announcement includes an insights panel showing market reaction, trading co
 
 Adding manual activities is now faster and more flexible. The redesigned form supports paid vs organic tracking, richer metadata, and a cleaner interface that gets out of your way.
 
-→ [Manual Activities](/guides/manual-activities)
+→ [Activities](/features/activities)
 
 ---
 
