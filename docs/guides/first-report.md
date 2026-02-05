@@ -1,66 +1,47 @@
 ---
 sidebar_position: 1
-title: Create Your First Report
-description: Step-by-step guide to generating investor relations reports
+title: Your First Report
+description: Generate a board report to summarize activity for a period.
 ---
 
-# Create Your First Report
+# Your First Report
 
-Learn how to generate comprehensive investor relations reports with Quarterback.
+Generate a board report to summarize activity for a period.
 
-## Overview
+## Steps
 
-Reports in Quarterback aggregate your company's activities, announcements, and sentiment data into professional documents suitable for board meetings and stakeholder presentations.
+### 1. Navigate to Reports
 
-## Prerequisites
+Click "Reports" in the sidebar.
 
-Before creating a report, ensure you have:
-- Connected your company profile
-- At least one week of activity data
-- Configured your market settings
+### 2. Set Date Range
 
-## Step 1: Navigate to Reports
+Select the period to cover using the date picker. Default is past 2 months.
 
-1. Open the Quarterback dashboard
-2. Click **Reports** in the main navigation
-3. Select **Create New Report**
+### 3. Wait for Data
 
-## Step 2: Choose Report Type
+The system loads activities, market data, and generates AI insights. A loading spinner indicates progress.
 
-Select from available templates:
+### 4. Download PDF
 
-| Report Type | Best For |
-|-------------|----------|
-| Weekly Summary | Regular board updates |
-| Announcement Analysis | Post-announcement review |
-| Quarterly Review | Comprehensive quarterly reporting |
-| Custom | Specific date ranges or topics |
+Click the download button. The 2-page PDF includes:
 
-## Step 3: Configure Date Range
+- AI-generated overview
+- Share price vs activities chart
+- Key metrics comparison
+- Sentiment breakdown
+- Top authors and media
+- Announcement impact analysis
 
-- Select your start and end dates
-- For announcement analysis, center the range around your announcement date
+### 5. Review and Share
 
-## Step 4: Select Sections
+Open the PDF to review. Share with your board or stakeholders.
 
-Choose which sections to include:
+## Monthly Reports
 
-- [ ] Executive Summary
-- [ ] Activity Overview
-- [ ] Sentiment Analysis
-- [ ] Media Coverage
-- [ ] Social Media Metrics
-- [ ] Announcement Impact
-- [ ] Key Influencers
+For month-specific reports:
 
-## Step 5: Generate and Export
-
-1. Click **Generate Preview**
-2. Review the report content
-3. Make any adjustments
-4. Export as PDF or share directly
-
-## Next Steps
-
-- [Understanding Reports](/features/reports) - Deep dive into report features
-- [Set Up Alerts](/guides/setup-alerts) - Get notified about important changes
+1. Navigate to Reports > Monthly
+2. Select the month from the dropdown
+3. Review the interactive report
+4. Use browser print (Ctrl/Cmd + P) to save as PDF

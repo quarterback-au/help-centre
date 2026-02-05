@@ -1,107 +1,55 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 title: People
-description: Track key authors and influencers discussing your company
+description: Track authors and contributors discussing your company.
 ---
 
 # People
 
-Understand who's talking about your company and their influence on market sentiment.
+Track authors and contributors discussing your company across all monitored platforms.
 
-## Overview
+## People Grid
 
-The People feature helps you:
+The people page shows all authors with aggregated statistics:
 
-- Identify key authors and influencers
-- Track individual sentiment patterns
-- Understand reach and engagement
-- Build relationships with advocates
+- Source platform
+- Author name with badges
+- Average sentiment across their posts
+- Activity count
+- Last active date
+- Stock held status (HotCopper disclosure)
+- Average price change on their activity days
 
-## People List
+## Author Badges
 
-Navigate to **People** in the sidebar to view all tracked individuals.
+### Frequent Author (Fire icon)
 
-### Displayed Information
+Authors who post significantly more than average. Calculated as mean + 1.5 standard deviations of post count, minimum 2 posts.
 
-| Field | Description |
-|-------|-------------|
-| **Name** | Author name or handle |
-| **Platform** | Primary platform (Twitter, LinkedIn, etc.) |
-| **Activity Count** | Number of posts about your company |
-| **Avg Sentiment** | Average sentiment of their posts |
-| **Reach** | Follower count or audience size |
+### High Reach (Megaphone icon)
 
-### Sorting
+Authors in the top 10% by follower count. These voices have outsized potential impact.
 
-Sort people by:
-- **Activity Count** - Most active first
-- **Sentiment** - Most positive or negative
-- **Reach** - Largest audience first
-- **Recent** - Most recently active
+### Flagged (Flag icon)
 
-## Person Details
+Authors you've manually flagged for attention.
 
-Click any person to view their profile:
+## Flagging & Archiving
 
-### Overview
-- Profile information (where available)
-- Platform links
-- Total engagement metrics
+Flag prominent people to track them separately. Archive authors to hide them from the main view while retaining data.
 
-### Activity History
-- All posts about your company
-- Sentiment over time
-- Topics they discuss most
+Both actions are organization-scoped—your flags and archives don't affect other users.
 
-### Engagement Stats
-- Average likes and shares
-- Most engaged posts
-- Peak activity times
+## Author Details
 
-## Key Influencers
+Click an author to see:
 
-Identify your most important voices:
+- Profile information and follower count
+- All activities from this author
+- Sentiment distribution across their posts
+- Notes (organization-specific)
+- Edit form for updating author information
 
-### High-Reach Positive
-People with large audiences who speak positively about you. These are potential advocates.
+## Price Impact
 
-### High-Reach Negative
-People with large audiences who are critical. Monitor closely and consider engagement strategies.
-
-### Most Active
-People who mention you frequently, regardless of sentiment. They're deeply engaged with your company.
-
-## Sentiment Patterns
-
-Track how individual sentiment changes over time:
-
-- **Consistently Positive** - Loyal advocates
-- **Consistently Negative** - Persistent critics
-- **Variable** - Reacts to specific events
-- **Recently Changed** - Shifted sentiment (investigate why)
-
-## Platform Breakdown
-
-See where people are most active:
-
-- **Twitter/X** - Real-time reactions
-- **LinkedIn** - Professional commentary
-- **HotCopper** - Retail investor discussions
-- **Reddit** - Community discussions
-
----
-
-## Tips & Best Practices
-
-- **Engage advocates** - Recognize and appreciate positive voices
-- **Monitor critics** - Understand concerns and address if valid
-- **Track influencer sentiment** - Changes may precede broader shifts
-- **Build relationships** - Connect with key voices on their platforms
-
----
-
-## Related
-
-- [Activities](/features/activities) - View all posts from specific people
-- [Alerts](/features/alerts) - Get notified about key influencer posts
-- [Insights](/features/insights) - AI analysis of people trends
+The "Average ▲" column shows the average share price change on days when the author posted. This helps identify authors whose activity correlates with price movements—whether causal or coincidental.

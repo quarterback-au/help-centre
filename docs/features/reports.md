@@ -1,163 +1,53 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 title: Reports
-description: Generate comprehensive investor relations reports
+description: Generate comprehensive reports for board meetings and stakeholder updates.
 ---
 
 # Reports
 
-Create professional reports for stakeholders with Quarterback's reporting tools.
+Generate comprehensive reports for board meetings, compliance records, or stakeholder updates.
 
-## Report Types
+## Board Report (PDF)
 
-### Activity Report
-Summary of all activities over a period:
+A downloadable 2-page PDF containing:
 
-- Activity counts by source
+### Page 1 – Executive Overview
+
+- AI-generated summary
+- Share price vs activities chart
+- Key metrics with period comparison
+
+### Page 2 – Detailed Analytics
+
 - Sentiment breakdown
-- Top posts and articles
-- Engagement metrics
-
-### Announcement Impact Report
-Analysis of announcement performance:
-
-- CAR metrics for each announcement
-- Comparison to historical average
-- Linked activities and reactions
-- Media coverage summary
-
-### Media Coverage Report
-Comprehensive media analysis:
-
-- Article counts by publisher
-- Sentiment trends
-- Key journalists
-- Share of voice (vs competitors)
-
-### Executive Summary
-High-level overview for board presentations:
-
-- Key metrics snapshot
-- Notable events
-- Sentiment trends
-- Recommendations
-
-## Generating a Report
-
-1. Navigate to **Reports**
-2. Click **+ New Report**
-3. Select report type
-4. Configure parameters:
-   - Date range
-   - Sections to include
-   - Comparison period (optional)
-5. Click **Generate**
-
-## Report Sections
-
-### Overview
-- Period summary
-- Key metrics at a glance
-- Highlights and lowlights
-
-### Activities
-- Activity volume chart
-- Source breakdown
-- Top activities by engagement
-
-### Sentiment
-- Sentiment trend chart
-- Positive/negative breakdown
-- Notable sentiment shifts
-
-### Announcements
-- Announcements in period
-- Market impact analysis
-- CAR comparison chart
-
-### Media
-- Coverage summary
-- Publisher breakdown
-- Key articles
-
-### People
 - Top authors
-- Influencer activity
-- Sentiment by author
+- Sentiment by source
+- Top media coverage
+- Announcements with 24-hour impact
+- Flagged activities
 
-## Customizing Reports
+Configure the date range and download the PDF directly from the reports page.
 
-### Branding
-Add your company logo and colors:
+## Monthly Report (HTML)
 
-1. Go to **Settings** → **Report Branding**
-2. Upload logo
-3. Set primary color
-4. Preview and save
+Interactive web-based report with print-to-PDF capability:
 
-### Templates
-Save report configurations as templates:
+- Month selector for historical reports
+- Key metrics with month-over-month comparison
+- Share price vs activities visualization
+- Price-sensitive announcements with AR metrics
+- Top media coverage table
+- Top authors grid
 
-1. Generate a report
-2. Click **Save as Template**
-3. Name your template
-4. Reuse for future reports
+Use your browser's print function to save as PDF.
 
-### Sections
-Choose which sections to include:
+## Announcement Reports
 
-- Toggle sections on/off
-- Reorder sections
-- Customize section content
+Export announcement-specific reports from the announcements page:
 
-## Exporting Reports
+1. Select announcements to include
+2. Click Export
+3. HTML report opens with full details
 
-### PDF Export
-Professional formatted PDF:
-
-- Suitable for printing
-- Includes charts and visualizations
-- Company branding applied
-
-### PowerPoint Export
-Presentation-ready slides:
-
-- One section per slide
-- Editable format
-- Chart images included
-
-### Data Export (CSV)
-Raw data for further analysis:
-
-- All metrics in tabular format
-- Import into Excel
-- Use for custom analysis
-
-## Scheduling Reports
-
-Set up automatic report generation:
-
-1. Create a report
-2. Click **Schedule**
-3. Set frequency (daily, weekly, monthly)
-4. Add email recipients
-5. Activate schedule
-
-Scheduled reports are emailed as PDF attachments.
-
----
-
-## Tips & Best Practices
-
-- **Consistent periods** - Use same date ranges for comparability
-- **Add context** - Include notes explaining unusual events
-- **Right audience** - Tailor detail level to recipients
-- **Regular cadence** - Establish routine reporting schedule
-
----
-
-## Related
-
-- [Dashboard](/features/dashboard) - Real-time metrics
-- [Alerts](/features/alerts) - Event-driven notifications
-- [Insights](/features/insights) - AI-powered analysis
+Reports include market metrics, activity breakdown by category, sentiment analysis, and all linked activities.

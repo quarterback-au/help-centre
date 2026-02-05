@@ -1,71 +1,60 @@
 ---
 sidebar_position: 3
-title: Track Announcements
-description: Monitor and analyze ASX announcement impact
+title: Tracking Announcements
+description: Monitor ASX announcements and their market impact.
 ---
 
-# Track Announcements
+# Tracking Announcements
 
-Learn how to monitor your ASX announcements and measure their market impact.
+Monitor ASX announcements and their market impact.
 
-## Overview
+## View Announcements
 
-Quarterback automatically tracks all your ASX announcements and calculates market impact metrics including abnormal returns and statistical significance.
+### 1. Navigate to Announcements
 
-## Step 1: View Your Announcements
+Click "Announcements" in the sidebar.
 
-1. Open the Dashboard
-2. Click **Announcements** in the navigation
-3. View your announcement timeline
+### 2. Set Date Range
 
-## Step 2: Understand the Metrics
+Select the period to review.
 
-For each announcement, Quarterback displays:
+### 3. Filter as Needed
 
-### Price Impact
-- **CAR(-1, +1)**: 3-day return around announcement
-- **CAR(0, +5)**: Week-long sustained impact
-- **Z-Score**: Statistical significance
+Default shows price-sensitive only. Toggle to show all announcements.
 
-### Market Context
-- **Index performance**: How the broader market moved
-- **Sector comparison**: How peers performed
-- **Volume analysis**: Trading activity changes
+## Analyze an Announcement
 
-## Step 3: Analyze Individual Announcements
+### 1. Click an Announcement
 
-Click any announcement to see:
+Opens the detail panel.
 
-1. **Summary**: Announcement title and category
-2. **Price chart**: Stock movement around the date
-3. **Sentiment**: How the market reacted
-4. **Activity**: Related mentions and coverage
+### 2. Review Market Reaction
 
-## Step 4: Compare Announcements
+- Check AR(0) for same-day impact
+- Review CAR(3d) and CAR(10d) for sustained reaction
+- Compare performance vs index
 
-Use the comparison tool to:
-- Compare similar announcement types
-- Track improvement over time
-- Identify what drives positive reactions
+### 3. View Linked Activities
 
-## Reading the Data
+See how the announcement drove conversation:
 
-| Metric | Good Sign | Warning Sign |
-|--------|-----------|--------------|
-| CAR | Positive for good news | Negative for bad news delivery |
-| Z-Score | > 2.0 (significant) | Low score on major news |
-| Volume | Increased interest | Abnormally low engagement |
+- Own distribution (your broadcasts)
+- Media pickup (news coverage)
+- Community discussion (social/forum)
 
-## Tips for Better Announcements
+### 4. Check Sentiment
 
-Based on market data, announcements perform better when:
+Review overall sentiment and distribution across linked activities.
 
-1. **Timing**: Release during market hours for immediate coverage
-2. **Clarity**: Clear headline and summary
-3. **Context**: Provide relevant background
-4. **Consistency**: Match announcement tone to content
+## Link Additional Activities
 
-## Next Steps
+If relevant activities aren't automatically linked:
 
-- [Create Your First Report](/guides/first-report) - Report on announcement performance
-- [Announcements Feature](/features/announcements) - Full documentation
+1. Click "Link Activities" in the announcement panel
+2. Search for activities from other days
+3. Select activities to link
+4. Linked activities appear in the breakdown and contribute to sentiment average
+
+## Export for Records
+
+Select announcements and export as HTML report for compliance records or board packs.

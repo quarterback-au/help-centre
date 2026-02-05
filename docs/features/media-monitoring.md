@@ -1,121 +1,46 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 title: Media Monitoring
-description: Track news coverage and media mentions
+description: Track news coverage and media articles from publishers worldwide.
 ---
 
 # Media Monitoring
 
-Stay on top of news coverage about your company with Quarterback's media monitoring tools.
+Track news coverage and media articles from publishers worldwide.
 
-## Overview
+## Publisher View
 
-Media monitoring captures:
+The media page aggregates articles by publisher, showing:
 
-- **News Articles** - From major publications and financial news
-- **Press Coverage** - Coverage of your press releases
-- **Industry News** - Sector and industry developments
-- **Opinion Pieces** - Analysis and commentary
+- Publisher name and logo
+- Global news rank (from Newscatcher)
+- Article count for the period
+- Paid vs organic breakdown
+- Average sentiment
+- Latest article date
 
-## Media Page
+## Publisher Rankings
 
-Navigate to **Media** in the sidebar to access all media coverage.
+Newscatcher integration provides global publisher rankings. Lower rank numbers indicate more influential publications. Rankings help prioritize which coverage matters most.
 
-### Article List
+## Paid vs Organic Tracking
 
-Each article shows:
-- **Headline** - Article title
-- **Publisher** - Source publication
-- **Date** - Publication date
-- **Sentiment** - Sentiment analysis score
-- **Reach** - Estimated audience (where available)
+Articles are tagged as paid or organic:
 
-### Filtering
+- **Paid** – Sponsored placements, advertorials
+- **Organic** – Natural editorial coverage
 
-Filter media coverage by:
-- **Date Range** - Select time period
-- **Publisher** - Filter by specific publications
-- **Sentiment** - Positive, neutral, or negative coverage
-- **Paid/Organic** - Distinguish sponsored content
+The breakdown appears in the grid and detail panels, helping distinguish earned media from paid distribution.
 
 ## Article Details
 
-Click any article to view:
+Click a publisher to see recent articles. Click an article to open full details:
 
-### Content
-- Full article text (where available)
-- Key quotes and excerpts
-- Embedded images
+- Article title and summary
+- Publication date and source link
+- Sentiment analysis
+- Author information (if available)
 
-### Analysis
-- **Sentiment Score** - Detailed sentiment breakdown
-- **Key Topics** - Main themes discussed
-- **Named Entities** - People and companies mentioned
+## Filtering
 
-### Metadata
-- **Publisher** - Publication details and reach
-- **Author** - Journalist information
-- **Engagement** - Social shares (where available)
-
-## Publishers
-
-Track which publications cover you most:
-
-### Publisher Stats
-- **Article Count** - Number of articles from each source
-- **Average Sentiment** - Typical tone of coverage
-- **Reach** - Publication's audience size
-
-### Publisher Details
-Click a publisher to see:
-- All articles from that source
-- Historical coverage trends
-- Key journalists who cover your company
-
-## Key Journalists
-
-Identify and track journalists who cover your company:
-
-- **Name** - Journalist byline
-- **Publication** - Where they write
-- **Article Count** - How often they cover you
-- **Average Sentiment** - Their typical tone
-
-This helps you understand who shapes your media narrative.
-
-## Paid vs Organic Media
-
-Quarterback distinguishes between:
-
-- **Organic Coverage** - Unpaid editorial coverage
-- **Paid/Sponsored** - Advertorial or sponsored content
-
-Use the filter to focus on organic coverage for genuine sentiment analysis.
-
-## Media Alerts
-
-Set up alerts for media coverage:
-
-1. Go to **Alerts** → **New Alert**
-2. Choose **Media Alert**
-3. Configure triggers:
-   - New article from any source
-   - Coverage from specific publishers
-   - Negative coverage alerts
-
----
-
-## Tips & Best Practices
-
-- **Track share of voice** - Compare your coverage to competitors
-- **Monitor sentiment trends** - Watch for shifts in media tone
-- **Identify key journalists** - Build relationships with frequent reporters
-- **Respond to negative coverage** - Address concerns proactively
-
----
-
-## Related
-
-- [Activities](/features/activities) - Track all mentions including media
-- [Alerts](/features/alerts) - Set up media notifications
-- [Reports](/features/reports) - Generate media coverage reports
+Filter by archived status, flagged status, or use column filters for specific publishers or date ranges. Export publisher data to Excel for external analysis.

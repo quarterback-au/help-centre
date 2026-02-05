@@ -1,104 +1,31 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: Market Settings
-description: Configure benchmark index and commodity tracking
+description: Configure benchmark indices and commodity tracking.
 ---
 
 # Market Settings
 
-Configure your market benchmarks and commodity settings for accurate performance analysis.
-
-## Accessing Market Settings
-
-1. Go to **Company Settings**
-2. Select the **Market** tab
+Configure benchmark indices and commodity tracking.
 
 ## Benchmark Index
 
-The benchmark index is used to calculate abnormal returns and measure relative performance.
+Select the index to compare your performance against. Choose based on your sector:
 
-### Available Benchmarks
+- **Broad market** (ASX 200, All Ordinaries) – Good default for most companies
+- **Sector-specific** (Materials, Energy, Financials, etc.) – Better comparison for sector-focused analysis
+- **Thematic** (Gold Mining, Resources) – For specialized resource companies
 
-| Index | Code | Best For |
-|-------|------|----------|
-| S&P/ASX 200 | AXJO | Large caps |
-| All Ordinaries | XAO | Broad market |
-| Small Ordinaries | XSO | Small caps |
-| S&P/ASX 300 | XKO | Extended coverage |
-
-### Choosing a Benchmark
-
-Select the index most relevant to your company:
-
-- **Large cap** (top 200) → Use AXJO
-- **Mid cap** (200-300) → Use XKO
-- **Small cap** (outside 300) → Use XSO
-
-### Impact of Benchmark Choice
-
-The benchmark affects:
-- Abnormal return (AR) calculations
-- Cumulative abnormal return (CAR)
-- Z-score and spike detection
-- Risk metrics (beta)
+Your benchmark appears in the Stock vs Index chart and factors into abnormal return calculations.
 
 ## Commodities
 
-For resources companies, enable commodity tracking to benchmark against relevant commodities instead of (or in addition to) market indices.
+Enable commodity tracking for resource-focused companies:
 
-### Enabling Commodities
+1. Toggle "Commodities" on
+2. Select up to 3 featured commodities
+3. Order determines priority (first = primary)
 
-1. Toggle **Commodities Enabled**
-2. Select your primary commodity
-3. Optionally add secondary commodities
+Featured commodities appear in the dashboard stats bar with live prices.
 
-### Available Commodities
-
-- **Gold (XAU)** - For gold miners
-- **Silver (XAG)** - For silver producers
-- **Iron Ore** - For iron ore miners
-- **Copper** - For copper producers
-- **Lithium** - For lithium companies
-- **Oil (WTI)** - For oil & gas
-- **Natural Gas** - For gas producers
-
-### Primary Commodity
-
-The primary commodity is used as the benchmark for AR/CAR calculations when commodities are enabled.
-
-**Example:** A gold miner's stock movement is more meaningfully measured against gold price than the ASX 200.
-
-### Setting Primary
-
-Click the star icon next to a commodity to make it primary. The primary commodity appears first and is used for benchmark calculations.
-
-## How It Affects Analysis
-
-### With Commodities Disabled
-```
-Expected Return = α + β × Market Return (AXJO)
-Abnormal Return = Actual Return - Expected Return
-```
-
-### With Commodities Enabled
-```
-Expected Return = α + β × Commodity Return (e.g., Gold)
-Abnormal Return = Actual Return - Expected Return
-```
-
-This provides more relevant analysis for resources companies whose stock prices are driven by commodity prices.
-
-## Saving Changes
-
-1. Make your selections
-2. Click **Save**
-3. Historical metrics will use the new benchmark going forward
-4. Previous calculations are preserved for comparison
-
----
-
-## Related
-
-- [Key Concepts](/concepts/key-concepts) - Understanding AR and CAR
-- [Announcements](/features/announcements) - Market impact analysis
-- [Company Profile](/settings/company-profile) - Basic settings
+Choose commodities based on what your investors care about most. A gold miner would select Gold as priority 1. A battery materials producer might choose Lithium or Cobalt.

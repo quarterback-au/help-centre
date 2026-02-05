@@ -1,51 +1,39 @@
 ---
 sidebar_position: 1
 title: Company Profile
-description: Configure your company's basic information
+description: Configure your company's basic information.
 ---
 
 # Company Profile
 
-Set up your company's profile in Quarterback to ensure accurate monitoring and reporting.
+Configure your company's basic information.
 
-## Accessing Company Settings
-
-1. Click your profile icon in the bottom left
-2. Select **Company Settings**
-3. You'll see the **General** tab by default
-
-## Basic Information
+## General Settings
 
 ### Company Name
-Your official company name as it appears on the ASX.
 
-### ASX Symbol
-Your stock ticker (e.g., 4DX, CLI, BHP).
+Your company's display name throughout the platform.
 
-### Exchange
-The exchange where your company is listed (typically ASX).
+### Ticker Symbol (read-only)
+
+Your ASX ticker symbol. Cannot be changed after setup.
+
+### Exchange (read-only)
+
+Defaults to ASX. Cannot be changed after setup.
 
 ### About
-A brief description of your company. This appears in reports and helps contextualize AI insights.
 
-## Saving Changes
+Company description for context. Optional but helpful for reports.
 
-1. Make your changes
-2. Click **Save** at the bottom of the form
-3. Changes take effect immediately
+## Social Media Handles
 
-## Multiple Companies
+Connect your official social accounts:
 
-If you manage multiple companies:
+- **Twitter** – Your @handle
+- **Facebook** – Your @handle
+- **LinkedIn** – Company page username
+- **LinkedIn Company ID** – Numeric ID (use Ghost Genius tool to find)
+- **YouTube** – Your @channel handle
 
-1. Use the company selector dropdown in the sidebar
-2. Switch between companies
-3. Each company has separate settings
-
----
-
-## Related
-
-- [Social Accounts](/settings/social-accounts) - Configure monitoring
-- [Market Settings](/settings/market-settings) - Set benchmarks
-- [Team Members](/settings/team-members) - Manage access
+These handles help identify your official communications vs. third-party discussion.

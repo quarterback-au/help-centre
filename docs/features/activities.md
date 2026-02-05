@@ -1,131 +1,91 @@
 ---
 sidebar_position: 2
 title: Activities
-description: Track social media, news, and market chatter about your company
+description: Track social posts, forum discussions, news articles, announcements, and more.
 ---
 
 # Activities
 
-Activities are the heart of Quarterback's monitoring system. Every mention, post, or article about your company is captured, analyzed, and made searchable.
+Activities are the core data type in Quarterback. An activity represents any tracked engagement or communication event related to your company—social posts, forum discussions, news articles, announcements, emails, and more.
 
-## What Gets Tracked
+## Activity Sources
 
-Quarterback monitors multiple platforms for mentions of your company:
+Quarterback tracks 50+ sources across multiple categories:
 
-### Social Media
-- **Twitter/X** - Tweets, replies, and quote tweets
-- **LinkedIn** - Posts and company mentions
-- **Reddit** - Posts and comments in relevant subreddits
+### Social Media & Forums
 
-### Investment Forums
-- **HotCopper** - Australia's largest stock forum
-- **Strawman** - Investment community discussions
+Twitter/X, LinkedIn, Facebook, Instagram, Reddit, HotCopper, YouTube, TikTok, Discord, Telegram, Slack, and more.
 
-### News & Media
-- **News Articles** - Major publications and financial news
-- **Press Releases** - Company-issued releases
-- **Blog Posts** - Industry blogs and analysis
+### Official Communications
+
+ASX Announcements, Mailchimp campaigns, press releases.
+
+### Manual Entries
+
+Calls, meetings, presentations, events, and other activities you add manually.
 
 ## Activities Page
 
-Navigate to **Activities** in the sidebar to access the full activities view.
+The activities page displays all tracked activities in a data grid, grouped by date.
 
-### List View
+### Each Row Shows
 
-The default view shows activities in a list with:
+- Source icon and author name
+- Activity preview (title and snippet)
+- Time posted
+- Sentiment indicator (color-coded score)
+- Format badge (announcement, chatter, media, broadcast)
+- Paid indicator (for sponsored content)
+- Flag indicator (if flagged for attention)
 
-- **Source** - Platform icon and publisher
-- **Content** - Preview of the activity
-- **Author** - Who created the content
-- **Sentiment** - Sentiment score with color indicator
-- **Date** - When it was posted
+### Group Headers
 
-### Filtering Activities
+Each date group shows the share price and trading volume for that day, helping you correlate activity with market movements.
 
-Use the filter panel to narrow results:
+### Filtering
 
-| Filter | Options |
-|--------|---------|
-| **Source** | Twitter, LinkedIn, HotCopper, News, etc. |
-| **Sentiment** | Positive, Neutral, Negative |
-| **Date Range** | Custom date selection |
-| **Search** | Full-text search across content |
-
-### Sorting
-
-Sort activities by:
-- **Date** - Most recent first (default)
-- **Sentiment** - Highest or lowest sentiment
-- **Engagement** - Most engaged content
+Filter activities by source, format, date range, flagged status, or archived status. Combine multiple filters to narrow down to specific activity types.
 
 ## Activity Details
 
-Click any activity to open the detail panel:
+Click any activity to open the detail panel showing:
 
-### Content Section
-- Full text or article content
-- Embedded media (images, videos)
-- Link to original source
+- Full content with formatting
+- Author information and follower count
+- Engagement metrics (likes, views, comments, shares)
+- Sentiment score and analysis
+- Posted date and source link
+- Linked announcements (if any)
 
-### Metadata
-- **Author** - Profile information and history
-- **Publisher** - Source platform details
-- **Engagement** - Likes, comments, shares (where available)
-- **Sentiment Analysis** - Detailed sentiment breakdown
+### Engagement Metrics by Platform
 
-### Related Items
-- **Linked Announcements** - ASX announcements this activity references
-- **Similar Activities** - Related content on the same topic
+| Platform | Metrics |
+|----------|---------|
+| Twitter | Likes, Views, Engagement Rate |
+| LinkedIn | Likes, Comments |
+| YouTube | Likes, Views, Comments |
+| HotCopper | Likes, Thread Views |
+| Reddit | Score |
+| Mailchimp | Emails Sent, Open Rate, Click Rate |
+
+## Activity Relationships
+
+Activities can be linked to ASX Announcements to track how announcements drive conversation and coverage.
+
+### Relationship Types
+
+- **Related** – General related content
+- **Broadcast** – Official company communication
+- **Coverage** – Organic news coverage
+- **Promotion** – Paid promotional content
+- **Auto-post** – AI-generated or automated content
+
+Link activities manually from the announcement detail panel, or let the system auto-match based on timing and content.
 
 ## Manual Activities
 
-You can also add activities manually for content that isn't automatically captured:
+Add activities that aren't automatically captured using the manual activity form. Select the source type, fill in the required fields (URL, title, content), and optionally add engagement metrics and sentiment.
 
-1. Click **+ Add Activity** button
-2. Select the activity type
-3. Fill in the details:
-   - Title and content
-   - Source and author
-   - Date posted
-   - Link (optional)
-4. Click **Save**
+### Supported Manual Sources
 
-Manual activities are marked with a special indicator to distinguish them from auto-captured content.
-
-## Activity Categories
-
-Activities can be categorized for better organization:
-
-- **Earnings** - Quarterly results and financial discussions
-- **Product** - Product launches and features
-- **Management** - Executive commentary and changes
-- **Industry** - Sector-wide discussions
-- **General** - Other mentions
-
-Categories help with filtering and reporting.
-
-## Exporting Activities
-
-Export your activities data:
-
-1. Apply your desired filters
-2. Click **Export** button
-3. Choose format (CSV or PDF)
-4. Download the file
-
----
-
-## Tips & Best Practices
-
-- **Review daily** - Check new activities each morning for important mentions
-- **Categorize key items** - Tag important activities for easy reference
-- **Link to announcements** - Connect activities that reference specific announcements
-- **Track sentiment trends** - Watch for sustained changes in sentiment
-
----
-
-## Related
-
-- [Announcements](/features/announcements) - Link activities to ASX announcements
-- [People](/features/people) - Track key authors and influencers
-- [Alerts](/features/alerts) - Get notified about new activities
+All 50+ platforms plus internal event types (calls, meetings, presentations, events).

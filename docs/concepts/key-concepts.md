@@ -1,54 +1,44 @@
 ---
 sidebar_position: 1
 title: Key Concepts
-description: Understanding the core concepts in Quarterback
+description: Core concepts that underpin the Quarterback platform.
 ---
 
 # Key Concepts
 
-Before diving deep into Quarterback, it helps to understand some key concepts and terminology.
+Core concepts that underpin the Quarterback platform.
 
 ## Activities
 
-**Activities** are any mentions, posts, or content related to your company. This includes:
+An activity is any tracked communication event related to your company. Activities are the fundamental unit of data in Quarterback—everything from tweets to announcements to news articles.
 
-- **Social Media Posts** - Tweets, LinkedIn posts, Reddit discussions
-- **News Articles** - Media coverage and press mentions
-- **Forum Posts** - HotCopper, Strawman, and other investment forums
-- **Videos** - YouTube content mentioning your company
+## Sentiment
 
-Each activity is analyzed for:
-- **Sentiment** - Positive, negative, or neutral tone
-- **Reach** - Potential audience size
-- **Engagement** - Likes, comments, shares
+Sentiment analysis scores content on a scale from -1 (negative) to +1 (positive):
 
-## Announcements
+| Score | Label | Meaning |
+|-------|-------|---------|
+| > 0.1 | Positive | Favorable tone, bullish language |
+| -0.1 to 0.1 | Neutral | Factual, neither positive nor negative |
+| -0.3 to -0.1 | Lacking | Slightly negative, cautious tone |
+| < -0.3 | Negative | Unfavorable tone, bearish language |
 
-**Announcements** are official ASX announcements made by your company. Quarterback tracks:
+Sentiment is calculated using machine learning models trained on financial communications.
 
-- **Price-sensitive** vs non-price-sensitive announcements
-- **Category** - Quarterly reports, capital raises, contracts, etc.
-- **Market Impact** - How the stock price reacted
+## Authors
 
-## People
+Authors are the people behind activities. Quarterback tracks author metadata including name, profile URL, follower count, and platform-specific identifiers. Author statistics aggregate across all their activities.
 
-**People** are individuals associated with your company mentions:
+## Sources
 
-- **Authors** - People creating content about your company
-- **Key Influencers** - High-reach accounts discussing your stock
-- **Management** - Your company's executives and spokespersons
+Sources are the platforms where activities originate—Twitter, HotCopper, LinkedIn, news publishers, etc. Each source has specific data available (engagement metrics, threading, etc.).
 
-## Publishers
+## Formats
 
-**Publishers** are the sources where content appears:
+Activities are categorized by format:
 
-- News outlets (AFR, Reuters, etc.)
-- Social platforms (Twitter, LinkedIn)
-- Investment forums (HotCopper, Strawman)
-
----
-
-## Learn More
-
-- [Market Sentiment](/concepts/market-sentiment) - Understanding sentiment analysis
-- [Investor Relations](/concepts/investor-relations) - IR fundamentals
+- **Announcement** – Official ASX announcements
+- **Chatter** – Social discussion and forum posts
+- **Media** – News articles and coverage
+- **Broadcast** – Official company communications (emails, posts)
+- **Manual** – User-added activities

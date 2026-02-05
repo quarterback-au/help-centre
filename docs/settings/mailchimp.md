@@ -1,88 +1,38 @@
 ---
-sidebar_position: 5
-title: MailChimp Integration
-description: Connect MailChimp to track email subscribers
+sidebar_position: 4
+title: Mailchimp Integration
+description: Connect Mailchimp to track email campaign performance.
 ---
 
-# MailChimp Integration
+# Mailchimp Integration
 
-Connect your MailChimp account to track email subscriber growth alongside other investor relations metrics.
+Connect Mailchimp to track email campaign performance.
 
-## Overview
+## Setup
 
-The MailChimp integration allows you to:
-- Track subscriber counts over time
-- Monitor list growth
-- Include subscriber metrics in reports
-- Correlate email engagement with market activity
+1. Navigate to Company Settings > Integrations
+2. Toggle Mailchimp on
+3. Enter your **API Key**
+   - Find in Mailchimp: Profile > Extras > API Keys
+4. Enter your **Audience ID**
+   - Find in Mailchimp: Audience > Manage > Settings > Unique Audience ID
+5. Save
 
-## Connecting MailChimp
+## What Gets Tracked
 
-1. Go to **Company Settings**
-2. Select the **Integrations** tab
-3. Find **MailChimp** and click **Connect**
-4. Log in to your MailChimp account
-5. Authorize Quarterback access
-6. Select the list(s) to track
+Once connected, Quarterback imports:
 
-## Selecting Lists
+- Campaign sends and delivery stats
+- Open rates and click rates
+- Subscriber engagement
+- Campaign timing
 
-Choose which MailChimp lists to monitor:
+Mailchimp metrics appear in:
 
-- **Investor Updates** - Primary investor mailing list
-- **Newsletter** - General company newsletter
-- **Announcements** - ASX announcement subscribers
-
-You can track multiple lists if needed.
-
-## Data Synced
-
-Once connected, Quarterback syncs:
-
-| Metric | Description |
-|--------|-------------|
-| **Subscriber Count** | Total active subscribers |
-| **Growth Rate** | Change in subscribers over time |
-| **List Activity** | Subscribe/unsubscribe events |
-
-## Viewing MailChimp Data
-
-### Dashboard
-Subscriber metrics appear in your dashboard overview.
-
-### Reports
-Include subscriber data in investor relations reports.
-
-### Trends
-View subscriber growth trends over time.
+- Dashboard audience section
+- Activity details for email campaigns
+- Reports and recaps
 
 ## Disconnecting
 
-To disconnect MailChimp:
-
-1. Go to **Company Settings** → **Integrations**
-2. Find MailChimp
-3. Click **Disconnect**
-4. Confirm
-
-Historical data is retained after disconnection.
-
-## Troubleshooting
-
-### Connection Failed
-- Ensure you're logging into the correct MailChimp account
-- Check that you have admin access to the MailChimp account
-- Try disconnecting and reconnecting
-
-### Data Not Syncing
-- Allow up to 24 hours for initial sync
-- Check that the selected list has subscribers
-- Verify the connection is active in settings
-
----
-
-## Related
-
-- [Social Accounts](/settings/social-accounts) - Other tracking integrations
-- [Reports](/features/reports) - Include subscriber data
-- [Dashboard](/features/dashboard) - View subscriber metrics
+Toggle Mailchimp off to disconnect. Your configuration is cleared from the database. Historical campaign data remains in Quarterback.

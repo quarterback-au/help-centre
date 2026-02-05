@@ -1,60 +1,50 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: Market Sentiment
-description: Understanding sentiment analysis and market metrics
+description: How Quarterback measures and interprets sentiment across communications.
 ---
 
 # Market Sentiment
 
-Quarterback uses advanced analytics to measure how the market perceives your company.
+How Quarterback measures and interprets sentiment across communications.
 
-## Sentiment Score
+## Sentiment Scoring
 
-Sentiment is measured on a scale from **-1 to +1**:
+Each activity receives a sentiment score from -1 to +1:
 
-| Score | Meaning |
-|-------|---------|
-| +0.5 to +1.0 | Very Positive |
-| +0.1 to +0.5 | Positive |
-| -0.1 to +0.1 | Neutral |
-| -0.5 to -0.1 | Negative |
-| -1.0 to -0.5 | Very Negative |
+| Score Range | Label | Meaning |
+|-------------|-------|---------|
+| > 0.1 | Positive | Favorable tone, bullish language |
+| -0.1 to 0.1 | Neutral | Factual, neither positive nor negative |
+| -0.3 to -0.1 | Lacking | Slightly negative, cautious tone |
+| < -0.3 | Negative | Unfavorable tone, bearish language |
 
-## Market Metrics
+## Aggregation
 
-### Abnormal Return (AR)
+Sentiment aggregates at multiple levels:
 
-The difference between actual stock return and expected return based on market movements.
+- **Activity** – Individual score
+- **Author** – Average across all their activities
+- **Announcement** – Average of linked activities
+- **Period** – Average across all activities in date range
 
-```
-AR = Actual Return - Expected Return
-```
+## Sentiment by Source
 
-A positive AR means the stock outperformed expectations; negative means it underperformed.
+Different platforms tend toward different sentiment distributions:
 
-### Cumulative Abnormal Return (CAR)
+- **HotCopper** – Often more polarized (strong opinions)
+- **Twitter** – Wide range, depends on author type
+- **LinkedIn** – Generally more neutral/professional
+- **Media** – Typically neutral, factual reporting
 
-The sum of abnormal returns over a period, typically used around announcement dates:
+The dashboard's sentiment by source chart helps identify platform-specific patterns.
 
-- **CAR(-1, +1)** - 3-day window around announcement
-- **CAR(0, +10)** - 11-day window for sustained impact
-- **CAR(-3, -1)** - Pre-announcement period (can indicate information leakage)
+## Using Sentiment Data
 
-### Z-Score
+**Monitor shifts:** Sudden sentiment changes may signal emerging issues or opportunities.
 
-A statistical measure of how unusual a price movement is:
+**Correlate with price:** Compare sentiment trends with share price movements to identify relationships.
 
-| Z-Score | Meaning |
-|---------|---------|
-| > 2.0 | Statistically significant (95% confidence) |
-| > 3.0 | Highly significant (99.7% confidence) |
+**Identify outliers:** High-sentiment activities (positive or negative) often warrant closer attention.
 
-## Benchmark Index
-
-The market index used to calculate expected returns. Options include:
-
-- **AXJO (ASX 200)** - Default for most companies
-- **XSO (Small Ordinaries)** - For smaller companies
-- **Commodity prices** - For resources companies (e.g., Gold, Iron Ore)
-
-You can configure your preferred benchmark in [Market Settings](/settings/market-settings).
+**Track authors:** Authors with consistently extreme sentiment may be influential voices worth monitoring.

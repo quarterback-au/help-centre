@@ -1,81 +1,59 @@
 ---
 sidebar_position: 1
 title: Dashboard
-description: Your central hub for investor relations intelligence
+description: Your central hub for monitoring share price activity, audience engagement, and market sentiment.
 ---
 
 # Dashboard
 
-The Dashboard is your central hub for monitoring investor relations activity. It provides a real-time overview of what's happening with your company in the market.
+The dashboard is your central hub for monitoring share price activity, audience engagement, and market sentiment at a glance.
 
-## Overview
+## What You'll See
 
-When you log in, your dashboard displays:
+### Stats Bar
 
-- **Activity Feed** - Recent mentions and coverage
-- **Key Metrics** - Activity counts, sentiment trends, engagement
-- **Stock Performance** - Price chart with key events marked
-- **Quick Actions** - Jump to common tasks
+Six key metrics appear at the top of the dashboard:
 
-## Key Metrics Panel
+- **Activities** – Total activity count for the selected period
+- **Media** – News articles and media coverage
+- **People** – Unique authors discussing your company
+- **Twitter/LinkedIn/YouTube/Facebook/Mailchimp** – Follower counts with period-over-period change
 
-The metrics panel shows activity across different time periods:
+Each metric shows percentage change compared to the previous equivalent period, with green indicating growth and red indicating decline.
 
-| Metric | Description |
-|--------|-------------|
-| **Total Activities** | All tracked mentions in the period |
-| **Sentiment Score** | Average sentiment across all activities |
-| **Announcements** | ASX announcements made |
-| **Media Articles** | News coverage count |
+### Share Price vs Activities Chart
 
-### Time Period Filters
+The main visualization overlays your share price movement with activity volume. Use this to identify correlations between communications activity and price movements.
 
-Switch between time periods using the filter buttons:
-- **24H** - Last 24 hours
-- **1W** - Last 7 days
-- **1M** - Last 30 days
-- **3M** - Last 90 days
+**Controls:**
+- **Group by** – Switch between Source, Format, or Sentiment groupings
+- **Time range** – 1D, 1W, 1M, 3M, or custom date range
+- **Overlays** – Toggle Volume, Sentiment, or Followers on the chart
 
-## Stock Chart
+Click any activity cluster to navigate directly to those activities.
 
-The interactive stock chart shows:
+### Stock vs Index Performance
 
-- **Price Movement** - Daily closing prices
-- **Volume** - Trading volume bars
-- **Events** - Announcements marked on the timeline
-- **Benchmark Comparison** - Performance vs ASX 200 or your chosen index
+Three metrics displayed together:
 
-### Chart Interactions
+- Your share price performance (cumulative % return)
+- Benchmark index performance (ASX 200 by default, or your configured benchmark)
+- Abnormal returns (difference between actual and expected returns)
 
-- **Hover** - View price and volume for specific dates
-- **Click on Event** - Jump to announcement details
-- **Zoom** - Select date range to zoom in
+This helps identify whether price movements are company-specific or driven by broader market trends.
 
-## Activity Feed
+### Sentiment Distribution
 
-The activity feed shows recent mentions in chronological order:
+Horizontal bars showing sentiment breakdown by source (HotCopper, LinkedIn, Twitter, Reddit). Quickly see which platforms skew positive or negative.
 
-- **Source Icon** - Platform where the activity appeared
-- **Preview** - Snippet of the content
-- **Sentiment** - Color-coded sentiment indicator
-- **Timestamp** - When the activity was posted
+### Activity Breakdown
 
-Click any activity to view full details in the side panel.
+Two pie charts showing activities by format and by source, helping you understand the composition of your communications landscape.
 
-## Customizing Your Dashboard
+### AI Summary
 
-### Date Range
+The sidebar displays an AI-generated summary of key trends and patterns from the selected period. The summary highlights notable activity patterns, sentiment shifts, and potential areas of interest.
 
-Use the date picker in the top right to set a custom date range for all dashboard widgets.
+## Date Range
 
-### Company Switching
-
-If you manage multiple companies, use the company selector dropdown to switch between them.
-
----
-
-## Next Steps
-
-- [Understanding Activities](/features/activities)
-- [Announcement Analysis](/features/announcements)
-- [Setting Up Alerts](/features/alerts)
+The date picker at the top right controls all dashboard data. Select from presets (7 days, 30 days, current quarter, last quarter) or set a custom range. Your preference persists across sessions.

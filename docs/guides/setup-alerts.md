@@ -1,73 +1,58 @@
 ---
 sidebar_position: 2
-title: Set Up Alerts
-description: Configure notifications for important events and changes
+title: Setting Up Alerts
+description: Configure alerts to stay informed of important events.
 ---
 
-# Set Up Alerts
+# Setting Up Alerts
 
-Stay informed about significant activity and sentiment changes with Quarterback alerts.
+Configure alerts to stay informed of important events.
 
-## Overview
+## Create Your First Alert
 
-Alerts notify you when something important happens:
-- Significant sentiment shifts
-- High-reach mentions
-- New media coverage
-- Unusual trading activity
+### 1. Navigate to Alerts
 
-## Step 1: Access Alert Settings
+Click "Alerts" in the sidebar.
 
-1. Go to your Dashboard
-2. Click **Alerts** in the navigation
-3. Select **Create New Alert**
+### 2. Click New Alert
 
-## Step 2: Choose Alert Type
+Opens the alert configuration form.
 
-### Sentiment Alerts
-Trigger when overall sentiment changes significantly.
+### 3. Select Alert Type
 
-- **Threshold**: Set the sentiment change that triggers an alert
-- **Timeframe**: How quickly the change must occur
-- **Example**: Alert when sentiment drops 0.3 points in 24 hours
+Choose from: Price Movement, Activity Level, Sentiment, Broad Search, Media Activity, Daily Recap, or Weekly Recap.
 
-### Activity Alerts
-Trigger for high-impact mentions.
+### 4. Configure Threshold
 
-- **Reach threshold**: Minimum audience size
-- **Engagement threshold**: Likes, shares, comments
-- **Source filter**: Specific platforms or publishers
+Set the trigger condition (varies by type):
 
-### Announcement Alerts
-Get notified about market reactions.
+- Price: percentage threshold (e.g., 5%)
+- Activity: percentage change and interval
+- Sentiment: score threshold and direction
+- Search: keyword and relevance level
 
-- **AR threshold**: Abnormal return significance
-- **Z-Score threshold**: Statistical significance level
+### 5. Add Recipients
 
-## Step 3: Configure Delivery
+Enter email addresses to receive alerts. Add multiple recipients if needed.
 
-Choose how you want to be notified:
+### 6. Save
 
-| Channel | Best For |
-|---------|----------|
-| Email | Detailed summaries |
-| Slack | Team notifications |
-| SMS | Urgent alerts only |
+Click Save to activate the alert.
 
-## Step 4: Set Frequency
+## Recommended Starting Alerts
 
-- **Instant**: Immediate notification
-- **Digest**: Daily or weekly summary
-- **Business hours only**: Avoid overnight alerts
+### Daily Recap
 
-## Best Practices
+Get a comprehensive daily summary. Good starting point for any company.
 
-1. **Start conservative** - Begin with high thresholds, then adjust
-2. **Prioritize channels** - Use SMS only for critical alerts
-3. **Review regularly** - Check alert performance monthly
-4. **Avoid alert fatigue** - Too many alerts means important ones get ignored
+### Price Movement (5%)
 
-## Next Steps
+Alerts on significant price moves. Adjust threshold based on your stock's typical volatility.
 
-- [Track Announcements](/guides/track-announcements) - Monitor ASX announcements
-- [Alerts Feature](/features/alerts) - Full alerts documentation
+### Media Activity
+
+Never miss news coverage. Useful for tracking earned media.
+
+## Managing Alerts
+
+View all alerts in the rules tab. Edit thresholds, add/remove recipients, or disable alerts as needed. View alert history to see what's triggered.
