@@ -1,6 +1,6 @@
 ---
 slug: 2026-release
-title: 2026 Release: Market Intelligence
+title: "2026 Release: Market Intelligence"
 authors: [quarterback]
 tags: [feature]
 ---

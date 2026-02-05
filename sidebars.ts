@@ -34,11 +34,12 @@ const sidebars: SidebarsConfig = {
                 'features/dashboard',
                 'features/activities',
                 'features/announcements',
+                'features/alerts',
+                'features/insights',
                 'features/media-monitoring',
                 'features/people',
-                'features/alerts',
                 'features/reports',
-                'features/insights'
+                'features/benchmarking'
             ]
         },
         {
@@ -47,8 +48,8 @@ const sidebars: SidebarsConfig = {
             collapsed: true,
             items: [
                 'concepts/key-concepts',
-                'concepts/market-sentiment',
-                'concepts/investor-relations'
+                'concepts/correlation',
+                'concepts/market-sentiment'
             ]
         },
         {
