@@ -71,6 +71,21 @@ const config: Config = {
         require.resolve('./src/sidebarCustomization.js')
     ],
 
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'help-center',
+                path: 'help-center',
+                routeBasePath: 'help-center',
+                sidebarPath: './sidebarsHelpCenter.ts',
+                editUrl: undefined,
+                remarkPlugins: [remarkMath],
+                rehypePlugins: [rehypeKatex]
+            }
+        ]
+    ],
+
     presets: [
         [
             'classic',
@@ -110,7 +125,8 @@ const config: Config = {
             '@easyops-cn/docusaurus-search-local',
             {
                 hashed: true,
-                docsRouteBasePath: '/',
+                docsRouteBasePath: ['/', '/help-center'],
+                docsPluginIdForPreferredVersion: 'default',
                 indexBlog: false,
                 highlightSearchTermsOnTargetPage: true
             }
@@ -142,6 +158,12 @@ const config: Config = {
                     sidebarId: 'mainSidebar',
                     position: 'left',
                     label: 'Documentation'
+                },
+                {
+                    to: '/help-center',
+                    label: 'How-To Guides',
+                    position: 'left',
+                    activeBaseRegex: '/help-center/'
                 },
                 {
                     to: '/changelog',

@@ -98,6 +98,76 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
 
   # ===========================
+  # How-To: Account & Setup
+  # ===========================
+  - name: "help-center-account-setup"
+    label: "How-To: Account & Setup"
+    folder: "help-center/account-setup"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # How-To: Reports & Analytics
+  # ===========================
+  - name: "help-center-reports-analytics"
+    label: "How-To: Reports & Analytics"
+    folder: "help-center/reports-analytics"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # How-To: Alerts & Notifications
+  # ===========================
+  - name: "help-center-alerts-notifications"
+    label: "How-To: Alerts & Notifications"
+    folder: "help-center/alerts-notifications"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # How-To: Market Intelligence
+  # ===========================
+  - name: "help-center-market-intelligence"
+    label: "How-To: Market Intelligence"
+    folder: "help-center/market-intelligence"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
+  # How-To: Troubleshooting
+  # ===========================
+  - name: "help-center-troubleshooting"
+    label: "How-To: Troubleshooting"
+    folder: "help-center/troubleshooting"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Sidebar Position", name: "sidebar_position", widget: "number", default: 1 }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ===========================
   # Changelog (Blog posts)
   # ===========================
   - name: "changelog"

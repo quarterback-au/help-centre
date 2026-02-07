@@ -2484,3 +2484,122 @@ hr {
     border-top: 1px solid var(--qb-border);
     margin: 2.5rem 0;
 }
+
+/* ============================================
+   Help Center - Landing Page & Styles
+   ============================================ */
+
+/* Hero section */
+.help-center-hero {
+    text-align: center;
+    padding: 2rem 0 3rem;
+}
+
+.help-center-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--qb-text);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.2;
+}
+
+.help-center-hero p {
+    font-size: 1.125rem;
+    color: var(--qb-text-muted);
+    margin: 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Category cards grid */
+.help-center-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.help-category-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--qb-bg);
+    border: 1px solid var(--qb-border);
+    border-radius: 0.75rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.help-category-card:hover {
+    border-color: var(--qb-primary);
+    box-shadow: var(--qb-shadow-md);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.help-category-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.help-category-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--qb-text);
+    margin: 0 0 0.5rem 0;
+}
+
+.help-category-card p {
+    font-size: 0.875rem;
+    color: var(--qb-text-muted);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Footer CTA */
+.help-center-footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--qb-border);
+    margin-top: 1rem;
+}
+
+.help-center-footer h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--qb-text);
+    margin: 0 0 0.5rem 0;
+}
+
+.help-center-footer p {
+    font-size: 0.9rem;
+    color: var(--qb-text-muted);
+    margin: 0;
+}
+
+.help-center-footer a {
+    color: var(--qb-primary);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--qb-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+}
+
+.help-center-footer a:hover {
+    color: var(--qb-primary-dark);
+}
+
+/* Responsive help center */
+@media (max-width: 768px) {
+    .help-center-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .help-center-hero h1 {
+        font-size: 2rem;
+    }
+}

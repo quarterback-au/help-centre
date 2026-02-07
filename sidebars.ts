@@ -72,6 +72,11 @@ const sidebars: SidebarsConfig = {
             items: [
                 {
                     type: 'link',
+                    label: 'How-To Guides',
+                    href: '/help-center'
+                },
+                {
+                    type: 'link',
                     label: 'Changelog',
                     href: '/changelog'
                 },

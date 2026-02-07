@@ -1,0 +1,46 @@
+---
+sidebar_position: 1
+title: Help Center
+hide_title: true
+slug: /
+---
+
+import Link from '@docusaurus/Link';
+
+<div className="help-center-hero">
+  <h1>How can we help?</h1>
+  <p>Find step-by-step guides and answers to common questions about Quarterback</p>
+</div>
+
+<div className="help-center-categories">
+  <Link to="/help-center/account-setup/invite-team-members" className="help-category-card">
+    <div className="help-category-icon">👥</div>
+    <h3>Account & Setup</h3>
+    <p>Manage your team, profile, and platform settings</p>
+  </Link>
+  <Link to="/help-center/reports-analytics/create-a-report" className="help-category-card">
+    <div className="help-category-icon">📊</div>
+    <h3>Reports & Analytics</h3>
+    <p>Create, customise, and share investor relations reports</p>
+  </Link>
+  <Link to="/help-center/alerts-notifications/create-alert-rule" className="help-category-card">
+    <div className="help-category-icon">🔔</div>
+    <h3>Alerts & Notifications</h3>
+    <p>Set up alerts for sentiment changes and market events</p>
+  </Link>
+  <Link to="/help-center/market-intelligence/track-competitor" className="help-category-card">
+    <div className="help-category-icon">📈</div>
+    <h3>Market Intelligence</h3>
+    <p>Monitor markets, announcements, and media coverage</p>
+  </Link>
+  <Link to="/help-center/troubleshooting/data-not-loading" className="help-category-card">
+    <div className="help-category-icon">🛠️</div>
+    <h3>Troubleshooting</h3>
+    <p>Resolve common issues and get back on track</p>
+  </Link>
+</div>
+
+<div className="help-center-footer">
+  <h3>Can't find what you're looking for?</h3>
+  <p>Browse our <Link to="/">documentation</Link> for detailed feature references, or <a href="#" onClick={(e) => { e.preventDefault(); if(window.Outseta) window.Outseta.support.open(); }}>contact support</a> for personalised help.</p>
+</div>
