@@ -33,6 +33,8 @@ The media page aggregates articles by publisher, giving you a high-level view of
 
 Newscatcher integration provides global publisher rankings. These help you prioritise which coverage matters most — an article in a top-100 publication carries more weight than a niche blog.
 
+Publishers are sorted by rank ascending by default, showing the most influential publications first.
+
 :::info
 Rankings are provided by Newscatcher and updated regularly. They reflect global web traffic and editorial influence, not industry-specific relevance.
 :::
@@ -54,7 +56,7 @@ The breakdown appears in both the grid and detail panels, making it easy to see 
 
 ## Article Details
 
-Click a publisher to see their recent articles. Click an article to open full details.
+Click a publisher to open the split panel detail view showing all their articles and price impact analysis. Click an individual article for full details.
 
 <!-- Screenshot: Article detail panel showing title, summary, sentiment, and source link -->
 
@@ -69,9 +71,21 @@ The detail panel shows:
 
 ## Filtering & Export
 
-Filter by archived status, flagged status, or use column filters for specific publishers or date ranges.
+The sidebar panel provides filters for narrowing your view:
 
-Export publisher data to Excel for external analysis using the <span className="ui-action">Export</span> button in the toolbar.
+| Filter | Options |
+|--------|---------|
+| **Country** | Filter publishers by country of origin |
+| **Paid Articles** | Show all, paid only, or organic only |
+
+Additional controls:
+
+- **Column visibility** — toggle which columns are displayed
+- **Column reordering** — drag columns to rearrange
+- **Reset Layout** — restore default grid state
+- **Multi-select** — select publishers with checkboxes for bulk actions
+
+Export publisher data to CSV using the <span className="ui-action">Export</span> button in the toolbar. You can export all publishers or only selected ones.
 
 ---
 

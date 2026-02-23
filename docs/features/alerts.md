@@ -24,6 +24,12 @@ Triggers when your share price moves beyond a specified percentage from open.
 
 Set based on your stock's typical volatility — a 5% move means different things for a large cap vs a micro cap.
 
+### Unusual Price Movement
+
+Triggers when abnormal returns exceed statistical thresholds, based on Z-score analysis of your stock's returns relative to its benchmark.
+
+This alert identifies days where price movement is statistically unusual compared to historical patterns — even if the raw percentage change appears modest.
+
 ### Activity Level
 
 Triggers when activity volume changes by a specified percentage compared to the previous period.

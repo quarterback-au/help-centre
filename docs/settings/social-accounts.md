@@ -8,7 +8,7 @@ description: Configure the search queries that control what Quarterback monitors
 
 Control what Quarterback listens for — configure the search queries that determine which social posts, forum threads, and news articles get tracked.
 
-<span className="ui-page">Settings</span> → <span className="ui-page">Social Accounts</span>
+<span className="ui-page">Settings</span> → <span className="ui-page">Queries</span>
 
 <!-- Screenshot: Social accounts settings page showing query generator -->
 
@@ -20,6 +20,7 @@ The query generator creates platform-specific search queries automatically:
 
 1. Enter **include keywords** — terms to monitor (your company name and ticker are auto-included)
 2. Enter **exclude keywords** — terms to filter out (e.g., unrelated companies with similar names)
+3. Click <span className="ui-action">Generate All Queries</span> to auto-populate all platform query fields
 
 The system generates optimised queries for each platform, handling syntax differences automatically.
 
@@ -35,6 +36,8 @@ Queries can be customised per platform if the auto-generated queries need refine
 |----------|-------------|---------|
 | **Twitter** | Supports OR operators and quoted phrases | `"Company Name" OR "ASX:ABC"` |
 | **LinkedIn** | Quoted phrases and company name variations | `"Company Name" OR "Company Ltd"` |
+| **YouTube** | Keyword and channel matching | `"Company Name" OR "ASX ABC"` |
+| **Facebook** | Keyword matching | `"Company Name"` |
 | **News** | No colons supported — use alternatives | `"Company Name" OR ABC.ASX` or `$ABC` |
 | **Reddit** | Simple keyword and ticker matching | `"Company Name" OR ticker` |
 
@@ -49,7 +52,7 @@ News queries use a different syntax from social platforms — colons aren't supp
 **Related**
 
 - [Company Profile](/settings/company-profile) – Set your official social handles
-- [Social Media Integrations](/settings/social-media-integration) – Connect accounts for follower tracking
+- [Integrations](/settings/social-media-integration) – Connect accounts for follower tracking
 - [Activities](/features/activities) – Where monitored content appears
 
 </div>

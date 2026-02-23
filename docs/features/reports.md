@@ -12,50 +12,71 @@ Turn your data into board-ready documents — comprehensive reports that combine
 
 ---
 
-## Board Report (PDF)
+## Board Report
 
-A downloadable 2-page PDF designed for board packs and stakeholder updates.
+A comprehensive multi-section report designed for board packs and stakeholder updates.
 
-<!-- Screenshot: Board report PDF preview showing both pages -->
+<!-- Screenshot: Board report showing sections overview -->
 
-### Page 1 — Executive Overview
+### Sections
 
-- AI-generated summary of the period
-- Share price vs activities chart
-- Key metrics with period-over-period comparison
+The board report includes up to 8 sections:
 
-### Page 2 — Detailed Analytics
-
-- Sentiment breakdown
-- Top authors
-- Sentiment by source
-- Top media coverage
-- Announcements with 24-hour impact
-- Flagged activities
+| Section | What It Contains |
+|---------|-----------------|
+| **Summary** | AI-generated executive summary, key metrics, and editable notes |
+| **Activities & Share Price** | Quick stats and share price vs activity chart for the period |
+| **Announcement Performance** | Price-sensitive announcements, impact timeline, and CAR by category |
+| **Sentiment** | Sentiment by source and sentiment vs share price chart |
+| **Media Coverage** | Article count, media timeline, and source concentration |
+| **People** | Author influence analysis and scatter chart |
+| **Broadcasts** | Events vs price, campaign performance, and email analytics (if Mailchimp connected) |
+| **Market Intelligence** | Z-score analysis, spike timeline, returns scatter, and drawdown charts |
 
 ### Generating a Board Report
 
-1. Navigate to <span className="ui-page">Reports</span> in the sidebar
-2. Set the date range using the date picker (default: past 2 months)
+1. Navigate to <span className="ui-page">Reports</span> → <span className="ui-page">Board Report</span>
+2. Set the date range using the date picker
 3. Wait for data to load — the system pulls activities, market data, and generates AI insights
-4. Click <span className="ui-action">Download</span> to save the PDF
+4. Review and edit the Notes section if needed
+5. Click <span className="ui-action">Download</span> to save as PDF
 
 ---
 
-## Monthly Report (HTML)
+## Monthly Report
 
 Interactive web-based report with full detail, designed for month-by-month review.
 
 <!-- Screenshot: Monthly report view showing metrics and charts -->
 
-- Month selector for historical reports
+- **Month selector** for reviewing historical months
 - Key metrics with month-over-month comparison
 - Share price vs activities visualisation
-- Price-sensitive announcements with AR metrics
-- Top media coverage table
-- Top authors grid
+- Top 6 price-sensitive announcements with AR metrics
+- Top media coverage
+- Top authors
+- AI-generated overview section
 
 Use your browser's print function (Ctrl/Cmd + P) to save as PDF.
+
+---
+
+## Broadcast Report
+
+Track the performance of your communications across email and social media.
+
+<!-- Screenshot: Broadcast report showing campaign performance and follower trends -->
+
+| Section | What It Shows |
+|---------|---------------|
+| **Campaign Performance** | Mailchimp campaign metrics — sends, opens, clicks |
+| **Subscriber Metrics** | Subscriber counts across connected platforms |
+| **Email Analytics** | Detailed table of individual campaign performance |
+| **Follower Growth** | Trends for Twitter, LinkedIn, Mailchimp, YouTube, and Facebook followers over time |
+
+:::info
+The Broadcast Report requires a connected [Mailchimp integration](/settings/mailchimp) for email campaign data. Follower metrics come from your connected social accounts.
+:::
 
 ---
 
@@ -66,9 +87,7 @@ Export announcement-specific reports directly from the [Announcements](/features
 1. Select announcements using checkboxes (or select all)
 2. Click <span className="ui-action">Export</span>
 3. Choose which announcements to include
-4. HTML report opens in a new tab — print or save as PDF
-
-Reports include market metrics, activity breakdown by category, sentiment analysis, and all linked activities.
+4. Report generates with market metrics, activity breakdown by category, sentiment analysis, and linked activities
 
 <!-- Screenshot: Announcement report showing market metrics and linked activities -->
 
@@ -81,5 +100,6 @@ Reports include market metrics, activity breakdown by category, sentiment analys
 - [Dashboard](/features/dashboard) – Real-time view of the metrics reports summarise
 - [Announcements](/features/announcements) – Export announcement-specific reports
 - [Insights](/features/insights) – AI summaries included in reports
+- [Mailchimp](/settings/mailchimp) – Connect Mailchimp for broadcast report data
 
 </div>

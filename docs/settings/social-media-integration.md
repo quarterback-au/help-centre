@@ -1,68 +1,41 @@
 ---
 sidebar_position: 6
-title: Social Media Integrations
-description: Connect your social accounts to track follower growth, engagement metrics, and profile changes.
+title: Integrations
+description: Connect external services to enrich your Quarterback data with follower metrics and campaign analytics.
 ---
 
-# Social Media Integrations
+# Integrations
 
-Connect your social accounts to track follower growth, engagement metrics, and profile changes over time.
+Connect external services to pull in follower metrics, campaign data, and subscriber analytics.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
-
-<!-- Screenshot: Social media integrations page showing connected and available platforms -->
 
 ---
 
 ## Available Integrations
 
-| Platform | What Gets Tracked |
-|----------|-------------------|
-| **Twitter / X** | Follower count, growth, tweet engagement, mentions |
-| **LinkedIn** | Follower count, post engagement, company page analytics |
-| **YouTube** | Subscriber count, video views, channel growth |
-| **Facebook** | Page likes, followers, post engagement, reach |
+| Service | What Gets Tracked |
+|---------|-------------------|
+| **Mailchimp** | Campaign sends, open rates, click rates, subscriber counts. See [Mailchimp Integration](/settings/mailchimp) for setup |
 
 ---
 
-## Connecting Accounts
+## Follower Tracking
 
-### OAuth Connection
+Quarterback tracks follower counts and growth for platforms configured in your [Company Profile](/settings/company-profile) social media handles:
 
-Some platforms support direct OAuth connection:
+| Platform | Metric |
+|----------|--------|
+| **Twitter / X** | Follower count |
+| **LinkedIn** | Follower count |
+| **YouTube** | Subscriber count |
+| **Facebook** | Page follower count |
 
-1. Navigate to <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
-2. Find the platform
-3. Click <span className="ui-action">Connect</span>
-4. Log in and authorise access
+Follower data appears in the [Dashboard](/features/dashboard) stats bar and in the [Broadcast Report](/features/reports#broadcast-report).
 
-<!-- Screenshot: OAuth connection flow or connected account confirmation -->
-
-### Manual Configuration
-
-For platforms without OAuth:
-
-1. Navigate to <span className="ui-page">Settings</span> → <span className="ui-page">General</span>
-2. Enter your social media handles
-3. Quarterback tracks public metrics automatically
-
----
-
-## What Gets Tracked
-
-| Metric Type | Details |
-|-------------|---------|
-| **Followers** | Current count, growth over time, growth rate |
-| **Engagement** | Likes, shares, comments, engagement rate |
-| **Profile snapshots** | Regular captures of bio changes, profile updates, and historical metrics |
-
-Follower metrics appear in the [Dashboard](/features/dashboard) stats bar and in [Reports](/features/reports).
-
----
-
-## Privacy & Permissions
-
-Quarterback only accesses public profile information and metrics you authorise. We never post on your behalf, access private messages, or share your data externally.
+:::info
+Follower tracking uses your social media handles set in [Company Profile](/settings/company-profile). No OAuth connection is required — Quarterback tracks public metrics automatically.
+:::
 
 ---
 
@@ -70,9 +43,10 @@ Quarterback only accesses public profile information and metrics you authorise. 
 
 **Related**
 
+- [Mailchimp](/settings/mailchimp) – Set up Mailchimp for campaign analytics
+- [Company Profile](/settings/company-profile) – Set your official social handles
 - [Social Accounts](/settings/social-accounts) – Configure monitoring queries
-- [Company Profile](/settings/company-profile) – Set your official handles
-- [Activities](/features/activities) – View social content
 - [Dashboard](/features/dashboard) – Follower metrics in the stats bar
+- [Reports](/features/reports) – Broadcast report with follower growth trends
 
 </div>

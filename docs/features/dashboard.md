@@ -6,30 +6,30 @@ description: Monitor share price activity, audience engagement, and market senti
 
 # Dashboard
 
-Your real-time view of how your company is tracking across the market, media, and social landscape — all in one place.
+Your real-time command centre for tracking how your company is performing across the market, media, and social landscape — all in one place.
 
-<!-- Screenshot: Full dashboard view showing stats bar, share price chart, and sidebar -->
-
----
-
-## Stats Bar
-
-Six key metrics appear across the top of the dashboard:
-
-<!-- Screenshot: Stats bar close-up showing metric cards with period comparison -->
-
-| Metric | What It Shows |
-|--------|---------------|
-| **Activities** | Total activity count for the selected period |
-| **Media** | News articles and media coverage count |
-| **People** | Unique authors discussing your company |
-| **Twitter / LinkedIn / YouTube / Facebook / Mailchimp** | Follower counts (varies by connected accounts) |
-
-Each metric shows percentage change compared to the previous equivalent period — green for growth, red for decline.
+<!-- Screenshot: Full dashboard view showing stats row, share price chart, announcements table, and sidebar -->
 
 ---
 
-## Share Price vs Activities Chart
+## Quick Stats
+
+Four cards across the top give you an at-a-glance snapshot of the selected period:
+
+<!-- Screenshot: Stats row showing the four stat cards -->
+
+| Card | What It Shows |
+|------|---------------|
+| **Share price** | Latest close price with period % change, a sparkline chart, and the high/low range |
+| **Total activities** | Total activity count with a coloured bar breaking down by format (Announcements, Chatter, Media, Broadcast) |
+| **Announcements & Followers** | Number of ASX announcements in the period, plus your combined follower count across all connected platforms |
+| **Average sentiment** | Overall sentiment score with a Positive / Neutral / Negative label |
+
+Each card shows percentage change compared to the previous equivalent period where available.
+
+---
+
+## Share Price vs Activity
 
 The main chart overlays your share price movement with activity volume, making it easy to spot correlations between what's being said and how the market is responding.
 
@@ -38,61 +38,93 @@ The main chart overlays your share price movement with activity volume, making i
 | Control | Options |
 |---------|---------|
 | **Group by** | Source, Format, or Sentiment |
-| **Time range** | 1D, 1W, 1M, 3M, or custom date range |
+| **Time range** | 1D, 1W, 1M, 3M, or custom date range via calendar |
 | **Overlays** | Volume, Sentiment, or Followers |
+| **Export** | Export chart data |
 
 Click any activity cluster on the chart to navigate directly to those activities.
 
 ---
 
-## Stock vs Index Performance
+## Recent Price-Sensitive Announcements
 
-Three metrics displayed together to show whether your price movement is company-specific or market-driven:
+A table of recent ASX announcements with market impact metrics, shown directly below the share price chart.
 
-<!-- Screenshot: Stock vs Index chart showing company performance, benchmark, and abnormal returns -->
+<!-- Screenshot: Announcements table showing columns with AR and CAR values -->
 
-- **Your share price performance** — Cumulative % return over the period
-- **Benchmark index performance** — ASX 200 by default, or your [configured benchmark](/settings/market-settings)
-- **Abnormal returns** — The difference between actual and expected returns (see [Abnormal Returns](/concepts/correlation#abnormal-returns-ar))
+| Column | What It Shows |
+|--------|---------------|
+| **Date** | Announcement date |
+| **Announcement** | Title with price-sensitive indicator ($) |
+| **Close** | Closing share price on announcement day |
+| **Change** | Price change on announcement day |
+| **Volume** | Trading volume |
+| **AR(0)** | Abnormal return on the announcement day |
+| **CAR(0,+10)** | Cumulative abnormal return over the 10 days following the announcement |
+| **Activities** | Number of related activities |
+| **Sentiment** | Average sentiment score for linked activities |
+
+Click any announcement to open its detail panel with full market metrics and linked activities.
 
 :::tip
-When your stock diverges from the benchmark, that's the signal to investigate. Either company-specific news is driving the price, or there's unusual activity worth understanding.
+The AR(0) and CAR columns help you quickly gauge whether the market reacted to an announcement and whether that reaction sustained or reversed. See [Abnormal Returns & Correlation](/concepts/correlation) for how these are calculated.
 :::
 
 ---
 
-## Sentiment Distribution
+## Author Activity vs Sentiment
 
-Horizontal bars showing sentiment breakdown by source — HotCopper, LinkedIn, Twitter, Reddit. Quickly see which platforms skew positive or negative for your company.
+A scatter plot mapping how frequently each author posts against their average sentiment. Bubble size indicates post count — larger bubbles represent more active authors.
 
-<!-- Screenshot: Sentiment distribution bars showing per-source breakdown -->
+<!-- Screenshot: Author scatter chart showing bubbles positioned by activity count and sentiment -->
 
----
-
-## Activity Breakdown
-
-Two pie charts showing your communications landscape:
-
-- **By Format** — Announcements, Chatter, Media, Broadcast
-- **By Source** — Which platforms are generating the most activity
-
-<!-- Screenshot: Activity breakdown pie charts -->
+Click any author bubble to open their profile panel with full activity history and sentiment breakdown.
 
 ---
 
-## AI Summary
+## Average Sentiment
 
-The sidebar displays an AI-generated summary of key trends and patterns from the selected period. It highlights notable activity patterns, sentiment shifts, and areas worth investigating.
+Sentiment distribution across all platforms — showing the balance of positive, neutral, and negative sentiment by source (HotCopper, LinkedIn, Twitter/X, Reddit, etc.).
 
-<!-- Screenshot: Dashboard sidebar showing AI summary -->
+<!-- Screenshot: Source sentiment chart showing per-platform sentiment breakdown -->
+
+---
+
+## Sidebar
+
+The right-hand sidebar surfaces what needs your attention and provides quick actions.
+
+### Alerts
+
+Dynamic alerts that appear when the platform detects something worth investigating:
+
+<!-- Screenshot: Sidebar alerts section showing extreme movement and leak detection alerts -->
+
+| Alert | When It Appears |
+|-------|-----------------|
+| **Extreme movement days** | Abnormal return days detected — click to view activities for that date |
+| **Potential leak signals** | Pre-announcement price movements that may indicate information leakage — click to review |
+| **Negative sentiment** | Overall sentiment has dropped below threshold — click to investigate chatter |
+
+### Actions
+
+Quick-launch buttons for common tasks:
+
+- **Generate announcement report** — Select announcements and export a PDF report
+- **Generate board report** — Create a full board report with all sections
+- **Add new activity** — Log a meeting, call, or note
+
+### AI Summary
+
+An AI-generated summary of key trends and patterns from the selected period. It highlights notable activity patterns, sentiment shifts, and areas worth investigating. Click any **bold term** in the summary to search for related activities.
+
+<!-- Screenshot: AI Summary section showing generated market analysis -->
 
 ---
 
 ## Date Range
 
-The date picker at the top right controls all dashboard data. Select from presets (7 days, 30 days, current quarter, last quarter) or set a custom range. Your preference persists across sessions.
-
-<!-- Screenshot: Date picker showing preset options -->
+The date picker in the top-right header controls all dashboard data. Select from presets or set a custom range. The dashboard enforces a minimum 14-day window and defaults to 30 days. Your preference persists across sessions.
 
 ---
 
@@ -101,8 +133,9 @@ The date picker at the top right controls all dashboard data. Select from preset
 **Related**
 
 - [Activities](/features/activities) – View the underlying activity data
+- [Announcements](/features/announcements) – Explore announcements in detail
 - [Abnormal Returns & Correlation](/concepts/correlation) – How market metrics are calculated
 - [Market Settings](/settings/market-settings) – Configure your benchmark index and commodities
-- [Alerts](/features/alerts) – Get notified when metrics change
+- [Reports](/features/reports) – Generate board and announcement reports
 
 </div>

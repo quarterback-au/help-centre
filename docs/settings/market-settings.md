@@ -6,7 +6,7 @@ description: Configure your benchmark index and commodity tracking to match how 
 
 # Market Settings
 
-Choose the benchmark that reflects how your investors think about your company — it drives abnormal return calculations, correlation analysis, and the Stock vs Index chart.
+Choose the benchmark that reflects how your investors think about your company — it drives abnormal return calculations, correlation analysis, and the Stock vs Benchmark chart on the dashboard.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Market</span>
 
@@ -24,7 +24,7 @@ Select the index to compare your performance against. Choose based on your secto
 | **Sector-specific** | Better comparison for sector-focused analysis | Materials (AXMJ), Energy (AXEJ), Financials (AXFJ) |
 | **Thematic** | For specialised resource or tech companies | Gold Mining (AXGD), All Technology (AXAT) |
 
-Your benchmark appears in the Stock vs Index chart and factors into [abnormal return calculations](/concepts/correlation#abnormal-returns-ar). See [Available Benchmarks](/features/benchmarking) for the complete list.
+Your benchmark appears in the Stock vs Benchmark chart and factors into [abnormal return calculations](/concepts/correlation#abnormal-returns-ar). See [Available Benchmarks](/features/benchmarking) for the complete list.
 
 <!-- Screenshot: Benchmark index dropdown showing available options -->
 
@@ -36,9 +36,9 @@ Enable commodity tracking for resource-focused companies:
 
 1. Toggle <span className="ui-action">Commodities</span> on
 2. Select up to 3 featured commodities
-3. Order determines priority (first = primary)
+3. Set priority by clicking the star icon — the starred commodity becomes primary
 
-Featured commodities appear in the dashboard stats bar with live prices.
+The primary commodity (marked with ★) is used as the default in correlation analysis. Selected commodities show numbered badges (1, 2, 3) indicating their priority order, with the primary highlighted in purple.
 
 <!-- Screenshot: Commodity selection panel with priority ordering -->
 

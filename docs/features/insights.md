@@ -18,27 +18,33 @@ Insights are woven throughout the platform, appearing wherever context adds valu
 
 ### Dashboard Sidebar
 
-AI-generated summary of key trends from the selected period. Highlights patterns in activity volume, sentiment shifts, and notable events.
+The AI Summary in the [Dashboard](/features/dashboard) sidebar analyses your selected period and generates a written summary covering:
+
+- Activity patterns and volume trends
+- Sentiment shifts and drivers
+- Notable events and their market impact
+- Key topics and themes from community discussion
+
+Click any **bold term** in the summary to search for related activities.
 
 <!-- Screenshot: Dashboard sidebar AI summary close-up -->
 
 ### Announcement Panel
 
-When you open an announcement, insights provide market reaction analysis:
+When you open an announcement detail panel, an AI summary provides market reaction analysis:
 
-- Trading context (volume, price movement relative to expectations)
+- Trading context (volume vs 20-day average, price movement relative to expectations)
 - Sentiment summary from linked activities
 - Key themes identified in discussion
 
 <!-- Screenshot: Announcement panel showing AI insights section -->
 
-### Activity Detail
-
-Contextual insights showing related announcements, author patterns, and market timing for the selected activity.
-
 ### Reports
 
-AI-generated overview section summarising the reporting period — included in both board reports and monthly reports.
+AI-generated overview sections are included in:
+
+- **Board Reports** — Executive Summary section with AI-generated analysis and key metrics
+- **Monthly Reports** — Overview section with AI-generated period summary
 
 ---
 

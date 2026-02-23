@@ -50,7 +50,7 @@ These handles are used to tag your posts as "Broadcast" format in the activities
 **Related**
 
 - [Social Accounts](/settings/social-accounts) – Configure monitoring queries
-- [Social Media Integrations](/settings/social-media-integration) – Connect accounts for follower tracking
+- [Integrations](/settings/social-media-integration) – Connect accounts for follower tracking
 - [Activities](/features/activities) – Where your official communications appear
 
 </div>

@@ -26,6 +26,27 @@ The people page shows all authors across every monitored platform, with aggregat
 | **Stock Held** | Whether the author holds stock (HotCopper disclosure) |
 | **Average ▲** | Average share price change on days when this author posted |
 
+### Toolbar
+
+| Button | Action |
+|--------|--------|
+| **Export All** | Export all people data to CSV |
+| **Export Selected** | Export only selected people to CSV |
+| **Reset Layout** | Restore default column layout |
+
+### Filtering
+
+The sidebar panel provides filters to narrow your view:
+
+| Filter | Options |
+|--------|---------|
+| **Source** | Filter by platform (HotCopper, Twitter, LinkedIn, etc.) |
+| **Frequency** | Frequent authors vs Occasional |
+| **Reach** | High Reach vs Standard |
+| **Stock Disclosure** | Disclosed vs None |
+
+The sidebar also includes column visibility toggles and column reordering.
+
 ---
 
 ## Author Badges
@@ -53,17 +74,6 @@ The detail panel shows:
 - **Sentiment distribution** across their posts
 - **Notes** — organisation-specific notes your team can add
 - **Edit form** for updating author information
-
----
-
-## Flagging & Archiving
-
-| Action | What It Does |
-|--------|--------------|
-| **Flag** | Marks an author for attention — flagged authors can be filtered for quick access |
-| **Archive** | Hides an author from the main view while retaining all their data |
-
-Both actions are organisation-scoped — your flags and archives don't affect other team members.
 
 ---
 
