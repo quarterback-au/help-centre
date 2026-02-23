@@ -1,27 +1,39 @@
 /**
  * Quarterback Help Center - Mintlify-style Design
- * Clean, minimal design with purple brand color
+ * Clean, minimal design with Quarterback brand color
  */
+
+/* ============================================
+   Font Face
+   ============================================ */
+
+@font-face {
+    font-family: 'Lufga';
+    src: url('/fonts/LufgaSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* ============================================
    Color Variables
    ============================================ */
 
 :root {
-    /* Quarterback purple */
-    --qb-primary: #4F46E5;
-    --qb-primary-dark: #4338CA;
-    --qb-primary-light: #6366F1;
-    --qb-primary-lighter: #818CF8;
+    /* Quarterback brand purple */
+    --qb-primary: #4d3eff;
+    --qb-primary-dark: #4030e6;
+    --qb-primary-light: #7068ff;
+    --qb-primary-lighter: #9490ff;
 
     /* Apply to Docusaurus */
-    --ifm-color-primary: #4F46E5;
-    --ifm-color-primary-dark: #4338CA;
-    --ifm-color-primary-darker: #3730A3;
-    --ifm-color-primary-darkest: #312E81;
-    --ifm-color-primary-light: #6366F1;
-    --ifm-color-primary-lighter: #818CF8;
-    --ifm-color-primary-lightest: #A5B4FC;
+    --ifm-color-primary: #4d3eff;
+    --ifm-color-primary-dark: #4030e6;
+    --ifm-color-primary-darker: #3628cc;
+    --ifm-color-primary-darkest: #2a1fad;
+    --ifm-color-primary-light: #7068ff;
+    --ifm-color-primary-lighter: #9490ff;
+    --ifm-color-primary-lightest: #b8b5ff;
 
     /* Typography - use system fonts to avoid FOUT */
     --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -57,7 +69,7 @@
     --ifm-toc-border-color: var(--qb-border);
 
     /* Code highlighting */
-    --docusaurus-highlighted-code-line-bg: rgba(79, 70, 229, 0.1);
+    --docusaurus-highlighted-code-line-bg: rgba(77, 62, 255, 0.1);
 
     /* Global radius */
     --ifm-global-radius: 0.5rem;
@@ -65,18 +77,18 @@
 }
 
 [data-theme='dark'] {
-    --qb-primary: #818CF8;
-    --qb-primary-dark: #6366F1;
-    --qb-primary-light: #A5B4FC;
-    --qb-primary-lighter: #C7D2FE;
+    --qb-primary: #9490ff;
+    --qb-primary-dark: #7068ff;
+    --qb-primary-light: #b8b5ff;
+    --qb-primary-lighter: #d4d2ff;
 
-    --ifm-color-primary: #818CF8;
-    --ifm-color-primary-dark: #6366F1;
-    --ifm-color-primary-darker: #4F46E5;
-    --ifm-color-primary-darkest: #4338CA;
-    --ifm-color-primary-light: #A5B4FC;
-    --ifm-color-primary-lighter: #C7D2FE;
-    --ifm-color-primary-lightest: #E0E7FF;
+    --ifm-color-primary: #9490ff;
+    --ifm-color-primary-dark: #7068ff;
+    --ifm-color-primary-darker: #4d3eff;
+    --ifm-color-primary-darkest: #4030e6;
+    --ifm-color-primary-light: #b8b5ff;
+    --ifm-color-primary-lighter: #d4d2ff;
+    --ifm-color-primary-lightest: #eeedff;
 
     --qb-bg: #0a0a0a;
     --qb-bg-subtle: #111111;
@@ -90,7 +102,7 @@
     --qb-gradient: linear-gradient(135deg, #0a0a0f 0%, #0f0a14 50%, #0a0a0a 100%);
 
     --ifm-background-color: var(--qb-bg);
-    --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.15);
+    --docusaurus-highlighted-code-line-bg: rgba(148, 144, 255, 0.15);
 }
 
 /* ============================================
@@ -120,17 +132,9 @@ body {
     background-color: #0a0a0a !important;
 }
 
-/* Dark mode: show text logo instead of image */
-[data-theme='dark'] .navbar__logo {
-    display: none !important;
-}
-
-[data-theme='dark'] .navbar__brand::after {
-    content: 'Quarterback';
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-right: 60px;
+/* Dark mode: invert logo to white */
+[data-theme='dark'] .navbar__logo img {
+    filter: brightness(0) invert(1);
 }
 
 /* ============================================
@@ -642,6 +646,7 @@ body {
 
 /* Page title */
 .markdown h1:first-child {
+    font-family: 'Lufga', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 2.25rem;
     font-weight: 600;
     letter-spacing: -0.025em;
@@ -795,7 +800,7 @@ pre code {
 /* Note */
 .admonition-note {
     border-left-color: var(--qb-primary);
-    background: rgba(79, 70, 229, 0.03);
+    background: rgba(77, 62, 255, 0.03);
 }
 
 .admonition-note .admonition-heading {
@@ -1173,6 +1178,7 @@ table tr:last-child td {
 }
 
 .changelog-title {
+    font-family: 'Lufga', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     font-size: 3rem !important;
     font-weight: 600 !important;
     letter-spacing: -0.03em !important;
@@ -1630,6 +1636,7 @@ table tr:last-child td {
 }
 
 .blog-post-page article h1 {
+    font-family: 'Lufga', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     font-size: 2rem !important;
     font-weight: 600 !important;
     letter-spacing: -0.025em !important;
@@ -1855,8 +1862,9 @@ table tr:last-child td {
 }
 
 .landing-hero h1 {
+    font-family: 'Lufga', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.02em;
     margin-bottom: 0.5rem;
     color: var(--qb-text);
@@ -2469,7 +2477,7 @@ pre code {
 
 /* Note */
 .theme-admonition-note {
-    background: rgba(79, 70, 229, 0.08);
+    background: rgba(77, 62, 255, 0.08);
     border-left: 4px solid var(--qb-primary);
 }
 .theme-admonition-note::before {

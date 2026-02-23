@@ -53,7 +53,8 @@ const config: Config = {
             attributes: {},
             innerHTML: `var o_options = {
                 domain: 'quarterback.outseta.com',
-                load: 'support'
+                load: 'support',
+                monitorDom: true
             };`
         },
         {

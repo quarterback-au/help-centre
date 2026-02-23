@@ -1,38 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function FeedbackFooter() {
+  const [submitted, setSubmitted] = useState(null);
+
   const handleFeedback = (helpful) => {
-    // You can integrate with analytics or a feedback service here
-    console.log(`Page helpful: ${helpful}`);
-    // Could send to analytics, show a thank you message, etc.
+    setSubmitted(helpful);
   };
 
   return (
     <div className="feedback-footer">
       <div className="feedback-section">
-        <span className="feedback-question">Was this page helpful?</span>
-        <div className="feedback-buttons">
-          <button
-            className="feedback-btn"
-            onClick={() => handleFeedback(true)}
-            aria-label="Yes, this page was helpful"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
-            </svg>
-            Yes
-          </button>
-          <button
-            className="feedback-btn"
-            onClick={() => handleFeedback(false)}
-            aria-label="No, this page was not helpful"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" />
-            </svg>
-            No
-          </button>
-        </div>
+        {submitted === null ? (
+          <>
+            <span className="feedback-question">Was this page helpful?</span>
+            <div className="feedback-buttons">
+              <button
+                className="feedback-btn"
+                onClick={() => handleFeedback(true)}
+                aria-label="Yes, this page was helpful"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+                </svg>
+                Yes
+              </button>
+              <button
+                className="feedback-btn"
+                onClick={() => handleFeedback(false)}
+                aria-label="No, this page was not helpful"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" />
+                </svg>
+                No
+              </button>
+            </div>
+          </>
+        ) : (
+          <span className="feedback-question">
+            {submitted ? 'Thanks for the feedback!' : 'Sorry to hear that. Let us know how we can improve.'}
+          </span>
+        )}
       </div>
       <div className="feedback-actions">
         <button
