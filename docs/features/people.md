@@ -1,55 +1,88 @@
 ---
 sidebar_position: 7
 title: People
-description: Track authors and contributors discussing your company.
+description: See who's talking about your company, how often, and what impact they have.
 ---
 
 # People
 
-Track authors and contributors discussing your company across all monitored platforms.
+Understand who's driving the conversation about your company — from frequent forum posters to high-reach media voices.
+
+<!-- Screenshot: Full people grid showing author rows with badges, sentiment, and price impact -->
+
+---
 
 ## People Grid
 
-The people page shows all authors with aggregated statistics:
+The people page shows all authors across every monitored platform, with aggregated statistics for each.
 
-- Source platform
-- Author name with badges
-- Average sentiment across their posts
-- Activity count
-- Last active date
-- Stock held status (HotCopper disclosure)
-- Average price change on their activity days
+| Column | Description |
+|--------|-------------|
+| **Source** | Platform the author is active on |
+| **Author** | Name with badges (see below) |
+| **Sentiment** | Average sentiment across all their posts |
+| **Activities** | Total activity count |
+| **Last Active** | Most recent activity date |
+| **Stock Held** | Whether the author holds stock (HotCopper disclosure) |
+| **Average ▲** | Average share price change on days when this author posted |
+
+---
 
 ## Author Badges
 
-### Frequent Author (Fire icon)
+Badges surface authors who stand out from the crowd.
 
-Authors who post significantly more than average. Calculated as mean + 1.5 standard deviations of post count, minimum 2 posts.
+| Badge | Icon | Criteria |
+|-------|------|----------|
+| **Frequent Author** | Fire | Posts significantly more than average (mean + 1.5 standard deviations, minimum 2 posts) |
+| **High Reach** | Megaphone | Top 10% by follower count — outsized potential impact |
+| **Flagged** | Flag | Manually flagged by your team for attention |
 
-### High Reach (Megaphone icon)
-
-Authors in the top 10% by follower count. These voices have outsized potential impact.
-
-### Flagged (Flag icon)
-
-Authors you've manually flagged for attention.
-
-## Flagging & Archiving
-
-Flag prominent people to track them separately. Archive authors to hide them from the main view while retaining data.
-
-Both actions are organization-scoped—your flags and archives don't affect other users.
+---
 
 ## Author Details
 
-Click an author to see:
+Click any author to open their detail panel.
 
-- Profile information and follower count
-- All activities from this author
-- Sentiment distribution across their posts
-- Notes (organization-specific)
-- Edit form for updating author information
+<!-- Screenshot: Author detail panel showing profile, activity list, sentiment distribution, and notes -->
+
+The detail panel shows:
+
+- **Profile information** and follower count
+- **All activities** from this author
+- **Sentiment distribution** across their posts
+- **Notes** — organisation-specific notes your team can add
+- **Edit form** for updating author information
+
+---
+
+## Flagging & Archiving
+
+| Action | What It Does |
+|--------|--------------|
+| **Flag** | Marks an author for attention — flagged authors can be filtered for quick access |
+| **Archive** | Hides an author from the main view while retaining all their data |
+
+Both actions are organisation-scoped — your flags and archives don't affect other team members.
+
+---
 
 ## Price Impact
 
-The "Average ▲" column shows the average share price change on days when the author posted. This helps identify authors whose activity correlates with price movements—whether causal or coincidental.
+The **Average ▲** column shows the average share price change on days when the author posted. This helps identify authors whose activity correlates with price movements — whether causal or coincidental.
+
+:::tip
+An author with high activity count, strong negative sentiment, and notable price impact on their posting days is someone worth monitoring closely.
+:::
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Activities](/features/activities) – View individual activities from any author
+- [Market Sentiment](/concepts/market-sentiment) – How sentiment scores are calculated
+- [Alerts](/features/alerts) – Get notified about sentiment shifts
+
+</div>

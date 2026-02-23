@@ -1,96 +1,78 @@
 ---
 sidebar_position: 6
 title: Social Media Integrations
-description: Connect your social media accounts
+description: Connect your social accounts to track follower growth, engagement metrics, and profile changes.
 ---
 
 # Social Media Integrations
 
-Connect your company's social media accounts to track engagement and performance.
+Connect your social accounts to track follower growth, engagement metrics, and profile changes over time.
+
+<span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
+
+<!-- Screenshot: Social media integrations page showing connected and available platforms -->
+
+---
 
 ## Available Integrations
 
-### Twitter / X
-Track your company's Twitter presence:
-- Follower count and growth
-- Tweet engagement metrics
-- Mention tracking
+| Platform | What Gets Tracked |
+|----------|-------------------|
+| **Twitter / X** | Follower count, growth, tweet engagement, mentions |
+| **LinkedIn** | Follower count, post engagement, company page analytics |
+| **YouTube** | Subscriber count, video views, channel growth |
+| **Facebook** | Page likes, followers, post engagement, reach |
 
-### LinkedIn
-Monitor your LinkedIn company page:
-- Follower count
-- Post engagement
-- Company page analytics
-
-### YouTube
-Track your YouTube channel:
-- Subscriber count
-- Video view metrics
-- Channel growth
-
-### Facebook
-Monitor your Facebook page:
-- Page likes and followers
-- Post engagement
-- Page reach
+---
 
 ## Connecting Accounts
 
 ### OAuth Connection
+
 Some platforms support direct OAuth connection:
 
-1. Go to **Company Settings** → **Integrations**
+1. Navigate to <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
 2. Find the platform
-3. Click **Connect**
-4. Log in and authorize
+3. Click <span className="ui-action">Connect</span>
+4. Log in and authorise access
+
+<!-- Screenshot: OAuth connection flow or connected account confirmation -->
 
 ### Manual Configuration
+
 For platforms without OAuth:
 
-1. Go to **Company Settings** → **General**
+1. Navigate to <span className="ui-page">Settings</span> → <span className="ui-page">General</span>
 2. Enter your social media handles
-3. We'll track public metrics automatically
-
-## What Gets Tracked
-
-### Follower Metrics
-- Current count
-- Growth over time
-- Growth rate
-
-### Engagement Metrics
-- Likes, shares, comments
-- Engagement rate
-- Top performing content
-
-### Profile Snapshots
-Regular snapshots of your profiles capture:
-- Bio changes
-- Profile updates
-- Historical metrics
-
-## Privacy & Permissions
-
-Quarterback only accesses:
-- Public profile information
-- Metrics you authorize
-- Content you choose to share
-
-We never:
-- Post on your behalf
-- Access private messages
-- Share your data externally
-
-## Best Practices
-
-- **Connect all profiles** - Get a complete picture
-- **Verify handles** - Ensure correct accounts are linked
-- **Check regularly** - Monitor connection health
+3. Quarterback tracks public metrics automatically
 
 ---
 
-## Related
+## What Gets Tracked
 
-- [Social Accounts](/settings/social-accounts) - Configure monitoring queries
-- [Activities](/features/activities) - View social content
-- [Reports](/features/reports) - Include social metrics
+| Metric Type | Details |
+|-------------|---------|
+| **Followers** | Current count, growth over time, growth rate |
+| **Engagement** | Likes, shares, comments, engagement rate |
+| **Profile snapshots** | Regular captures of bio changes, profile updates, and historical metrics |
+
+Follower metrics appear in the [Dashboard](/features/dashboard) stats bar and in [Reports](/features/reports).
+
+---
+
+## Privacy & Permissions
+
+Quarterback only accesses public profile information and metrics you authorise. We never post on your behalf, access private messages, or share your data externally.
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Social Accounts](/settings/social-accounts) – Configure monitoring queries
+- [Company Profile](/settings/company-profile) – Set your official handles
+- [Activities](/features/activities) – View social content
+- [Dashboard](/features/dashboard) – Follower metrics in the stats bar
+
+</div>

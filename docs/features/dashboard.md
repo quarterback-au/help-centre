@@ -1,59 +1,108 @@
 ---
 sidebar_position: 1
 title: Dashboard
-description: Your central hub for monitoring share price activity, audience engagement, and market sentiment.
+description: Monitor share price activity, audience engagement, and market sentiment from a single view.
 ---
 
 # Dashboard
 
-The dashboard is your central hub for monitoring share price activity, audience engagement, and market sentiment at a glance.
+Your real-time view of how your company is tracking across the market, media, and social landscape — all in one place.
 
-## What You'll See
+<!-- Screenshot: Full dashboard view showing stats bar, share price chart, and sidebar -->
 
-### Stats Bar
+---
 
-Six key metrics appear at the top of the dashboard:
+## Stats Bar
 
-- **Activities** – Total activity count for the selected period
-- **Media** – News articles and media coverage
-- **People** – Unique authors discussing your company
-- **Twitter/LinkedIn/YouTube/Facebook/Mailchimp** – Follower counts with period-over-period change
+Six key metrics appear across the top of the dashboard:
 
-Each metric shows percentage change compared to the previous equivalent period, with green indicating growth and red indicating decline.
+<!-- Screenshot: Stats bar close-up showing metric cards with period comparison -->
 
-### Share Price vs Activities Chart
+| Metric | What It Shows |
+|--------|---------------|
+| **Activities** | Total activity count for the selected period |
+| **Media** | News articles and media coverage count |
+| **People** | Unique authors discussing your company |
+| **Twitter / LinkedIn / YouTube / Facebook / Mailchimp** | Follower counts (varies by connected accounts) |
 
-The main visualization overlays your share price movement with activity volume. Use this to identify correlations between communications activity and price movements.
+Each metric shows percentage change compared to the previous equivalent period — green for growth, red for decline.
 
-**Controls:**
-- **Group by** – Switch between Source, Format, or Sentiment groupings
-- **Time range** – 1D, 1W, 1M, 3M, or custom date range
-- **Overlays** – Toggle Volume, Sentiment, or Followers on the chart
+---
 
-Click any activity cluster to navigate directly to those activities.
+## Share Price vs Activities Chart
 
-### Stock vs Index Performance
+The main chart overlays your share price movement with activity volume, making it easy to spot correlations between what's being said and how the market is responding.
 
-Three metrics displayed together:
+<!-- Screenshot: Share price chart with activity bars and overlay controls visible -->
 
-- Your share price performance (cumulative % return)
-- Benchmark index performance (ASX 200 by default, or your configured benchmark)
-- Abnormal returns (difference between actual and expected returns)
+| Control | Options |
+|---------|---------|
+| **Group by** | Source, Format, or Sentiment |
+| **Time range** | 1D, 1W, 1M, 3M, or custom date range |
+| **Overlays** | Volume, Sentiment, or Followers |
 
-This helps identify whether price movements are company-specific or driven by broader market trends.
+Click any activity cluster on the chart to navigate directly to those activities.
 
-### Sentiment Distribution
+---
 
-Horizontal bars showing sentiment breakdown by source (HotCopper, LinkedIn, Twitter, Reddit). Quickly see which platforms skew positive or negative.
+## Stock vs Index Performance
 
-### Activity Breakdown
+Three metrics displayed together to show whether your price movement is company-specific or market-driven:
 
-Two pie charts showing activities by format and by source, helping you understand the composition of your communications landscape.
+<!-- Screenshot: Stock vs Index chart showing company performance, benchmark, and abnormal returns -->
 
-### AI Summary
+- **Your share price performance** — Cumulative % return over the period
+- **Benchmark index performance** — ASX 200 by default, or your [configured benchmark](/settings/market-settings)
+- **Abnormal returns** — The difference between actual and expected returns (see [Abnormal Returns](/concepts/correlation#abnormal-returns-ar))
 
-The sidebar displays an AI-generated summary of key trends and patterns from the selected period. The summary highlights notable activity patterns, sentiment shifts, and potential areas of interest.
+:::tip
+When your stock diverges from the benchmark, that's the signal to investigate. Either company-specific news is driving the price, or there's unusual activity worth understanding.
+:::
+
+---
+
+## Sentiment Distribution
+
+Horizontal bars showing sentiment breakdown by source — HotCopper, LinkedIn, Twitter, Reddit. Quickly see which platforms skew positive or negative for your company.
+
+<!-- Screenshot: Sentiment distribution bars showing per-source breakdown -->
+
+---
+
+## Activity Breakdown
+
+Two pie charts showing your communications landscape:
+
+- **By Format** — Announcements, Chatter, Media, Broadcast
+- **By Source** — Which platforms are generating the most activity
+
+<!-- Screenshot: Activity breakdown pie charts -->
+
+---
+
+## AI Summary
+
+The sidebar displays an AI-generated summary of key trends and patterns from the selected period. It highlights notable activity patterns, sentiment shifts, and areas worth investigating.
+
+<!-- Screenshot: Dashboard sidebar showing AI summary -->
+
+---
 
 ## Date Range
 
 The date picker at the top right controls all dashboard data. Select from presets (7 days, 30 days, current quarter, last quarter) or set a custom range. Your preference persists across sessions.
+
+<!-- Screenshot: Date picker showing preset options -->
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Activities](/features/activities) – View the underlying activity data
+- [Abnormal Returns & Correlation](/concepts/correlation) – How market metrics are calculated
+- [Market Settings](/settings/market-settings) – Configure your benchmark index and commodities
+- [Alerts](/features/alerts) – Get notified when metrics change
+
+</div>

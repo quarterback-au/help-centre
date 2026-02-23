@@ -1,33 +1,41 @@
 ---
 sidebar_position: 1
 title: Key Concepts
-description: Core concepts that underpin the Quarterback platform.
+description: The building blocks of Quarterback — activities, sentiment, sources, formats, and how they connect.
 ---
 
 # Key Concepts
 
-Core concepts that underpin the Quarterback platform.
+The building blocks of Quarterback — how your data is structured, scored, and connected.
 
 ---
 
 ## Activities
 
-An activity is any tracked communication event related to your company. Activities are the fundamental unit of data in Quarterback—everything from tweets to announcements to news articles.
+An activity is any tracked communication event related to your company. Activities are the fundamental unit of data in Quarterback — everything from tweets to announcements to news articles.
+
+<div className="definition-box">
+
+*Every piece of attention your company receives is an activity. A HotCopper forum post, a LinkedIn mention, a news article, an ASX announcement, a Mailchimp campaign — each one flows in, gets scored, and connects to your share price.*
+
+</div>
+
+See [Activities](/features/activities) for the full feature guide.
 
 ---
 
 ## Sentiment
 
-Sentiment analysis scores content on a scale from -1 (negative) to +1 (positive):
+Sentiment analysis scores each activity on a scale from -1 (negative) to +1 (positive):
 
 | Score | Label | Meaning |
 |-------|-------|---------|
-| > 0.1 | Positive | Favourable tone, bullish language |
-| -0.1 to 0.1 | Neutral | Factual, neither positive nor negative |
-| -0.3 to -0.1 | Lacking | Slightly negative, cautious tone |
-| < -0.3 | Negative | Unfavourable tone, bearish language |
+| **> 0.1** | Positive | Favourable tone, bullish language |
+| **-0.1 to 0.1** | Neutral | Factual, neither positive nor negative |
+| **-0.3 to -0.1** | Lacking | Slightly negative, cautious tone |
+| **< -0.3** | Negative | Unfavourable tone, bearish language |
 
-Sentiment is calculated using machine learning models trained on financial communications.
+Sentiment is calculated using machine learning models trained on financial communications. See [Market Sentiment](/concepts/market-sentiment) for how it aggregates and how to use it.
 
 ---
 
@@ -35,11 +43,13 @@ Sentiment is calculated using machine learning models trained on financial commu
 
 Authors are the people behind activities. Quarterback tracks author metadata including name, profile URL, follower count, and platform-specific identifiers. Author statistics aggregate across all their activities.
 
+See [People](/features/people) for badges, flagging, and price impact analysis.
+
 ---
 
 ## Sources
 
-Sources are the platforms where activities originate—Twitter, HotCopper, LinkedIn, news publishers, etc. Each source has specific data available (engagement metrics, threading, etc.).
+Sources are the platforms where activities originate — Twitter, HotCopper, LinkedIn, news publishers, and more. Each source provides different data (engagement metrics, threading, follower counts).
 
 ---
 
@@ -47,17 +57,21 @@ Sources are the platforms where activities originate—Twitter, HotCopper, Linke
 
 Activities are categorised by format:
 
-- **Announcement** – Official ASX announcements
-- **Chatter** – Social discussion and forum posts
-- **Media** – News articles and coverage
-- **Broadcast** – Official company communications (emails, posts)
-- **Manual** – User-added activities
+| Format | What It Includes |
+|--------|------------------|
+| **Announcement** | Official ASX announcements |
+| **Chatter** | Social discussion and forum posts |
+| **Media** | News articles and coverage |
+| **Broadcast** | Official company communications (emails, posts) |
+| **Manual** | User-added activities |
 
 ---
 
 ## Linked Activity Relationships
 
 When an announcement is released, the platform automatically detects which activities are related to it. This creates a complete picture of market reaction beyond just share price.
+
+<!-- Screenshot: Announcement detail panel showing linked activities grouped by category -->
 
 ---
 
@@ -136,8 +150,8 @@ These categories can be edited at any time. The system does a first pass, then y
 
 The depth of linked activities varies by announcement type:
 
-- **Price-sensitive announcements** – Broader conversation, more linked activities
-- **Administrative announcements** – Minimal linked activity
+- **Price-sensitive announcements** — Broader conversation, more linked activities
+- **Administrative announcements** — Minimal linked activity
 
 This is expected. A major drilling result generates media coverage, forum threads, and social discussion. A change of director's interest notice does not.
 
@@ -157,42 +171,42 @@ The ASX provides limited category options when uploading an announcement. Quarte
 <summary>View all 23 announcement categories</summary>
 
 **Financial Reporting:**
-- **Quarterly** – Appendix 4C, quarterly activities/reports
-- **Annual** – Annual reports, full year results
-- **Half-year** – Half-yearly reports, interim results
+- **Quarterly** — Appendix 4C, quarterly activities/reports
+- **Annual** — Annual reports, full year results
+- **Half-year** — Half-yearly reports, interim results
 
 **Corporate Actions:**
-- **Dividend** – Dividend/distribution announcements
-- **Trading halt** – Trading halt, suspension from quotation
-- **Takeover** – Takeover, merger, acquisition, scheme of arrangement
-- **Capital raise** – Placement, share purchase plan, rights issue, entitlement offer
-- **AGM** – Annual general meeting notices
+- **Dividend** — Dividend/distribution announcements
+- **Trading halt** — Trading halt, suspension from quotation
+- **Takeover** — Takeover, merger, acquisition, scheme of arrangement
+- **Capital raise** — Placement, share purchase plan, rights issue, entitlement offer
+- **AGM** — Annual general meeting notices
 
 **Interest Changes:**
-- **Director interest** – Appendix 3X/Y/Z, director appointments, options, incentives
-- **Employee interest** – Employee share schemes, performance rights, incentive plans
-- **Substantial holder** – Becoming/ceasing to be substantial holder
+- **Director interest** — Appendix 3X/Y/Z, director appointments, options, incentives
+- **Employee interest** — Employee share schemes, performance rights, incentive plans
+- **Substantial holder** — Becoming/ceasing to be substantial holder
 
 **Executive & Strategic:**
-- **Executive** – CEO/CFO/COO appointments, executive team changes
-- **Strategic** – Strategic investments, partnerships, alliances
-- **Guidance** – Guidance, forecast, outlook updates
+- **Executive** — CEO/CFO/COO appointments, executive team changes
+- **Strategic** — Strategic investments, partnerships, alliances
+- **Guidance** — Guidance, forecast, outlook updates
 
 **Operational:**
-- **Contract** – Contract awards, new contracts, binding agreements
-- **Product launch** – Product adoption, commercial launches, customer wins, orders
-- **Regulatory** – FDA/TGA approval, regulatory clearance, CE mark
-- **Exploration** – Drilling, exploration updates, assay results (mining-specific)
-- **Resource** – Resource estimates, reserve updates, JORC disclosures
+- **Contract** — Contract awards, new contracts, binding agreements
+- **Product launch** — Product adoption, commercial launches, customer wins, orders
+- **Regulatory** — FDA/TGA approval, regulatory clearance, CE mark
+- **Exploration** — Drilling, exploration updates, assay results (mining-specific)
+- **Resource** — Resource estimates, reserve updates, JORC disclosures
 
 **Communications:**
-- **Presentation** – Investor presentations, company presentations, webinars
-- **ASX query** – ASX query responses, price queries, awareness letters
+- **Presentation** — Investor presentations, company presentations, webinars
+- **ASX query** — ASX query responses, price queries, awareness letters
 
 **Admin/Governance:**
-- **Corporate governance** – Appendix 4G, corporate governance statements
-- **Corporate admin** – Appendix 2A, quotation applications, cleansing statements
-- **Other** – Fallback for unmatched announcements
+- **Corporate governance** — Appendix 4G, corporate governance statements
+- **Corporate admin** — Appendix 2A, quotation applications, cleansing statements
+- **Other** — Fallback for unmatched announcements
 
 </details>
 

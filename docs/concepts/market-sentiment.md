@@ -1,50 +1,107 @@
 ---
 sidebar_position: 3
 title: Market Sentiment
-description: How Quarterback measures and interprets sentiment across communications.
+description: How Quarterback scores, aggregates, and surfaces sentiment across every conversation about your company.
 ---
 
 # Market Sentiment
 
-How Quarterback measures and interprets sentiment across communications.
+Understand the tone of what's being said about your company — from individual posts to platform-wide trends.
+
+---
 
 ## Sentiment Scoring
 
-Each activity receives a sentiment score from -1 to +1:
+Each activity receives a sentiment score from -1 to +1, calculated using machine learning models trained on financial communications.
+
+<div className="definition-box">
+
+*Sentiment scoring reads the tone of a post, article, or discussion and rates it on a scale. A bullish HotCopper thread might score +0.6. A neutral news article might score 0.0. A bearish analyst comment might score -0.5.*
+
+</div>
 
 | Score Range | Label | Meaning |
 |-------------|-------|---------|
-| > 0.1 | Positive | Favorable tone, bullish language |
-| -0.1 to 0.1 | Neutral | Factual, neither positive nor negative |
-| -0.3 to -0.1 | Lacking | Slightly negative, cautious tone |
-| < -0.3 | Negative | Unfavorable tone, bearish language |
+| **> 0.1** | Positive | Favourable tone, bullish language |
+| **-0.1 to 0.1** | Neutral | Factual, neither positive nor negative |
+| **-0.3 to -0.1** | Lacking | Slightly negative, cautious tone |
+| **< -0.3** | Negative | Unfavourable tone, bearish language |
+
+<!-- Screenshot: Activity detail panel showing sentiment score and colour indicator -->
+
+---
 
 ## Aggregation
 
-Sentiment aggregates at multiple levels:
+Sentiment rolls up at multiple levels, so you can zoom in or out:
 
-- **Activity** – Individual score
-- **Author** – Average across all their activities
-- **Announcement** – Average of linked activities
-- **Period** – Average across all activities in date range
+| Level | How It's Calculated |
+|-------|---------------------|
+| **Activity** | Individual score for a single post or article |
+| **Author** | Average across all their activities |
+| **Announcement** | Average of all linked activities |
+| **Period** | Average across all activities in the selected date range |
+
+---
 
 ## Sentiment by Source
 
 Different platforms tend toward different sentiment distributions:
 
-- **HotCopper** – Often more polarized (strong opinions)
-- **Twitter** – Wide range, depends on author type
-- **LinkedIn** – Generally more neutral/professional
-- **Media** – Typically neutral, factual reporting
+| Platform | Typical Pattern |
+|----------|----------------|
+| **HotCopper** | More polarised — strong opinions, both bullish and bearish |
+| **Twitter** | Wide range — depends on author type and context |
+| **LinkedIn** | Generally more neutral and professional |
+| **Media** | Typically neutral — factual reporting tone |
 
-The dashboard's sentiment by source chart helps identify platform-specific patterns.
+The [Dashboard](/features/dashboard) sentiment by source chart helps you identify platform-specific patterns at a glance.
+
+<!-- Screenshot: Dashboard sentiment distribution bars showing per-source breakdown -->
+
+---
+
+## Where Sentiment Appears
+
+Sentiment is surfaced throughout the platform:
+
+| Location | What You'll See |
+|----------|----------------|
+| **Activities grid** | Colour-coded sentiment indicator on each row |
+| **Activity detail** | Score with positive/negative/neutral label |
+| **Announcements grid** | Average sentiment across linked activities |
+| **Announcement detail** | Sentiment distribution breakdown |
+| **People grid** | Average sentiment per author |
+| **Dashboard** | Sentiment distribution by source |
+| **Reports** | Sentiment breakdown and trends |
+| **Alerts** | Trigger on sentiment thresholds |
+
+---
 
 ## Using Sentiment Data
 
-**Monitor shifts:** Sudden sentiment changes may signal emerging issues or opportunities.
+**Monitor shifts:** Sudden sentiment changes may signal emerging issues or opportunities. A sharp negative shift without a corresponding announcement is worth investigating.
 
-**Correlate with price:** Compare sentiment trends with share price movements to identify relationships.
+**Correlate with price:** Compare sentiment trends with share price movements. Sustained negative sentiment sometimes precedes price drops — and vice versa.
 
-**Identify outliers:** High-sentiment activities (positive or negative) often warrant closer attention.
+**Identify outliers:** Activities with extreme sentiment (positive or negative) often warrant closer attention. Use the [Activities](/features/activities) filter to surface them.
 
-**Track authors:** Authors with consistently extreme sentiment may be influential voices worth monitoring.
+**Track authors:** Authors with consistently extreme sentiment may be influential voices. See [People](/features/people) for author-level analysis.
+
+:::tip
+Don't just look at the average — look at the distribution. A neutral average can mask a split between strongly positive and strongly negative sentiment, which tells a very different story.
+:::
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Activities](/features/activities) – Filter activities by sentiment
+- [People](/features/people) – Author-level sentiment analysis
+- [Announcements](/features/announcements) – Announcement sentiment from linked activities
+- [Alerts](/features/alerts) – Set up sentiment-triggered alerts
+- [Dashboard](/features/dashboard) – Sentiment distribution charts
+
+</div>

@@ -9,75 +9,77 @@ tags: [feature]
 
 We've spent the last few months rebuilding core parts of the platform around a simple idea: IR teams need market context alongside their communications data. Share price movements don't happen in isolation—they're shaped by commodity prices, sector trends, and the timing of announcements.
 
-Today we're launching commodities tracking, benchmark indices, smarter AI summaries, and improved tools for identifying what matters most. We've also rebuilt search, reimagined the announcements page, and refreshed the interface throughout.
+Today we're launching commodities tracking, benchmark indices, correlation analysis, cumulative abnormal return analysis, and improved tools for identifying what matters most. We've also rebuilt the announcements experience, added broadcast analytics, improved compliance alerting, and refreshed the interface throughout.
 
 ---
 
 ### Market Intelligence
 
-Commodity prices and benchmark indices now appear alongside your share price - everywhere. Select up to three featured commodities from 28 options precious metals, battery metals, and critical minerals with live prices updated hourly.
+**Commodities tracking.** 35 commodities across nine categories—precious metals, base metals, battery metals, bulk, industrial, nuclear, energy, fertilisers, and rare earths—with live prices updated hourly. Select up to three featured commodities that appear alongside your share price everywhere in the platform.
 
-Use this data to spot unusual market movements and understand whether share price changes reflect company news or broader sector trends. When your stock moves against its usual correlation, you'll know to look closer. Pre-announcement trading patterns become easier to identify when you can see commodity and index movements in the same view.
+**Benchmark indices.** 31 ASX indices across main market, GICS sector, specialty, and other categories. Choose an index instead of a commodity if sector performance matters more than commodity exposure.
 
-Choose an index instead if sector performance matters more than commodity exposure. Either way, correlation analysis runs automatically so you can separate signal from noise.
+**Correlation analysis.** A dedicated correlation page with heatmap, rolling correlation, cross-correlation, and R-squared analysis. Understand how your share price relates to commodities, indices, and sector benchmarks over configurable time periods.
+
+**Cumulative abnormal return (CAR) analysis.** CAPM-based abnormal return calculations across multiple event windows—AR(0) for announcement day impact, CAR(-3,-1) for pre-announcement leak detection, CAR(-5,-1) for early warning, CAR(-1,+1) for 3-day event response, and CAR(0,+10) for sustained impact.
+
+**Enhanced sentiment analysis.** Sentiment scoring tuned for IR-specific language with feedback loops. Author-level sentiment trends, platform-level aggregation, and historical sentiment patterns surface automatically.
 
 → [Benchmarking](/features/benchmarking) · [Correlation Analysis](/concepts/correlation)
 
 ---
 
-### Flagging & Identification
+### Announcement Overhaul
 
-Prominent people, influential activities, and unusual patterns now surface automatically throughout the platform.
+The announcements page has been rebuilt around how IR teams actually work.
 
-People are flagged based on their reach, engagement history, and market impact. Activities are scored for influence so you can prioritise what deserves attention. Announcements are categorised automatically and compared against historical performance for similar announcement types—so you know whether a drilling result outperformed or underperformed relative to past disclosures.
+**Redesigned with intelligent insights.** Browse with AG Grid's filtering and sorting, preview any announcement in the side panel, and export selections as HTML reports for board packs or compliance records. Each announcement includes an insights panel showing market reaction, trading context, and key themes.
 
-→ [People](/features/people) · [Activities](/features/activities) · [Key Concepts](/concepts/key-concepts#announcement-categorisation)
+**Automatic announcement linking.** Activities—chatter, media, broadcasts—are automatically linked to the announcements they reference. No manual tagging required.
 
----
+**Announcement category auto-sorting.** Announcements are categorised automatically and compared against historical performance for similar announcement types. See whether a drilling result outperformed or underperformed relative to past disclosures.
 
-### Smarter AI Summaries
-
-AI-generated summaries now incorporate market context, people analytics, and historical patterns.
-
-Announcement insights reference commodity movements and benchmark performance on the day of release. People summaries highlight engagement trends and sentiment patterns over time. Activity summaries connect related content and surface what drove the conversation.
-
-The underlying models have been tuned for IR-specific language, so summaries read like they were written by someone who understands the market.
-
-→ [Insights](/features/insights)
-
----
-
-### Redesigned Search
-
-Search now combines semantic understanding with keyword matching. Describe what you're looking for or search exact terms—both work.
-
-Results appear in a split panel layout. Browse the list on the left, preview details on the right without losing your place. Filter across announcements, activities, media, and people from one unified experience.
-
-→ [Activities](/features/activities)
-
----
-
-### Announcements Reimagined
-
-The announcements page has been rebuilt around how IR teams actually work. Browse with AG Grid's filtering and sorting, preview any announcement in the side panel, and export selections as HTML reports for board packs or compliance records.
-
-Each announcement includes an insights panel showing market reaction, trading context, and key themes. Compare performance against historical announcements of the same type to see whether the market response was typical or unusual.
+**CAR analysis per announcement.** Every announcement shows its abnormal return on day zero, pre-announcement trading patterns, and sustained market response. Compare against category averages to understand whether the market reaction was typical or unusual.
 
 → [Announcements](/features/announcements) · [Reports](/features/reports)
 
 ---
 
-### Manual Activity Form
+### Compliance & Alerts
 
-Adding manual activities is now faster and more flexible. The redesigned form supports paid vs organic tracking, richer metadata, and a cleaner interface that gets out of your way.
+**8 alert types.** Daily recaps, weekly recaps, price spike alerts, activity spike alerts, abnormal day detection, pre-announcement leak detection, rumour detection, and media coverage alerts—all configurable per user.
+
+**In-app notifications.** Pre-announcement leak detection and abnormal day detection surface directly in the platform with Z-score classification (extreme positive, positive, normal, negative, extreme negative).
+
+**Configurable recap delivery time.** Choose when daily and weekly recap emails arrive to match your workflow.
+
+---
+
+### Broadcast Analytics
+
+Brand new broadcast analytics and reporting. A dedicated page for broadcast content—investor presentations, webinars, and video updates—with engagement tracking, audience metrics, and exportable reports.
 
 → [Activities](/features/activities)
 
 ---
 
-### Refreshed Interface
+### Reporting
 
-The entire application has been updated with a cleaner design built on shadcn components. Split panels throughout let you preview details without losing context. Date range controls persist across sessions. Performance has improved across the board.
+- **Updated configurable board report** – Section toggles let you customise what appears in each report. One-click PDF generation via print
+- **Landscape reports** – Landscape-oriented report layouts for data-heavy sections
+- **Announcement reports** – Export announcement selections as HTML reports for board packs or compliance records
+
+→ [Reports](/features/reports)
+
+---
+
+### Platform
+
+- **Redesigned search** – Hybrid search combining semantic understanding with keyword matching. Split-panel results with preview
+- **Enhanced manual activity component** – Faster entry with paid vs organic tracking, richer metadata, and cleaner interface
+- **Split-panel navigation** – Browse lists on the left, preview details on the right without losing context. Available across announcements, activities, media, and people
+- **Reimagined interactive data tables** – AG Grid Enterprise across announcements, activities, media, people, broadcasts, and authors with filtering, sorting, and export
+- **Refreshed interface** – Cleaner design built on shadcn components with 103 chart components. Date range controls persist across sessions. Performance improved throughout
 
 ---
 
@@ -85,11 +87,9 @@ The entire application has been updated with a cleaner design built on shadcn co
 
 - **Media page** – Publisher ranking with Newscatcher metadata and improved grid layout
 - **Activity relationships** – Linked activities surface related content automatically
-- **Board reports** – Refreshed design with better loading states
 - **Engagements** – Metrics appear directly on activity detail cards
 - **Author insights** – Average price change by author in the authors table
 - **Mailchimp summaries** – Campaign performance data in activity details
-- **Broadcasts page** – Dedicated page for broadcast content
 - **Monthly reports** – New reporting view for monthly summaries
 
 ---

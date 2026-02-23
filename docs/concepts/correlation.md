@@ -8,15 +8,17 @@ description: Understanding how your share price performs relative to expectation
 
 Understanding whether share price movements reflect company news or broader market conditions.
 
+<!-- Screenshot: Dashboard Stock vs Index chart showing company performance diverging from benchmark -->
+
 ---
 
 ## Abnormal Returns (AR)
 
-Abnormal return measures how your stock performed compared to what the market model predicted. It's a standard financial method that eliminates the impact of wider market behaviours, letting you see whether today's performance is genuinely unusual.
+Abnormal return is the difference between your stock's actual return and its expected return, calculated using the Capital Asset Pricing Model (CAPM) with a rolling estimation window. It eliminates the impact of wider market movements, letting you see whether today's performance is genuinely unusual.
 
 <div className="definition-box">
 
-*The difference between actual stock return and expected return, calculated using the Capital Asset Pricing Model (CAPM) with a rolling estimation window.*
+*Your stock's actual return minus the return you'd expect given how the benchmark moved that day. If the ASX 200 drops 3% and your stock drops 3%, that's expected — the abnormal return is ~0%. But if the ASX drops 3% and your stock drops 8%, the abnormal return is about -5%.*
 
 </div>
 
@@ -66,6 +68,8 @@ $$
 
 Spike flags appear on day-to-day markers throughout the activities chart, making it easy to spot unusual trading days at a glance.
 
+<!-- Screenshot: Activities chart showing spike flag markers on unusual trading days -->
+
 To view only activities from unusual trading days, open the filters panel on the Activities page and select <span className="ui-action">Unusual</span> or <span className="ui-action">Very Unusual</span> from the <span className="ui-reference">Market Activity</span> filter.
 
 ---
@@ -73,6 +77,10 @@ To view only activities from unusual trading days, open the filters panel on the
 ### Configuring Your Benchmark
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Market</span> → <span className="ui-action">Benchmark Configuration</span>
+
+See [Available Benchmarks](/features/benchmarking) for the full list of indices and commodities.
+
+<!-- Screenshot: Market settings benchmark configuration panel -->
 
 | Setting | Behaviour |
 |---------|-----------|
@@ -113,6 +121,8 @@ The platform calculates CAR across multiple windows to capture different aspects
 | **Short window** | CAR(-1,+1) | Day before through day after |
 | **Post-announcement** | CAR(0,+10) | Announcement through 10 days after |
 | **Extended pre-window** | CAR(-5,-1) | 5 days before announcement |
+
+<!-- Screenshot: CAR event study chart from an announcement detail panel -->
 
 **Interpreting CAR:**
 

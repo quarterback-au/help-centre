@@ -1,13 +1,31 @@
 ---
 sidebar_position: 5
 title: Team Members
-description: Manage team access to your organization's data.
+description: Add team members to share access to your organisation's Quarterback data.
 ---
 
 # Team Members
 
-Team member management allows multiple users to access your organization's data.
+Give your team access to Quarterback so multiple people can monitor activities, review announcements, and generate reports.
 
-:::note
-Team management is handled through your account settings in Outseta. Contact support if you need to add or remove team members.
+---
+
+## Managing Access
+
+Team management is handled through your account settings in Outseta (the billing and account platform).
+
+To add or remove team members, contact us at [support@qback.au](mailto:support@qback.au) and we'll get them set up.
+
+:::info
+All team members share the same organisation data — activities, announcements, reports, and settings. Individual preferences like flagged authors and archived activities are scoped per user.
 :::
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Company Profile](/settings/company-profile) – Configure your organisation details
+
+</div>
