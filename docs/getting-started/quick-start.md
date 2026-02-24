@@ -1,81 +1,45 @@
 ---
 sidebar_position: 1
 title: Quick Start Guide
-description: Get Quarterback set up and start monitoring your investor relations in minutes.
+description: What's already configured and how to start using Quarterback.
 ---
 
 # Quick Start Guide
 
-Get Quarterback configured and start seeing how your company tracks across the market, media, and social landscape.
+Everything is configured during onboarding — company profile, benchmark, social monitoring, and integrations are all set up before you log in. Here's what to expect when you get started.
 
 ---
 
 ## 1. Log In
 
-Navigate to [app.qback.au](https://app.qback.au) and sign in with your credentials.
+Navigate to [app.qback.au](https://app.qback.au) and sign in with the credentials provided during onboarding.
 
-<!-- Screenshot: Login page -->
-
----
-
-## 2. Set Up Your Company Profile
-
-<span className="ui-page">Settings</span> → <span className="ui-page">General</span>
-
-Fill in your company details:
-
-| Field | What to Enter |
-|-------|---------------|
-| **Company Name** | Your ASX-listed company name |
-| **ASX Symbol** | Your stock ticker (e.g., 4DX) — set during onboarding |
-| **About** | Brief company description (optional, appears in reports) |
-| **Social handles** | Twitter, LinkedIn, Facebook, YouTube handles |
-
-<!-- Screenshot: Company profile settings form filled in -->
-
-See [Company Profile](/settings/company-profile) for full details on each field.
+![Login page](/img/docs/getting-started/login-page.png)
 
 ---
 
-## 3. Configure Your Benchmark
+## 2. What's Already Configured
 
-<span className="ui-page">Settings</span> → <span className="ui-page">Market</span>
+The following settings are in place from onboarding:
 
-Choose the index and commodities that reflect how your investors view your company:
+| Setting | What It Controls | Learn More |
+|---------|-----------------|------------|
+| **Company Profile** | Company name, ticker, social handles — powers reports and activity matching | [Company Profile](/settings/company-profile) |
+| **Benchmark & Commodities** | Index comparison and commodity tracking for abnormal returns and correlation | [Market Settings](/settings/market-settings) |
+| **Social Monitoring** | Search queries that determine which social posts, news, and forums are tracked | [Social Accounts](/settings/social-accounts) |
+| **Integrations** | Connected services like Mailchimp for campaign analytics | [Integrations](/settings/social-media-integration) |
 
-1. Select your **benchmark index** (default: ASX 200)
-2. Optionally enable **commodities** and select up to 3
-3. Save
-
-<!-- Screenshot: Market settings with benchmark and commodity selected -->
-
-Your benchmark drives the Stock vs Index chart, abnormal return calculations, and correlation analysis. See [Market Settings](/settings/market-settings) for guidance on choosing the right benchmark.
-
----
-
-## 4. Set Up Social Monitoring
-
-<span className="ui-page">Settings</span> → <span className="ui-page">Social Accounts</span>
-
-Configure what Quarterback listens for across social platforms and news:
-
-1. Enter **include keywords** — terms to monitor
-2. Enter **exclude keywords** — terms to filter out
-3. Review auto-generated queries for each platform
-
-<!-- Screenshot: Social accounts query generator -->
-
-See [Social Accounts](/settings/social-accounts) for platform-specific syntax.
+<!-- Screenshot: Settings overview -->
 
 ---
 
-## 5. Explore Your Dashboard
+## 3. Explore the Dashboard
 
-Once configured, your [Dashboard](/features/dashboard) shows:
+The [Dashboard](/features/dashboard) shows:
 
 - **Stats bar** — Activity count, media coverage, follower metrics
 - **Share price vs activities chart** — Price movement overlaid with activity volume
-- **Stock vs index performance** — Your performance against your benchmark
+- **Stock vs index performance** — Performance against the configured benchmark
 - **Sentiment distribution** — Breakdown by platform
 - **AI summary** — Key trends and patterns
 
@@ -83,11 +47,9 @@ Once configured, your [Dashboard](/features/dashboard) shows:
 
 ---
 
-## 6. Set Up Alerts
+## 4. Set Up Alerts
 
-Don't wait for things to happen — let Quarterback notify you.
-
-Navigate to <span className="ui-page">Alerts</span> and create your first alerts:
+Alerts let Quarterback notify you when something happens. Navigate to <span className="ui-page">Alerts</span> to see available alert types:
 
 | Recommended Alert | Why |
 |-------------------|-----|
@@ -101,9 +63,9 @@ See [Alerts](/features/alerts) for all alert types and configuration options.
 
 ## Next Steps
 
-Now that you're set up, explore these features:
+Explore these features:
 
-- [Activities](/features/activities) — See every conversation about your company
+- [Activities](/features/activities) — See every conversation about the company
 - [Announcements](/features/announcements) — Track ASX announcements and their market impact
 - [Reports](/features/reports) — Generate board-ready reports
 - [Abnormal Returns & Correlation](/concepts/correlation) — Understand the market metrics

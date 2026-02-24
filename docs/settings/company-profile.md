@@ -1,16 +1,16 @@
 ---
 sidebar_position: 1
 title: Company Profile
-description: Set your company name, ticker, description, and social media handles.
+description: Company name, ticker, description, and social media handles configured during onboarding.
 ---
 
 # Company Profile
 
-Your company's identity in Quarterback — the basics that power reports, activity matching, and social tracking.
+The company profile is the foundation of Quarterback — it powers reports, activity matching, and social tracking. These details are configured during onboarding.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">General</span>
 
-<!-- Screenshot: Company profile settings form -->
+![Company profile settings form](/img/docs/settings/company-profile.png)
 
 ---
 
@@ -18,29 +18,29 @@ Your company's identity in Quarterback — the basics that power reports, activi
 
 | Field | Description |
 |-------|-------------|
-| **Company Name** | Your display name throughout the platform — appears in reports, dashboards, and exports |
-| **Ticker Symbol** | Your ASX ticker symbol (read-only — set during onboarding) |
-| **Exchange** | Defaults to ASX (read-only — set during onboarding) |
+| **Company Name** | Display name throughout the platform — appears in reports, dashboards, and exports |
+| **Ticker Symbol** | ASX ticker symbol |
+| **Exchange** | Stock exchange (defaults to ASX) |
 | **About** | Company description for context. Optional, but included in reports |
 
 ---
 
 ## Social Media Handles
 
-Enter your official social accounts so Quarterback can identify your own communications vs third-party discussion.
+Official social accounts are linked during onboarding so Quarterback can distinguish company communications from third-party discussion.
 
 <!-- Screenshot: Social media handles section of company profile -->
 
-| Field | What to Enter |
-|-------|---------------|
-| **Twitter** | Your @handle |
-| **Facebook** | Your @handle |
+| Field | Description |
+|-------|-------------|
+| **Twitter** | Company @handle |
+| **Facebook** | Company @handle |
 | **LinkedIn** | Company page username |
-| **LinkedIn Company ID** | Numeric ID (find using Ghost Genius or your LinkedIn admin URL) |
-| **YouTube** | Your @channel handle |
+| **LinkedIn Company ID** | Numeric ID used for follower tracking |
+| **YouTube** | Company @channel handle |
 
 :::info
-These handles are used to tag your posts as "Broadcast" format in the activities grid, distinguishing your official communications from third-party discussion.
+These handles are used to tag company posts as "Broadcast" format in the activities grid, distinguishing official communications from third-party discussion.
 :::
 
 ---
@@ -49,8 +49,8 @@ These handles are used to tag your posts as "Broadcast" format in the activities
 
 **Related**
 
-- [Social Accounts](/settings/social-accounts) – Configure monitoring queries
-- [Integrations](/settings/social-media-integration) – Connect accounts for follower tracking
-- [Activities](/features/activities) – Where your official communications appear
+- [Social Accounts](/settings/social-accounts) – Monitoring queries that control tracked content
+- [Integrations](/settings/social-media-integration) – Follower tracking and connected services
+- [Activities](/features/activities) – Where official communications appear
 
 </div>

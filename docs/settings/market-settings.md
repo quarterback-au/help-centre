@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
 title: Market Settings
-description: Configure your benchmark index and commodity tracking to match how investors view your company.
+description: Benchmark index and commodity tracking settings that drive abnormal return and correlation calculations.
 ---
 
 # Market Settings
 
-Choose the benchmark that reflects how your investors think about your company — it drives abnormal return calculations, correlation analysis, and the Stock vs Benchmark chart on the dashboard.
+The benchmark reflects how investors think about the company — it drives abnormal return calculations, correlation analysis, and the Stock vs Benchmark chart on the dashboard. These settings are configured during onboarding.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Market</span>
 
@@ -16,15 +16,15 @@ Choose the benchmark that reflects how your investors think about your company �
 
 ## Benchmark Index
 
-Select the index to compare your performance against. Choose based on your sector:
+The benchmark index is chosen based on sector and investor context:
 
-| Approach | When to Use | Examples |
+| Approach | When It's Used | Examples |
 |----------|-------------|---------|
 | **Broad market** | Good default for most companies | ASX 200, All Ordinaries |
 | **Sector-specific** | Better comparison for sector-focused analysis | Materials (AXMJ), Energy (AXEJ), Financials (AXFJ) |
 | **Thematic** | For specialised resource or tech companies | Gold Mining (AXGD), All Technology (AXAT) |
 
-Your benchmark appears in the Stock vs Benchmark chart and factors into [abnormal return calculations](/concepts/correlation#abnormal-returns-ar). See [Available Benchmarks](/features/benchmarking) for the complete list.
+The benchmark appears in the Stock vs Benchmark chart and factors into [abnormal return calculations](/concepts/correlation#abnormal-returns-ar). See [Available Benchmarks](/features/benchmarking) for the complete list.
 
 <!-- Screenshot: Benchmark index dropdown showing available options -->
 
@@ -32,20 +32,16 @@ Your benchmark appears in the Stock vs Benchmark chart and factors into [abnorma
 
 ## Commodities
 
-Enable commodity tracking for resource-focused companies:
+Commodity tracking is enabled for resource-focused companies. Up to 3 commodities can be tracked, with one marked as primary (★).
 
-1. Toggle <span className="ui-action">Commodities</span> on
-2. Select up to 3 featured commodities
-3. Set priority by clicking the star icon — the starred commodity becomes primary
-
-The primary commodity (marked with ★) is used as the default in correlation analysis. Selected commodities show numbered badges (1, 2, 3) indicating their priority order, with the primary highlighted in purple.
+The primary commodity is used as the default in correlation analysis. Selected commodities show numbered badges (1, 2, 3) indicating their priority order, with the primary highlighted in purple.
 
 <!-- Screenshot: Commodity selection panel with priority ordering -->
 
-Choose based on what matters most to your investors. A gold miner would select Gold as priority 1. A battery materials producer might choose Lithium or Cobalt.
+For example, a gold miner would have Gold as priority 1. A battery materials producer might have Lithium or Cobalt.
 
 :::info
-When commodities are enabled and a primary commodity is selected, it takes priority over the index for benchmark calculations. See [Benchmark Priority](/concepts/correlation#configuring-your-benchmark) for how this works.
+When commodities are enabled and a primary commodity is set, it takes priority over the index for benchmark calculations. See [Benchmark Priority](/concepts/correlation#configuring-your-benchmark) for how this works.
 :::
 
 ---
@@ -55,7 +51,7 @@ When commodities are enabled and a primary commodity is selected, it takes prior
 **Related**
 
 - [Benchmarking](/features/benchmarking) – Full list of available indices and commodities
-- [Abnormal Returns & Correlation](/concepts/correlation) – How your benchmark factors into calculations
+- [Abnormal Returns & Correlation](/concepts/correlation) – How the benchmark factors into calculations
 - [Dashboard](/features/dashboard) – Where benchmark comparisons are displayed
 
 </div>

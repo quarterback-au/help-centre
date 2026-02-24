@@ -1,12 +1,12 @@
 ---
 sidebar_position: 6
 title: Integrations
-description: Connect external services to enrich your Quarterback data with follower metrics and campaign analytics.
+description: External services connected to Quarterback for follower metrics and campaign analytics.
 ---
 
 # Integrations
 
-Connect external services to pull in follower metrics, campaign data, and subscriber analytics.
+Integrations pull in follower metrics, campaign data, and subscriber analytics from external services. These are connected during onboarding.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
 
@@ -16,13 +16,13 @@ Connect external services to pull in follower metrics, campaign data, and subscr
 
 | Service | What Gets Tracked |
 |---------|-------------------|
-| **Mailchimp** | Campaign sends, open rates, click rates, subscriber counts. See [Mailchimp Integration](/settings/mailchimp) for setup |
+| **Mailchimp** | Campaign sends, open rates, click rates, subscriber counts. See [Mailchimp Integration](/settings/mailchimp) for details |
 
 ---
 
 ## Follower Tracking
 
-Quarterback tracks follower counts and growth for platforms configured in your [Company Profile](/settings/company-profile) social media handles:
+Quarterback tracks follower counts and growth for platforms linked in the [Company Profile](/settings/company-profile):
 
 | Platform | Metric |
 |----------|--------|
@@ -34,7 +34,7 @@ Quarterback tracks follower counts and growth for platforms configured in your [
 Follower data appears in the [Dashboard](/features/dashboard) stats bar and in the [Broadcast Report](/features/reports#broadcast-report).
 
 :::info
-Follower tracking uses your social media handles set in [Company Profile](/settings/company-profile). No OAuth connection is required — Quarterback tracks public metrics automatically.
+Follower tracking uses the social media handles in [Company Profile](/settings/company-profile). No OAuth connection is required — Quarterback tracks public metrics automatically.
 :::
 
 ---
@@ -43,9 +43,9 @@ Follower tracking uses your social media handles set in [Company Profile](/setti
 
 **Related**
 
-- [Mailchimp](/settings/mailchimp) – Set up Mailchimp for campaign analytics
-- [Company Profile](/settings/company-profile) – Set your official social handles
-- [Social Accounts](/settings/social-accounts) – Configure monitoring queries
+- [Mailchimp](/settings/mailchimp) – Mailchimp campaign analytics integration
+- [Company Profile](/settings/company-profile) – Official social handles used for follower tracking
+- [Social Accounts](/settings/social-accounts) – Monitoring queries that control tracked content
 - [Dashboard](/features/dashboard) – Follower metrics in the stats bar
 - [Reports](/features/reports) – Broadcast report with follower growth trends
 

@@ -56,8 +56,7 @@
     --qb-text-muted: #6b7280;
     --qb-text-light: #9ca3af;
 
-    /* Gradient background - subtle */
-    --qb-gradient: linear-gradient(135deg, #f8f9ff 0%, #f5f3ff 50%, #faf5ff 100%);
+    /* Gradient background - removed */
 
     /* Shadows */
     --qb-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -99,7 +98,6 @@
     --qb-text-muted: #a3a3a3;
     --qb-text-light: #737373;
 
-    --qb-gradient: linear-gradient(135deg, #0a0a0f 0%, #0f0a14 50%, #0a0a0a 100%);
 
     --ifm-background-color: var(--qb-bg);
     --docusaurus-highlighted-code-line-bg: rgba(148, 144, 255, 0.15);
@@ -114,8 +112,6 @@ html {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
     background: #ffffff;
-    background: linear-gradient(34deg, rgba(255, 255, 255, 1) 28%, rgba(227, 195, 243, 0.11) 66%, rgba(238, 184, 192, 0.16) 76%, rgba(148, 187, 233, 0.2) 100%);
-    background-attachment: fixed;
 }
 
 body {
@@ -544,6 +540,19 @@ body {
     padding: 7% 9% !important;
     margin: 0 !important;
     width: 100% !important;
+}
+
+/* Doc page screenshots - contained with border and subtle background */
+.docMainContainer article img,
+.docPage article img,
+[class*="docMainContainer"] article img {
+    border-radius: 0.5rem;
+    border: 1px solid var(--qb-border);
+    background: var(--qb-bg-subtle);
+    box-shadow: var(--qb-shadow-sm);
+    margin: 1.5rem 0;
+    max-width: 100%;
+    display: block;
 }
 
 /* Override Docusaurus layout - 3/4 content, 1/4 TOC */
@@ -1106,26 +1115,18 @@ table tr:last-child td {
    Blog / Changelog - Dub.co Style Two-Column Layout
    ============================================ */
 
-/* Geometric grid background for changelog */
+/* Circle grid background for changelog */
 .blog-list-page .main-wrapper,
 .blog-tags-posts-page-custom .main-wrapper {
     position: relative;
     background:
-        /* Vertical lines */
-        repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 79px,
-            var(--qb-border) 79px,
-            var(--qb-border) 80px
-        ),
-        /* Horizontal lines */
-        repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 79px,
-            var(--qb-border) 79px,
-            var(--qb-border) 80px
+        /* Circle outlines in a grid pattern */
+        radial-gradient(
+            circle,
+            transparent 38px,
+            var(--qb-border) 38px,
+            var(--qb-border) 39px,
+            transparent 39px
         ),
         /* Subtle color gradient underneath */
         linear-gradient(
@@ -1135,9 +1136,9 @@ table tr:last-child td {
             rgba(238, 184, 192, 0.16) 76%,
             rgba(148, 187, 233, 0.2) 100%
         );
-    background-size: 80px 80px, 80px 80px, 100% 100%;
-    background-position: left top, left top, center;
-    background-attachment: scroll, scroll, fixed;
+    background-size: 80px 80px, 100% 100%;
+    background-position: center center, center;
+    background-attachment: scroll, fixed;
 }
 
 /* Fade out the grid on the sides, keep center clean but show gradient */
@@ -1966,114 +1967,23 @@ table tr:last-child td {
     transform: translateY(-2px);
 }
 
-.guide-card-gradient {
+.guide-card-image {
     width: 140px;
-    min-height: 140px;
     flex-shrink: 0;
-    position: relative;
     overflow: hidden;
+    align-self: stretch;
 }
 
-.guide-card-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.8;
-}
-
-.guide-card-gradient--purple {
-    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
-    position: relative;
-}
-
-.guide-card-gradient--purple::after {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, rgba(167, 139, 250, 0.6) 0%, rgba(139, 92, 246, 0.3) 50%, transparent 70%);
-    border-radius: 50%;
-    bottom: -20px;
-    left: -20px;
-    filter: blur(20px);
-}
-
-.guide-card-gradient--teal {
-    background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
-    position: relative;
-}
-
-.guide-card-gradient--teal::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(45, 212, 191, 0.5) 0%, rgba(20, 184, 166, 0.3) 50%, transparent 70%);
-    border-radius: 50%;
-    top: 10px;
-    right: -10px;
-    filter: blur(15px);
-}
-
-.guide-card-gradient--teal::before {
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(circle, rgba(167, 139, 250, 0.4) 0%, transparent 60%);
-    border-radius: 50%;
-    bottom: 10px;
-    left: 10px;
-    filter: blur(12px);
-}
-
-.guide-card-gradient--orange {
-    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-    position: relative;
-}
-
-.guide-card-gradient--orange::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(251, 146, 60, 0.5) 0%, rgba(249, 115, 22, 0.2) 50%, transparent 70%);
-    border-radius: 50%;
-    bottom: -10px;
-    right: -10px;
-    filter: blur(18px);
-}
-
-.guide-card-gradient--orange::before {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle, rgba(52, 211, 153, 0.4) 0%, transparent 60%);
-    border-radius: 50%;
-    top: 20px;
-    left: 20px;
-    filter: blur(10px);
-}
-
-.guide-card-gradient--pink {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
-    position: relative;
-}
-
-.guide-card-gradient--pink::after {
-    content: '';
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    background: radial-gradient(circle, rgba(244, 114, 182, 0.5) 0%, transparent 60%);
-    border-radius: 50%;
-    top: -10px;
-    right: 10px;
-    filter: blur(15px);
+.guide-card-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    background: none !important;
 }
 
 .guide-card-content {
@@ -2232,7 +2142,7 @@ table tr:last-child td {
         flex-direction: column;
     }
 
-    .guide-card-gradient {
+    .guide-card-image {
         width: 100%;
         min-height: 80px;
     }
@@ -2491,4 +2401,31 @@ hr {
     border: none;
     border-top: 1px solid var(--qb-border);
     margin: 2.5rem 0;
+}
+
+/* Outseta Support Widget */
+.o--Widget--displayMode-light {
+    background-color: #ffffff !important;
+}
+
+.o--Button--btn {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+}
+
+/* ============================================
+   Documentation Screenshots
+   ============================================ */
+
+/* All doc images get rounded corners and subtle shadow */
+.markdown img {
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+    margin: 1rem 0;
+}
+
+/* Half-width utility for portrait/square screenshots */
+.img-half {
+    max-width: 50% !important;
+    display: block;
 }

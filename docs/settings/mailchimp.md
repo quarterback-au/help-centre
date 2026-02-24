@@ -1,12 +1,12 @@
 ---
 sidebar_position: 4
 title: Mailchimp Integration
-description: Connect Mailchimp to track email campaign performance alongside your other activities.
+description: Mailchimp integration for tracking email campaign performance alongside other activities.
 ---
 
 # Mailchimp Integration
 
-Track how your email campaigns perform alongside social, media, and market activity — connect Mailchimp to pull in campaign metrics automatically.
+See how email campaigns perform alongside social, media, and market activity. The Mailchimp integration pulls in campaign metrics automatically once connected during onboarding.
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
 
@@ -14,15 +14,14 @@ Track how your email campaigns perform alongside social, media, and market activ
 
 ---
 
-## Setup
+## Connection Details
 
-1. Navigate to <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
-2. Toggle <span className="ui-action">Mailchimp</span> on
-3. Enter your **API Key**
-   - Find in Mailchimp: Profile → Extras → API Keys
-4. Enter your **Audience ID**
-   - Find in Mailchimp: Audience → Manage → Settings → Unique Audience ID
-5. Click <span className="ui-action">Save</span>
+The Mailchimp integration requires two credentials, provided during onboarding:
+
+| Field | Where It Comes From |
+|-------|---------------------|
+| **API Key** | Mailchimp: Profile → Extras → API Keys |
+| **Audience ID** | Mailchimp: Audience → Manage → Settings → Unique Audience ID |
 
 ---
 

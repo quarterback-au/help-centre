@@ -8,7 +8,7 @@ description: Track every social post, news article, forum discussion, and announ
 
 Every conversation, article, and post about your company — tracked, scored, and connected to your share price.
 
-<!-- Screenshot: Full activities page showing date-grouped grid with sentiment indicators -->
+![Full activities page showing date-grouped grid with sentiment indicators](/img/docs/activities/full-activities-page.png)
 
 ---
 
@@ -149,7 +149,7 @@ Use the arrow buttons at the top of the panel to navigate between activities wit
 
 For a more detailed look at an activity and its surrounding conversation, click the expand icon to open the full expanded view.
 
-<!-- Screenshot: Expanded activity view showing full content with thread below -->
+<img src="/img/docs/activities/expanded-activity.png" alt="Expanded activity view" className="img-half" />
 
 The expanded view provides:
 
@@ -244,7 +244,7 @@ Open the filter panel and expand the <span className="ui-action">Flagged</span> 
 
 Quarterback automatically scores the sentiment of every activity on a scale from -1 (negative) to +1 (positive). If the AI gets it wrong, you can manually correct the score. Your corrections also help improve future sentiment analysis.
 
-<!-- Screenshot: Edit Sentiment dialog showing score slider and reason field -->
+<img src="/img/docs/activities/edit-sentiment.png" alt="Edit Sentiment dialog" className="img-half" />
 
 ### How to Edit Sentiment
 

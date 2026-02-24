@@ -8,7 +8,7 @@ description: Monitor share price activity, audience engagement, and market senti
 
 Your real-time command centre for tracking how your company is performing across the market, media, and social landscape — all in one place.
 
-<!-- Screenshot: Full dashboard view showing stats row, share price chart, announcements table, and sidebar -->
+![Full dashboard view showing stats row, share price chart, announcements table, and sidebar](/img/docs/dashboard/full-dashboard.png)
 
 ---
 
@@ -16,7 +16,7 @@ Your real-time command centre for tracking how your company is performing across
 
 Four cards across the top give you an at-a-glance snapshot of the selected period:
 
-<!-- Screenshot: Stats row showing the four stat cards -->
+![Stats row showing the four stat cards](/img/docs/dashboard/stats-row.png)
 
 | Card | What It Shows |
 |------|---------------|
@@ -31,16 +31,30 @@ Each card shows percentage change compared to the previous equivalent period whe
 
 ## Share Price vs Activity
 
-The main chart overlays your share price movement with activity volume, making it easy to spot correlations between what's being said and how the market is responding.
+The main chart overlays share price movement with activity volume, making it easy to spot correlations between what's being said and how the market is responding.
 
-<!-- Screenshot: Share price chart with activity bars and overlay controls visible -->
+![Share price chart with activity bars and overlay controls](/img/docs/dashboard/share-price-chart.png)
+
+### Controls
 
 | Control | Options |
 |---------|---------|
-| **Group by** | Source, Format, or Sentiment |
+| **Group by** | Source, Format, or Sentiment — changes how activity bars are colour-coded |
 | **Time range** | 1D, 1W, 1M, 3M, or custom date range via calendar |
-| **Overlays** | Volume, Sentiment, or Followers |
 | **Export** | Export chart data |
+
+### Overlays
+
+Toggle overlays on or off to layer additional data onto the chart:
+
+| Overlay | What It Shows |
+|---------|---------------|
+| **Volume** | Trading volume bars beneath the price line |
+| **Sentiment** | Sentiment trend line across the period |
+| **Followers** | Follower count trend across connected platforms |
+| **Indexes** | Benchmark index performance overlaid on the price chart for direct comparison |
+
+Multiple overlays can be active at the same time.
 
 Click any activity cluster on the chart to navigate directly to those activities.
 
@@ -50,7 +64,7 @@ Click any activity cluster on the chart to navigate directly to those activities
 
 A table of recent ASX announcements with market impact metrics, shown directly below the share price chart.
 
-<!-- Screenshot: Announcements table showing columns with AR and CAR values -->
+![Announcements table showing columns with AR and CAR values](/img/docs/dashboard/announcements-table.png)
 
 | Column | What It Shows |
 |--------|---------------|
@@ -76,7 +90,7 @@ The AR(0) and CAR columns help you quickly gauge whether the market reacted to a
 
 A scatter plot mapping how frequently each author posts against their average sentiment. Bubble size indicates post count — larger bubbles represent more active authors.
 
-<!-- Screenshot: Author scatter chart showing bubbles positioned by activity count and sentiment -->
+<img src="/img/docs/dashboard/author-scatter.png" alt="Author scatter chart" className="img-half" />
 
 Click any author bubble to open their profile panel with full activity history and sentiment breakdown.
 
@@ -86,7 +100,7 @@ Click any author bubble to open their profile panel with full activity history a
 
 Sentiment distribution across all platforms — showing the balance of positive, neutral, and negative sentiment by source (HotCopper, LinkedIn, Twitter/X, Reddit, etc.).
 
-<!-- Screenshot: Source sentiment chart showing per-platform sentiment breakdown -->
+<img src="/img/docs/dashboard/source-sentiment.png" alt="Source sentiment chart" className="img-half" />
 
 ---
 
@@ -98,7 +112,7 @@ The right-hand sidebar surfaces what needs your attention and provides quick act
 
 Dynamic alerts that appear when the platform detects something worth investigating:
 
-<!-- Screenshot: Sidebar alerts section showing extreme movement and leak detection alerts -->
+<img src="/img/docs/dashboard/sidebar-alerts.png" alt="Sidebar alerts" className="img-half" />
 
 | Alert | When It Appears |
 |-------|-----------------|
@@ -118,7 +132,7 @@ Quick-launch buttons for common tasks:
 
 An AI-generated summary of key trends and patterns from the selected period. It highlights notable activity patterns, sentiment shifts, and areas worth investigating. Click any **bold term** in the summary to search for related activities.
 
-<!-- Screenshot: AI Summary section showing generated market analysis -->
+<img src="/img/docs/dashboard/ai-summary.png" alt="AI Summary section" className="img-half" />
 
 ---
 
@@ -135,7 +149,7 @@ The date picker in the top-right header controls all dashboard data. Select from
 - [Activities](/features/activities) – View the underlying activity data
 - [Announcements](/features/announcements) – Explore announcements in detail
 - [Abnormal Returns & Correlation](/concepts/correlation) – How market metrics are calculated
-- [Market Settings](/settings/market-settings) – Configure your benchmark index and commodities
+- [Market Settings](/settings/market-settings) – Benchmark index and commodity configuration
 - [Reports](/features/reports) – Generate board and announcement reports
 
 </div>
