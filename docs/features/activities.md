@@ -42,7 +42,7 @@ Quarterback tracks 50+ sources across multiple categories:
 
 Activities display in a data grid, grouped by date. Each date group header shows the share price and trading volume for that day, helping you correlate activity with market movements.
 
-<!-- Screenshot: Activities grid with date group header showing share price and volume -->
+![Activities grid with date group header showing share price and volume](/img/docs/activities/activities-grid.png)
 
 ### Toolbar
 
@@ -89,7 +89,7 @@ Activities can be grouped by different dimensions using the sidebar panel:
 
 The sidebar panel provides filters to narrow your view. Click the settings icon in the toolbar to open it.
 
-<!-- Screenshot: Filter panel showing available filter options -->
+<img src="/img/docs/activities/filter-panel.png" alt="Filter panel showing available filter options" className="img-half" />
 
 | Filter | Options |
 |--------|---------|
@@ -117,7 +117,7 @@ Toggle the chart view using the chart icon in the toolbar to overlay your share 
 
 Click any activity to open the detail panel on the right side of the screen.
 
-<!-- Screenshot: Activity detail panel showing full content, engagement metrics, and sentiment -->
+<img src="/img/docs/activities/activity-detail-panel.png" alt="Activity detail panel" className="img-half" />
 
 The detail panel shows:
 
@@ -340,17 +340,9 @@ You can also link from the other direction — open an announcement and click <s
 
 ## Adding Manual Activities
 
-Add activities that aren't automatically captured — calls, meetings, presentations, or content from platforms not yet integrated.
+You can add activities that aren't automatically captured — calls, meetings, presentations, events, or content from platforms not yet integrated. Click <span className="ui-action">+ New Activity</span> in the toolbar to get started.
 
-<!-- Screenshot: Manual activity form showing source selection and fields -->
-
-1. Click <span className="ui-action">+ New Activity</span> in the toolbar
-2. Select the source type
-3. Fill in required fields (URL, title, content)
-4. Optionally add engagement metrics and sentiment
-5. Save
-
-All 50+ platforms plus internal event types (calls, meetings, presentations, events) are available as manual sources.
+See [Adding Activities](/features/adding-activities) for full details on each activity type and the fields available.
 
 ---
 
@@ -358,6 +350,7 @@ All 50+ platforms plus internal event types (calls, meetings, presentations, eve
 
 **Related**
 
+- [Adding Activities](/features/adding-activities) – Manually add calls, meetings, events, and social posts
 - [Announcements](/features/announcements) – View announcement-linked activities and CAR analysis
 - [People](/features/people) – See activity aggregated by author
 - [Market Sentiment](/concepts/market-sentiment) – How sentiment scoring works

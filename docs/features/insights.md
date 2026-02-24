@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 title: Insights
 description: AI-generated analysis that surfaces trends, patterns, and context across your data.
 ---
@@ -8,7 +8,7 @@ description: AI-generated analysis that surfaces trends, patterns, and context a
 
 AI-generated analysis that helps you make sense of what's happening — surfacing trends, patterns, and context you might otherwise miss.
 
-<!-- Screenshot: Dashboard sidebar showing AI summary with key trends highlighted -->
+<img src="/img/docs/insights/dashboard-ai-summary.png" alt="Dashboard sidebar showing AI summary with key trends highlighted" className="img-half" />
 
 ---
 
@@ -27,17 +27,24 @@ The AI Summary in the [Dashboard](/features/dashboard) sidebar analyses your sel
 
 Click any **bold term** in the summary to search for related activities.
 
-<!-- Screenshot: Dashboard sidebar AI summary close-up -->
-
 ### Announcement Panel
 
 When you open an announcement detail panel, an AI summary provides market reaction analysis:
+
+<img src="/img/docs/insights/announcement-ai-insights.png" alt="Announcement AI insights showing market reaction summary" className="img-half" />
 
 - Trading context (volume vs 20-day average, price movement relative to expectations)
 - Sentiment summary from linked activities
 - Key themes identified in discussion
 
-<!-- Screenshot: Announcement panel showing AI insights section -->
+### People Panel
+
+When you open an author detail panel on the [People](/features/people) page, an AI insights section generates a two-part analysis:
+
+- **Activity & sentiment analysis** — characterises the author, identifies sentiment patterns, and flags correlations with company events
+- **Demographic profile** — assesses communication style, investor profile, and experience level
+
+Requires a minimum of 3 activities from the author. See [People — AI Insights](/features/people#ai-insights) for details.
 
 ### Reports
 

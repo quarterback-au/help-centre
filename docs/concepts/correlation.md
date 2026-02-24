@@ -8,7 +8,7 @@ description: Understanding how your share price performs relative to expectation
 
 Understanding whether share price movements reflect company news or broader market conditions.
 
-<!-- Screenshot: Dashboard Stock vs Index chart showing company performance diverging from benchmark -->
+![Stock vs Benchmark chart showing company performance against index](/img/docs/concepts/stock-vs-benchmark.png)
 
 ---
 
@@ -68,7 +68,7 @@ $$
 
 Spike flags appear on day-to-day markers throughout the activities chart, making it easy to spot unusual trading days at a glance.
 
-<!-- Screenshot: Activities chart showing spike flag markers on unusual trading days -->
+<img src="/img/docs/concepts/spike-flags.png" alt="Activities chart showing spike flag markers on unusual trading days" className="img-half" />
 
 To view only activities from unusual trading days, open the filters panel on the Activities page and select <span className="ui-action">Unusual</span> or <span className="ui-action">Very Unusual</span> from the <span className="ui-reference">Market Activity</span> filter.
 
@@ -80,7 +80,7 @@ To view only activities from unusual trading days, open the filters panel on the
 
 See [Available Benchmarks](/features/benchmarking) for the full list of indices and commodities.
 
-<!-- Screenshot: Market settings benchmark configuration panel -->
+<img src="/img/docs/concepts/market-settings-benchmark.png" alt="Market settings benchmark configuration panel" className="img-half" />
 
 | Setting | Behaviour |
 |---------|-----------|
@@ -122,7 +122,7 @@ The platform calculates CAR across multiple windows to capture different aspects
 | **Post-announcement** | CAR(0,+10) | Announcement through 10 days after |
 | **Extended pre-window** | CAR(-5,-1) | 5 days before announcement |
 
-<!-- Screenshot: CAR event study chart from an announcement detail panel -->
+![CAR event study chart from an announcement detail panel](/img/docs/announcements/car-event-study.png)
 
 **Interpreting CAR:**
 
@@ -233,6 +233,6 @@ When your stock moves against its usual correlation with the benchmark, that's a
 - [Dashboard](/features/dashboard) – View AR and correlation metrics
 - [Announcements](/features/announcements) – See CAR for each announcement
 - [Market Settings](/settings/market-settings) – Configure your benchmark
-- [Alerts](/features/alerts) – Set up unusual day alerts
+- [Notifications](/features/alerts) – Set up unusual day alerts
 
 </div>

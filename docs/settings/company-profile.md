@@ -29,7 +29,7 @@ The company profile is the foundation of Quarterback — it powers reports, acti
 
 Official social accounts are linked during onboarding so Quarterback can distinguish company communications from third-party discussion.
 
-<!-- Screenshot: Social media handles section of company profile -->
+![Social media handles section of company profile](/img/docs/settings/social-media-handles.png)
 
 | Field | Description |
 |-------|-------------|

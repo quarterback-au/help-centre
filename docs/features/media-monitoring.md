@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 8
 title: Media Monitoring
 description: Track news coverage from publishers worldwide, ranked by influence and scored by sentiment.
 ---
@@ -8,15 +8,13 @@ description: Track news coverage from publishers worldwide, ranked by influence 
 
 Know when your company is in the news, who's writing about you, and whether the coverage is earned or paid.
 
-<!-- Screenshot: Full media monitoring page showing publisher grid with rankings and sentiment -->
+![Media monitoring page showing publisher grid with rankings and sentiment](/img/docs/media-monitoring/media-grid.png)
 
 ---
 
 ## Publisher View
 
 The media page aggregates articles by publisher, giving you a high-level view of your news coverage landscape.
-
-<!-- Screenshot: Publisher grid showing logos, rankings, and article counts -->
 
 | Column | Description |
 |--------|-------------|
@@ -58,14 +56,19 @@ The breakdown appears in both the grid and detail panels, making it easy to see 
 
 Click a publisher to open the split panel detail view showing all their articles and price impact analysis. Click an individual article for full details.
 
-<!-- Screenshot: Article detail panel showing title, summary, sentiment, and source link -->
+<img src="/img/docs/media-monitoring/article-detail.png" alt="Article detail panel showing title, sentiment, and highlighted mention" className="img-half" />
 
 The detail panel shows:
 
-- Article title and summary
-- Publication date and link to original source
-- Sentiment analysis
-- Author information (if available)
+- **Highlighted mention** — the section of the article where your company is mentioned is shown first, with the relevant passage highlighted
+- **Article title** and publication date
+- **Sentiment score** for the article
+- **Link to original source**
+- **Author information** (if available)
+
+To read the full article, click the **expand** icon to open the expanded view. This shows the complete article text rather than just the highlighted mention.
+
+![Expanded media article view showing full article content](/img/docs/media-monitoring/media-expanded.png)
 
 ---
 
@@ -94,7 +97,7 @@ Export publisher data to CSV using the <span className="ui-action">Export</span>
 **Related**
 
 - [Activities](/features/activities) – Media articles also appear as activities
-- [Alerts](/features/alerts) – Set up media activity alerts for instant notification
+- [Notifications](/features/alerts) – Set up media activity alerts for instant notification
 - [Reports](/features/reports) – Top media coverage appears in board reports
 
 </div>

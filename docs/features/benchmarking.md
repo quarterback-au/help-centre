@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 11
 title: Benchmarking
 description: Compare your share price performance against market indices and commodity prices.
 ---
@@ -12,7 +12,7 @@ Your benchmark drives abnormal return calculations, correlation analysis, and th
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Market</span> → <span className="ui-action">Benchmark Configuration</span>
 
-<!-- Screenshot: Benchmark configuration panel in market settings -->
+<img src="/img/docs/concepts/market-settings-benchmark.png" alt="Benchmark configuration panel in market settings" className="img-half" />
 
 ---
 
@@ -70,7 +70,7 @@ If your company operates across multiple sectors, choose the index that best rep
 
 Select up to three commodities relevant to your company. Featured commodities appear in the dashboard stats bar with live prices.
 
-<!-- Screenshot: Commodity selection panel showing priority ordering -->
+<img src="/img/docs/settings/commodities.png" alt="Commodity selection panel showing priority ordering" className="img-half" />
 
 ### Precious Metals
 

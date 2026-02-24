@@ -10,18 +10,42 @@ See how email campaigns perform alongside social, media, and market activity. Th
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
 
-<!-- Screenshot: Mailchimp integration settings showing API key and Audience ID fields -->
+![Mailchimp integration settings showing API key and Audience ID fields](/img/docs/settings/mailchimp-integration.png)
 
 ---
 
 ## Connection Details
 
-The Mailchimp integration requires two credentials, provided during onboarding:
+The Mailchimp integration requires two credentials. These are usually provided during onboarding, but you can update them at any time.
 
-| Field | Where It Comes From |
-|-------|---------------------|
-| **API Key** | Mailchimp: Profile → Extras → API Keys |
-| **Audience ID** | Mailchimp: Audience → Manage → Settings → Unique Audience ID |
+### Finding Your API Key
+
+1. Log in to [Mailchimp](https://mailchimp.com)
+2. Click your **profile icon** in the bottom-left corner
+3. Go to **Account & billing**
+4. Click **Extras** → **API keys**
+5. If you already have a key, copy it. Otherwise click <span className="ui-action">Create A Key</span>
+6. Copy the full API key (it looks like `abc123def456-us5`)
+
+:::info
+The suffix after the dash (e.g., `-us5`) indicates your Mailchimp data centre. The integration uses this to connect to the correct server automatically.
+:::
+
+### Finding Your Audience ID
+
+1. In Mailchimp, go to **Audience** → **All contacts**
+2. Click **Settings** in the top menu
+3. Select **Audience name and defaults**
+4. Scroll down to find your **Audience ID** (a string like `abc123def4`)
+
+Alternatively: **Audience** → **Manage Audience** → **Settings** → scroll to the **Unique Audience ID** field.
+
+### Connecting
+
+1. In Quarterback, navigate to <span className="ui-page">Settings</span> → <span className="ui-page">Integrations</span>
+2. Toggle **Mailchimp** on
+3. Paste your **API Key** and **Audience ID**
+4. Click <span className="ui-action">Save Changes</span>
 
 ---
 

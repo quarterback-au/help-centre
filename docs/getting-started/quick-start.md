@@ -29,7 +29,7 @@ The following settings are in place from onboarding:
 | **Social Monitoring** | Search queries that determine which social posts, news, and forums are tracked | [Social Accounts](/settings/social-accounts) |
 | **Integrations** | Connected services like Mailchimp for campaign analytics | [Integrations](/settings/social-media-integration) |
 
-<!-- Screenshot: Settings overview -->
+![Company settings page](/img/docs/settings/general-company-settings.png)
 
 ---
 
@@ -43,7 +43,7 @@ The [Dashboard](/features/dashboard) shows:
 - **Sentiment distribution** — Breakdown by platform
 - **AI summary** — Key trends and patterns
 
-<!-- Screenshot: Populated dashboard showing all sections -->
+![Populated dashboard showing all sections](/img/docs/dashboard/full-dashboard.png)
 
 ---
 
@@ -57,7 +57,7 @@ Alerts let Quarterback notify you when something happens. Navigate to <span clas
 | **Media Activity** | Never miss news coverage |
 | **Price Movement (5%)** | Alert on significant price moves |
 
-See [Alerts](/features/alerts) for all alert types and configuration options.
+See [Notifications](/features/alerts) for all alert types and configuration options.
 
 ---
 

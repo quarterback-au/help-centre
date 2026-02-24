@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 title: Reports
 description: Generate board-ready reports with market metrics, sentiment analysis, and activity breakdowns.
 ---
@@ -8,7 +8,7 @@ description: Generate board-ready reports with market metrics, sentiment analysi
 
 Turn your data into board-ready documents — comprehensive reports that combine market metrics, sentiment analysis, and activity breakdowns in a format stakeholders can act on.
 
-<!-- Screenshot: Reports page showing report type options -->
+![Reports page showing report type options](/img/docs/reports/reports-hub.png)
 
 ---
 
@@ -16,7 +16,7 @@ Turn your data into board-ready documents — comprehensive reports that combine
 
 A comprehensive multi-section report designed for board packs and stakeholder updates.
 
-<!-- Screenshot: Board report showing sections overview -->
+<img src="/img/docs/reports/board-report.png" alt="Board report showing sections overview" className="img-half" />
 
 ### Sections
 
@@ -65,7 +65,7 @@ Use your browser's print function (Ctrl/Cmd + P) to save as PDF.
 
 Track the performance of your communications across email and social media.
 
-<!-- Screenshot: Broadcast report showing campaign performance and follower trends -->
+<img src="/img/docs/reports/broadcast-report.png" alt="Broadcast report showing campaign performance and follower trends" className="img-half" />
 
 | Section | What It Shows |
 |---------|---------------|
@@ -82,14 +82,9 @@ The Broadcast Report requires a connected [Mailchimp integration](/settings/mail
 
 ## Announcement Reports
 
-Export announcement-specific reports directly from the [Announcements](/features/announcements) page:
+Generate detailed reports for individual or multiple announcements with market impact charts, AI analysis, sentiment breakdowns, and linked activity details. You can generate a report for a single announcement from its detail panel, or select multiple announcements from the [Announcements](/features/announcements) grid and use <span className="ui-action">Export</span> to choose which to include.
 
-1. Select announcements using checkboxes (or select all)
-2. Click <span className="ui-action">Export</span>
-3. Choose which announcements to include
-4. Report generates with market metrics, activity breakdown by category, sentiment analysis, and linked activities
-
-<!-- Screenshot: Announcement report showing market metrics and linked activities -->
+See [Announcement Reports](/features/announcement-reports) for full details.
 
 ---
 
@@ -97,8 +92,9 @@ Export announcement-specific reports directly from the [Announcements](/features
 
 **Related**
 
+- [Announcement Reports](/features/announcement-reports) – Detailed announcement reports with market impact and AI analysis
 - [Dashboard](/features/dashboard) – Real-time view of the metrics reports summarise
-- [Announcements](/features/announcements) – Export announcement-specific reports
+- [Announcements](/features/announcements) – The announcements grid where reports are generated
 - [Insights](/features/insights) – AI summaries included in reports
 - [Mailchimp](/settings/mailchimp) – Connect Mailchimp for broadcast report data
 

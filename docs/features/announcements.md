@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Announcements
 description: Track ASX announcements, measure market impact, and understand what drives share price reaction.
 ---
@@ -8,7 +8,7 @@ description: Track ASX announcements, measure market impact, and understand what
 
 See how the market reacts to your ASX announcements — from same-day price impact to sustained sentiment over the following days.
 
-<!-- Screenshot: Full announcements grid showing columns, price-sensitive badges, and CAR values -->
+![Full announcements grid showing columns, price-sensitive badges, and CAR values](/img/docs/announcements/full-announcements-grid.png)
 
 ---
 
@@ -52,7 +52,7 @@ Announcements marked with **$** are flagged by the ASX as material information l
 
 Click any announcement to open the detail panel. The panel contains collapsible sections:
 
-<!-- Screenshot: Announcement detail panel showing market section, CAR chart, and activity breakdown -->
+<img src="/img/docs/announcements/announcement-detail-panel.png" alt="Announcement detail panel" className="img-half" />
 
 ### Share Price
 
@@ -76,7 +76,7 @@ Multiple CAR windows showing different aspects of market reaction:
 
 CAR chart showing 10 days before and after the announcement, visualising how abnormal returns accumulated over the event window.
 
-<!-- Screenshot: CAR event study chart showing pre and post announcement window -->
+![CAR event study chart showing pre and post announcement window](/img/docs/announcements/car-event-study.png)
 
 ### AI Summary
 
@@ -98,7 +98,7 @@ Activities can also be viewed grouped by **Relationship** (Related, Broadcast, C
 
 Visual sentiment distribution showing positive, neutral, and negative breakdown with average score across all linked activities.
 
-<!-- Screenshot: Sentiment breakdown section in announcement detail panel -->
+![Sentiment breakdown section in announcement detail panel](/img/docs/announcements/sentiment-breakdown.png)
 
 ### High Engagement & Compliance Badges
 
@@ -123,6 +123,14 @@ Compare CAR across announcements of the same category to understand which types 
 
 ---
 
+## Expanded Announcement View
+
+Click the expand icon on any announcement to open the full expanded view, showing all detail sections in a wider layout.
+
+![Expanded announcement detail panel](/img/docs/announcements/announcement-expanded.png)
+
+---
+
 ## Linking Activities
 
 Connect activities to announcements to build the full picture of market reaction.
@@ -132,22 +140,17 @@ Connect activities to announcements to build the full picture of market reaction
 3. Search and select activities from other days
 4. Linked activities appear in the breakdown and contribute to the announcement's sentiment average
 
-<!-- Screenshot: Link Activities dialog with search results -->
+<img src="/img/docs/announcements/link-activities-dialog.png" alt="Link Activities dialog with search results" className="img-half" />
 
 ---
 
-## Exporting Reports
+## Generating Reports
 
-Generate reports from announcements:
+Select announcements using the checkboxes in the grid, then click <span className="ui-action">Export</span> in the toolbar to generate an announcement report with market metrics, activity breakdown, sentiment analysis, and linked activity details.
 
-1. Select announcements using checkboxes (or select all)
-2. Click <span className="ui-action">Export</span> in the toolbar
-3. Choose announcements to include
-4. Report generates with market metrics, activity breakdown, sentiment analysis, and linked activity details
+See [Announcement Reports](/features/announcement-reports) for full details on the report contents and options.
 
 You can also export the grid data as CSV for offline analysis.
-
-<!-- Screenshot: Export dialog or sample report preview -->
 
 ---
 
@@ -157,7 +160,8 @@ You can also export the grid data as CSV for offline analysis.
 
 - [Abnormal Returns & Correlation](/concepts/correlation) – How AR and CAR are calculated
 - [Key Concepts](/concepts/key-concepts) – Linked activity relationships and announcement categorisation
-- [Reports](/features/reports) – Generate board and monthly reports
+- [Announcement Reports](/features/announcement-reports) – Generate reports from selected announcements
+- [Reports](/features/reports) – Board reports and other report types
 - [Market Sentiment](/concepts/market-sentiment) – How sentiment scoring works
 
 </div>

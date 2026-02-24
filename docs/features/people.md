@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 9
 title: People
 description: See who's talking about your company, how often, and what impact they have.
 ---
@@ -8,7 +8,7 @@ description: See who's talking about your company, how often, and what impact th
 
 Understand who's driving the conversation about your company — from frequent forum posters to high-reach media voices.
 
-<!-- Screenshot: Full people grid showing author rows with badges, sentiment, and price impact -->
+![People grid showing author rows with badges, sentiment, and price impact](/img/docs/people/people-grid.png)
 
 ---
 
@@ -65,7 +65,7 @@ Badges surface authors who stand out from the crowd.
 
 Click any author to open their detail panel.
 
-<!-- Screenshot: Author detail panel showing profile, activity list, sentiment distribution, and notes -->
+<img src="/img/docs/people/author-detail-panel.png" alt="Author detail panel showing profile, activity list, sentiment distribution, and notes" className="img-half" />
 
 The detail panel shows:
 
@@ -74,6 +74,17 @@ The detail panel shows:
 - **Sentiment distribution** across their posts
 - **Notes** — organisation-specific notes your team can add
 - **Edit form** for updating author information
+
+---
+
+## AI Insights
+
+The author detail panel includes an AI-generated insights section that analyses the person's posting history in the context of your company events. The AI generates two key assessments:
+
+- **Activity & sentiment analysis** — characterises the author (supporter, critic, neutral observer), identifies sentiment patterns over time, and flags correlations with company events like announcements or price movements
+- **Demographic profile** — assesses communication style, investor profile (day-trader, long-term holder, institutional), and experience level based on their posting patterns
+
+AI insights require a minimum of 3 activities from the author to generate. You can regenerate insights at any time to get an updated analysis based on the latest data.
 
 ---
 
@@ -93,6 +104,6 @@ An author with high activity count, strong negative sentiment, and notable price
 
 - [Activities](/features/activities) – View individual activities from any author
 - [Market Sentiment](/concepts/market-sentiment) – How sentiment scores are calculated
-- [Alerts](/features/alerts) – Get notified about sentiment shifts
+- [Notifications](/features/alerts) – Get notified about sentiment shifts
 
 </div>

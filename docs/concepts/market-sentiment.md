@@ -27,7 +27,7 @@ Each activity receives a sentiment score from -1 to +1, calculated using machine
 | **-0.3 to -0.1** | Lacking | Slightly negative, cautious tone |
 | **< -0.3** | Negative | Unfavourable tone, bearish language |
 
-<!-- Screenshot: Activity detail panel showing sentiment score and colour indicator -->
+<img src="/img/docs/concepts/sentiment-score-detail.png" alt="Activity detail panel showing sentiment score and colour indicator" className="img-half" />
 
 ---
 
@@ -57,7 +57,7 @@ Different platforms tend toward different sentiment distributions:
 
 The [Dashboard](/features/dashboard) sentiment by source chart helps you identify platform-specific patterns at a glance.
 
-<!-- Screenshot: Dashboard sentiment distribution bars showing per-source breakdown -->
+<img src="/img/docs/concepts/sentiment-distribution.png" alt="Dashboard sentiment distribution bars showing per-source breakdown" className="img-half" />
 
 ---
 
@@ -101,7 +101,7 @@ Don't just look at the average — look at the distribution. A neutral average c
 - [Activities](/features/activities) – Filter activities by sentiment
 - [People](/features/people) – Author-level sentiment analysis
 - [Announcements](/features/announcements) – Announcement sentiment from linked activities
-- [Alerts](/features/alerts) – Set up sentiment-triggered alerts
+- [Notifications](/features/alerts) – Set up sentiment-triggered alerts
 - [Dashboard](/features/dashboard) – Sentiment distribution charts
 
 </div>

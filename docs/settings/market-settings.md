@@ -10,7 +10,7 @@ The benchmark reflects how investors think about the company — it drives abnor
 
 <span className="ui-page">Settings</span> → <span className="ui-page">Market</span>
 
-<!-- Screenshot: Market settings page showing benchmark and commodity configuration -->
+<img src="/img/docs/concepts/market-settings-benchmark.png" alt="Market settings page showing benchmark and commodity configuration" className="img-half" />
 
 ---
 
@@ -26,7 +26,7 @@ The benchmark index is chosen based on sector and investor context:
 
 The benchmark appears in the Stock vs Benchmark chart and factors into [abnormal return calculations](/concepts/correlation#abnormal-returns-ar). See [Available Benchmarks](/features/benchmarking) for the complete list.
 
-<!-- Screenshot: Benchmark index dropdown showing available options -->
+<img src="/img/docs/settings/benchmark-dropdown.png" alt="Benchmark index dropdown showing available options" className="img-half" />
 
 ---
 
@@ -36,7 +36,7 @@ Commodity tracking is enabled for resource-focused companies. Up to 3 commoditie
 
 The primary commodity is used as the default in correlation analysis. Selected commodities show numbered badges (1, 2, 3) indicating their priority order, with the primary highlighted in purple.
 
-<!-- Screenshot: Commodity selection panel with priority ordering -->
+<img src="/img/docs/settings/commodities.png" alt="Commodity selection panel with priority ordering" className="img-half" />
 
 For example, a gold miner would have Gold as priority 1. A battery materials producer might have Lithium or Cobalt.
 

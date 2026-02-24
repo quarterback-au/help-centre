@@ -71,7 +71,7 @@ Activities are categorised by format:
 
 When an announcement is released, the platform automatically detects which activities are related to it. This creates a complete picture of market reaction beyond just share price.
 
-<!-- Screenshot: Announcement detail panel showing linked activities grouped by category -->
+![Announcement detail panel showing linked activities grouped by category](/img/docs/concepts/linked-activities-by-category.png)
 
 ---
 
