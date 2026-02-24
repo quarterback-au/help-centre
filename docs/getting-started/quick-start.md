@@ -47,9 +47,9 @@ The [Dashboard](/features/dashboard) shows:
 
 ---
 
-## 4. Set Up Alerts
+## 4. Set Up Notifications
 
-Alerts let Quarterback notify you when something happens. Navigate to <span className="ui-page">Alerts</span> to see available alert types:
+Notifications let Quarterback alert you when something happens. Navigate to <span className="ui-page">Notifications</span> to see available alert types:
 
 | Recommended Alert | Why |
 |-------------------|-----|
@@ -57,7 +57,7 @@ Alerts let Quarterback notify you when something happens. Navigate to <span clas
 | **Media Activity** | Never miss news coverage |
 | **Price Movement (5%)** | Alert on significant price moves |
 
-See [Notifications](/features/alerts) for all alert types and configuration options.
+See [Notifications](/features/alerts) for all notification types and configuration options.
 
 ---
 

@@ -33,7 +33,9 @@ const sidebars: SidebarsConfig = {
             items: [
                 'features/dashboard',
                 'features/activities',
+                'features/adding-activities',
                 'features/announcements',
+                'features/announcement-reports',
                 'features/alerts',
                 'features/insights',
                 'features/media-monitoring',

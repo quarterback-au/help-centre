@@ -43,24 +43,6 @@ The board report includes up to 8 sections:
 
 ---
 
-## Monthly Report
-
-Interactive web-based report with full detail, designed for month-by-month review.
-
-<!-- Screenshot: Monthly report view showing metrics and charts -->
-
-- **Month selector** for reviewing historical months
-- Key metrics with month-over-month comparison
-- Share price vs activities visualisation
-- Top 6 price-sensitive announcements with AR metrics
-- Top media coverage
-- Top authors
-- AI-generated overview section
-
-Use your browser's print function (Ctrl/Cmd + P) to save as PDF.
-
----
-
 ## Broadcast Report
 
 Track the performance of your communications across email and social media.
