@@ -21,11 +21,11 @@ The Mailchimp integration requires two credentials. These are usually provided d
 ### Finding Your API Key
 
 1. Log in to [Mailchimp](https://mailchimp.com)
-2. Click your **profile icon** in the bottom-left corner
-3. Go to **Account & billing**
-4. Click **Extras** → **API keys**
-5. If you already have a key, copy it. Otherwise click <span className="ui-action">Create A Key</span>
-6. Copy the full API key (it looks like `abc123def456-us5`)
+2. Navigate to **Account & billing** → **Extras** → **API keys**
+3. If you already have a key, copy it. Otherwise click <span className="ui-action">Create A Key</span>
+4. Copy the full API key (it looks like `abc123def456-us5`)
+
+![Mailchimp API keys page showing where to create and copy your key](/img/docs/settings/mailchimp-api-keys.png)
 
 :::info
 The suffix after the dash (e.g., `-us5`) indicates your Mailchimp data centre. The integration uses this to connect to the correct server automatically.
@@ -33,12 +33,15 @@ The suffix after the dash (e.g., `-us5`) indicates your Mailchimp data centre. T
 
 ### Finding Your Audience ID
 
-1. In Mailchimp, go to **Audience** → **All contacts**
-2. Click **Settings** in the top menu
-3. Select **Audience name and defaults**
-4. Scroll down to find your **Audience ID** (a string like `abc123def4`)
+1. In Mailchimp, go to **Audience**
+2. Use the dropdown to navigate to your contact list
+3. Click the **three dots** menu → **Audience settings**
 
-Alternatively: **Audience** → **Manage Audience** → **Settings** → scroll to the **Unique Audience ID** field.
+<img src="/img/docs/settings/mailchimp-audience-settings.png" alt="Mailchimp audience dropdown showing the three dots menu and Audience settings option" className="img-half" />
+
+4. Find your **Audience ID** on the settings page
+
+![Mailchimp audience settings page showing the Audience ID field](/img/docs/settings/mailchimp-audience-id.png)
 
 ### Connecting
 
