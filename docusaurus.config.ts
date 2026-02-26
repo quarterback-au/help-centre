@@ -28,13 +28,7 @@ const config: Config = {
         locales: ['en']
     },
 
-    // Netlify Identity widget for CMS authentication
-    scripts: [
-        {
-            src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
-            async: true
-        }
-    ],
+    scripts: [],
 
     // KaTeX CSS for math rendering
     stylesheets: [
@@ -66,9 +60,7 @@ const config: Config = {
         }
     ],
 
-    // Handle Netlify Identity redirects and sidebar customization
     clientModules: [
-        require.resolve('./src/netlifyIdentityRedirect.js'),
         require.resolve('./src/sidebarCustomization.js')
     ],
 
