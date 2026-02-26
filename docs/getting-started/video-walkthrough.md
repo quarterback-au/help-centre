@@ -6,7 +6,7 @@ description: Watch a guided tour of the Quarterback platform.
 
 # Video Walkthrough
 
-A quick overview of the Quarterback platform and what it can do.
+Video guides covering the Quarterback platform and key features.
 
 ---
 
@@ -15,6 +15,14 @@ A quick overview of the Quarterback platform and what it can do.
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/aCtnQKmtffE" title="Quarterback Platform Overview" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 A 4-minute overview of the platform — dashboard, activities, announcements, media monitoring, people, reports, and insights.
+
+---
+
+## Market Benchmarking
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/wcON86HML7Y" title="Quarterback Market Benchmarking" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+How benchmarking works across the platform — from configuring your index and commodities, to correlation analysis, abnormal returns, and compliance tools. Set it once, and it flows through everything automatically.
 
 ---
 
