@@ -40,7 +40,7 @@ Quarterback automatically pulls in every ASX announcement for your company and e
 1. Navigate to <span className="ui-page">Announcements</span> in the sidebar
 2. The grid shows price-sensitive announcements by default — toggle to show all
 3. Click any announcement to open the detail panel and explore market reaction, linked activities, and AI analysis
-4. Select announcements and click <span className="ui-action">Export</span> to generate a report
+4. Select announcements and click <span className="ui-action">Print Report</span> to generate a report
 
 :::tip
 Compare CAR values across announcements of the same category to understand which types of disclosure drive sustained market impact versus temporary spikes.

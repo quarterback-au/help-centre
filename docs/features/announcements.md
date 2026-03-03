@@ -40,7 +40,7 @@ Announcements display in a data grid with powerful filtering and sorting.
 | **Chart toggle** | Show or hide the share price chart |
 | **Filters** | Open the sidebar filter panel |
 | **Reset Layout** | Restore default column layout |
-| **Export** | Export announcements to CSV or generate a report |
+| **Print Report** | Generate a report from selected announcements |
 
 ### Price-Sensitive Announcements
 
@@ -148,7 +148,7 @@ Connect activities to announcements to build the full picture of market reaction
 
 ## Generating Reports
 
-Select announcements using the checkboxes in the grid, then click <span className="ui-action">Export</span> in the toolbar to generate an announcement report with market metrics, activity breakdown, sentiment analysis, and linked activity details.
+Select announcements using the checkboxes in the grid, then click <span className="ui-action">Print Report</span> in the toolbar to generate an announcement report with market metrics, activity breakdown, sentiment analysis, and linked activity details.
 
 See [Announcement Reports](/features/announcement-reports) for full details on the report contents and options.
 
