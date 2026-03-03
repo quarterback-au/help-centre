@@ -8,6 +8,8 @@ description: Track ASX announcements, measure market impact, and understand what
 
 See how the market reacts to your ASX announcements — from same-day price impact to sustained sentiment over the following days.
 
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/uRsBOgRt7zc" title="Tracking Announcements" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
 ![Full announcements grid showing columns, price-sensitive badges, and CAR values](/img/docs/announcements/full-announcements-grid.png)
 
 ---

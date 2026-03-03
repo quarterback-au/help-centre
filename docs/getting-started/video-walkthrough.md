@@ -18,6 +18,14 @@ A 4-minute overview of the platform — dashboard, activities, announcements, me
 
 ---
 
+## Tracking Announcements
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/uRsBOgRt7zc" title="Tracking Announcements" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+See how the platform tracks ASX announcements, measures market impact, and helps you understand what drives share price reaction.
+
+---
+
 ## Market Benchmarking
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/wcON86HML7Y" title="Quarterback Market Benchmarking" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -1,60 +1,47 @@
 ---
 sidebar_position: 3
 title: Tracking Announcements
-description: Monitor ASX announcements and their market impact.
+description: Learn how to track ASX announcements, measure market impact, and generate reports in Quarterback.
 ---
 
 # Tracking Announcements
 
-Monitor ASX announcements and their market impact.
+Understand how the market reacts to your ASX announcements — from same-day price impact to sustained sentiment over the days that follow.
 
-## View Announcements
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/uRsBOgRt7zc" title="Tracking Announcements" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-### 1. Navigate to Announcements
+---
 
-Click "Announcements" in the sidebar.
+## What You Can Do
 
-### 2. Set Date Range
+Quarterback automatically pulls in every ASX announcement for your company and enriches it with market data, linked activities, and AI-generated analysis.
 
-Select the period to review.
+- **See the market reaction** — abnormal returns on announcement day and over the following 10 trading days
+- **Understand the conversation** — media coverage, social discussion, and your own broadcasts linked to each announcement
+- **Measure sentiment** — aggregate sentiment scoring across all linked activities
+- **Detect information leakage** — pre-announcement trading pattern analysis flags potential leaks
+- **Generate reports** — export announcement data for board packs and compliance records
 
-### 3. Filter as Needed
+---
 
-Default shows price-sensitive only. Toggle to show all announcements.
+## Explore the Details
 
-## Analyze an Announcement
+| Page | What It Covers |
+|------|---------------|
+| [Announcements](/features/announcements) | The full announcements grid, detail panel, leak detection, linking activities, and filtering |
+| [Announcement Reports](/features/announcement-reports) | Generating and configuring announcement reports for board packs and compliance |
+| [Abnormal Returns & Correlation](/concepts/correlation) | How AR and CAR values are calculated and what they mean |
+| [Market Sentiment](/concepts/market-sentiment) | How sentiment scoring works across linked activities |
 
-### 1. Click an Announcement
+---
 
-Opens the detail panel.
+## Quick Start
 
-### 2. Review Market Reaction
+1. Navigate to <span className="ui-page">Announcements</span> in the sidebar
+2. The grid shows price-sensitive announcements by default — toggle to show all
+3. Click any announcement to open the detail panel and explore market reaction, linked activities, and AI analysis
+4. Select announcements and click <span className="ui-action">Export</span> to generate a report
 
-- Check AR(0) for same-day impact
-- Review CAR(3d) and CAR(10d) for sustained reaction
-- Compare performance vs index
-
-### 3. View Linked Activities
-
-See how the announcement drove conversation:
-
-- Own distribution (your broadcasts)
-- Media pickup (news coverage)
-- Community discussion (social/forum)
-
-### 4. Check Sentiment
-
-Review overall sentiment and distribution across linked activities.
-
-## Link Additional Activities
-
-If relevant activities aren't automatically linked:
-
-1. Click "Link Activities" in the announcement panel
-2. Search for activities from other days
-3. Select activities to link
-4. Linked activities appear in the breakdown and contribute to sentiment average
-
-## Export for Records
-
-Select announcements and export as HTML report for compliance records or board packs.
+:::tip
+Compare CAR values across announcements of the same category to understand which types of disclosure drive sustained market impact versus temporary spikes.
+:::
