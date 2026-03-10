@@ -1,47 +1,76 @@
 ---
 sidebar_position: 1
 title: Your First Report
-description: Generate a board report to summarize activity for a period.
+description: Step-by-step guide to generating a board-ready report with market metrics, sentiment analysis, and activity breakdowns.
 ---
 
 # Your First Report
 
-Generate a board report to summarize activity for a period.
+Reports turn your activity and market data into board-ready documents — combining share price performance, sentiment analysis, and AI-generated insights into a single PDF you can share with stakeholders.
 
-## Steps
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/f41WRyQ1XvQ" title="Quarterback Reports Walkthrough" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
-### 1. Navigate to Reports
+---
 
-Click "Reports" in the sidebar.
+## What You'll Need
 
-### 2. Set Date Range
+Before generating your first report, make sure:
 
-Select the period to cover using the date picker. Default is past 2 months.
+- Your [company profile](/settings/company-profile) is configured with an ASX code
+- You have at least a few weeks of tracked [activities](/features/activities) for meaningful data
+- Optional: A connected [Mailchimp integration](/settings/mailchimp) for broadcast metrics
 
-### 3. Wait for Data
+---
 
-The system loads activities, market data, and generates AI insights. A loading spinner indicates progress.
+## Generating a Board Report
 
-### 4. Download PDF
+1. Navigate to <span className="ui-page">Reports</span> in the sidebar
+2. Select <span className="ui-action">Board Report</span>
+3. Set the date range using the date picker — default is the past 2 months
+4. Wait for data to load — the system pulls activities, market data, and generates AI insights
+5. Review the report sections and edit the **Notes** field if needed
+6. Click <span className="ui-action">Download</span> to save as PDF
 
-Click the download button. The 2-page PDF includes:
+<!-- Screenshot: Board report generation page with date picker and download button -->
 
-- AI-generated overview
-- Share price vs activities chart
-- Key metrics comparison
-- Sentiment breakdown
-- Top authors and media
-- Announcement impact analysis
+---
 
-### 5. Review and Share
+## What's in the Report
 
-Open the PDF to review. Share with your board or stakeholders.
+The board report generates a multi-section PDF covering:
 
-## Monthly Reports
+| Section | What It Contains |
+|---------|-----------------|
+| **Summary** | AI-generated executive summary, key metrics, and editable notes |
+| **Activities & Share Price** | Quick stats and share price vs activity chart for the period |
+| **Announcement Performance** | Price-sensitive announcements, impact timeline, and CAR by category |
+| **Sentiment** | Sentiment by source and sentiment vs share price chart |
+| **Media Coverage** | Article count, media timeline, and source concentration |
+| **People** | Author influence analysis and scatter chart |
+| **Broadcasts** | Events vs price, campaign performance, and email analytics |
+| **Market Intelligence** | Z-score analysis, spike timeline, returns scatter, and drawdown charts |
 
-For month-specific reports:
+---
 
-1. Navigate to Reports > Monthly
-2. Select the month from the dropdown
-3. Review the interactive report
-4. Use browser print (Ctrl/Cmd + P) to save as PDF
+## Tips for Better Reports
+
+:::tip
+Set a date range that covers a meaningful period of activity. Short ranges (under a week) may not have enough data for useful AI insights or trend charts.
+:::
+
+- **Edit the Notes section** before downloading to add board-specific context or commentary
+- **Run reports after market close** for the most up-to-date share price data
+- **Use consistent date ranges** (e.g. quarterly) to make reports comparable over time
+
+---
+
+<div className="related-links">
+
+**Related**
+
+- [Reports](/features/reports) – Full overview of all report types including broadcast and announcement reports
+- [Announcement Reports](/features/announcement-reports) – Generate detailed reports for individual announcements
+- [Dashboard](/features/dashboard) – Real-time view of the metrics that reports summarise
+- [Insights](/features/insights) – How AI-generated summaries are created
+
+</div>

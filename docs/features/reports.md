@@ -8,6 +8,8 @@ description: Generate board-ready reports with market metrics, sentiment analysi
 
 Turn your data into board-ready documents — comprehensive reports that combine market metrics, sentiment analysis, and activity breakdowns in a format stakeholders can act on.
 
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/f41WRyQ1XvQ" title="Quarterback Reports Walkthrough" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
 ![Reports page showing report type options](/img/docs/reports/reports-hub.png)
 
 ---

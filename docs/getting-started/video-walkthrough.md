@@ -34,4 +34,12 @@ How benchmarking works across the platform — from configuring your index and c
 
 ---
 
+## Reports
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/f41WRyQ1XvQ" title="Quarterback Reports Walkthrough" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+How to generate board-ready reports — setting date ranges, reviewing AI-generated insights, and downloading PDFs to share with stakeholders.
+
+---
+
 **Need help?** Contact us at [support@qback.au](mailto:support@qback.au)
