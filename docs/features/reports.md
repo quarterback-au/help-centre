@@ -22,7 +22,7 @@ A comprehensive multi-section report designed for board packs and stakeholder up
 
 ### Sections
 
-The board report includes up to 8 sections:
+The board report includes up to 9 sections:
 
 | Section | What It Contains |
 |---------|-----------------|
@@ -31,17 +31,18 @@ The board report includes up to 8 sections:
 | **Announcement Performance** | Price-sensitive announcements, impact timeline, and CAR by category |
 | **Sentiment** | Sentiment by source and sentiment vs share price chart |
 | **Media Coverage** | Article count, media timeline, and source concentration |
-| **People** | Author influence analysis and scatter chart |
+| **People** | Author influence analysis, scatter chart, and [flagged people](/features/people) |
 | **Broadcasts** | Events vs price, campaign performance, and email analytics (if Mailchimp connected) |
+| **Flagged Activities** | Activities [flagged](/features/activities#flagging-activities) by your team for follow-up or attention |
 | **Market Intelligence** | Z-score analysis, spike timeline, returns scatter, and drawdown charts |
 
 ### Generating a Board Report
 
 1. Navigate to <span className="ui-page">Reports</span> → <span className="ui-page">Board Report</span>
 2. Set the date range using the date picker
-3. Wait for data to load — the system pulls activities, market data, and generates AI insights
+3. Click <span className="ui-action">Generate Report</span> — this takes a moment as the system pulls activities, market data, and generates AI insights
 4. Review and edit the Notes section if needed
-5. Click <span className="ui-action">Download</span> to save as PDF
+5. Click <span className="ui-action">Download PDF</span> to save
 
 ---
 
@@ -66,7 +67,7 @@ The Broadcast Report requires a connected [Mailchimp integration](/settings/mail
 
 ## Announcement Reports
 
-Generate detailed reports for individual or multiple announcements with market impact charts, AI analysis, sentiment breakdowns, and linked activity details. You can generate a report for a single announcement from its detail panel, or select multiple announcements from the [Announcements](/features/announcements) grid and use <span className="ui-action">Export</span> to choose which to include.
+Generate detailed reports for individual or multiple announcements with market impact charts, AI analysis, sentiment breakdowns, and linked activity details. Select announcements from the [Announcements](/features/announcements) grid, click <span className="ui-action">Generate Report</span>, and the report opens in a new tab.
 
 See [Announcement Reports](/features/announcement-reports) for full details.
 
@@ -80,6 +81,7 @@ See [Announcement Reports](/features/announcement-reports) for full details.
 - [Dashboard](/features/dashboard) – Real-time view of the metrics reports summarise
 - [Announcements](/features/announcements) – The announcements grid where reports are generated
 - [Insights](/features/insights) – AI summaries included in reports
+- [Flagging Activities](/features/activities#flagging-activities) – How to flag activities for inclusion in board reports
 - [Mailchimp](/settings/mailchimp) – Connect Mailchimp for broadcast report data
 
 </div>

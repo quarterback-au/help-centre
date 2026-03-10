@@ -43,6 +43,7 @@ The sidebar panel provides filters to narrow your view:
 | **Source** | Filter by platform (HotCopper, Twitter, LinkedIn, etc.) |
 | **Frequency** | Frequent authors vs Occasional |
 | **Reach** | High Reach vs Standard |
+| **Flagged** | Show only flagged people |
 | **Stock Disclosure** | Disclosed vs None |
 
 The sidebar also includes column visibility toggles and column reordering.
@@ -88,6 +89,28 @@ AI insights require a minimum of 3 activities from the author to generate. You c
 
 ---
 
+## Flagging People
+
+Flag authors to mark them for attention, track key individuals, or highlight people your team should monitor. Flagged people are indicated with a flag badge in the grid, can be filtered using the <span className="ui-action">Flagged</span> filter, and automatically appear in the **People** section of your [Board Report](/features/reports#board-report).
+
+![Flagged author in the people grid](/img/docs/people/flagged-author.png)
+
+### How to Flag
+
+- Open the author detail panel by clicking on a person
+- Click the flag icon to toggle the flag on or off
+- Flags are visible to all users on your company account
+
+### Filtering by Flagged
+
+Add <span className="ui-action">Flagged</span> to your filters to show only flagged people. This is useful for:
+
+- Monitoring key authors who regularly post about your company
+- Building a watchlist of high-impact or high-risk individuals
+- Reviewing who will appear in the People section of your next board report
+
+---
+
 ## Price Impact
 
 The **Average ▲** column shows the average share price change on days when the author posted. This helps identify authors whose activity correlates with price movements — whether causal or coincidental.
@@ -105,5 +128,6 @@ An author with high activity count, strong negative sentiment, and notable price
 - [Activities](/features/activities) – View individual activities from any author
 - [Market Sentiment](/concepts/market-sentiment) – How sentiment scores are calculated
 - [Notifications](/features/alerts) – Get notified about sentiment shifts
+- [Reports](/features/reports) – Flagged people appear in the board report People section
 
 </div>

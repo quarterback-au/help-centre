@@ -222,7 +222,7 @@ A selection badge in the toolbar shows how many activities are currently selecte
 
 ## Flagging Activities
 
-Flag activities to mark them for follow-up, highlight them for your team, or track items that need attention. Flagged activities are visually marked in the grid and can be filtered to create a focused review list.
+Flag activities to mark them for follow-up, highlight them for your team, or track items that need attention. Flagged activities are visually marked in the grid, can be filtered using the <span className="ui-action">Flagged</span> filter, and automatically appear in the **Flagged Activities** section of your [Board Report](/features/reports#board-report).
 
 ### How to Flag
 
@@ -236,7 +236,7 @@ Open the filter panel and expand the <span className="ui-action">Flagged</span> 
 
 - Building a shortlist of activities to discuss in a team meeting
 - Tracking items that need a response or follow-up
-- Marking activities for inclusion in a board report
+- Reviewing what will appear in the Flagged Activities section of your next board report
 
 ---
 
@@ -276,7 +276,7 @@ Archive activities to remove them from your default view without permanently del
 Open the filter panel and expand the <span className="ui-action">Archived</span> filter to include archived activities in the grid. This lets you review or restore items you previously archived.
 
 :::info
-Archiving does not delete data. Archived activities still contribute to historical analytics, sentiment trends, and reports. Archiving only affects whether the activity appears in the default grid view.
+Archiving does not delete data. Archived activities do not contribute to historical analytics or sentiment trend reports. They can be unarchived at any time to restore them to the default grid view.
 :::
 
 ---

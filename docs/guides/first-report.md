@@ -27,9 +27,9 @@ Before generating your first report, make sure:
 1. Navigate to <span className="ui-page">Reports</span> in the sidebar
 2. Select <span className="ui-action">Board Report</span>
 3. Set the date range using the date picker — default is the past 2 months
-4. Wait for data to load — the system pulls activities, market data, and generates AI insights
+4. Click <span className="ui-action">Generate Report</span> — this takes a moment as the system pulls activities, market data, and generates AI insights
 5. Review the report sections and edit the **Notes** field if needed
-6. Click <span className="ui-action">Download</span> to save as PDF
+6. Click <span className="ui-action">Download PDF</span> to save
 
 <!-- Screenshot: Board report generation page with date picker and download button -->
 
@@ -46,8 +46,9 @@ The board report generates a multi-section PDF covering:
 | **Announcement Performance** | Price-sensitive announcements, impact timeline, and CAR by category |
 | **Sentiment** | Sentiment by source and sentiment vs share price chart |
 | **Media Coverage** | Article count, media timeline, and source concentration |
-| **People** | Author influence analysis and scatter chart |
+| **People** | Author influence analysis, scatter chart, and [flagged people](/features/people) |
 | **Broadcasts** | Events vs price, campaign performance, and email analytics |
+| **Flagged Activities** | Activities [flagged](/features/activities#flagging-activities) by your team for follow-up or attention |
 | **Market Intelligence** | Z-score analysis, spike timeline, returns scatter, and drawdown charts |
 
 ---
