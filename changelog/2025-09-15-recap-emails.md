@@ -18,5 +18,5 @@ Stay on top of activity without logging in. Quarterback now sends automated reca
 
 ### Bug Fixes
 
-- Fixed HotCopper scraper handling of deleted posts
+- Fixed forum scraper handling of deleted posts
 - Improved database query performance for large activity volumes

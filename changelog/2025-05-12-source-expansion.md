@@ -7,7 +7,7 @@ tags: [feature]
 
 ## Source Expansion
 
-We've expanded the range of sources monitored across the platform. Reddit communities and Twitter/X discussions are now tracked alongside HotCopper forums, giving you a broader view of where conversations about your company are happening.
+We've expanded the range of sources monitored across the platform. Reddit communities and Twitter/X discussions are now tracked alongside investor forums, giving you a broader view of where conversations about your company are happening.
 
 ### What's New
 

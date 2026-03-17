@@ -16,7 +16,7 @@ Each activity receives a sentiment score from -1 to +1, calculated using machine
 
 <div className="definition-box">
 
-*Sentiment scoring reads the tone of a post, article, or discussion and rates it on a scale. A bullish HotCopper thread might score +0.6. A neutral news article might score 0.0. A bearish analyst comment might score -0.5.*
+*Sentiment scoring reads the tone of a post, article, or discussion and rates it on a scale. A bullish forum thread might score +0.6. A neutral news article might score 0.0. A bearish analyst comment might score -0.5.*
 
 </div>
 
@@ -50,7 +50,7 @@ Different platforms tend toward different sentiment distributions:
 
 | Platform | Typical Pattern |
 |----------|----------------|
-| **HotCopper** | More polarised — strong opinions, both bullish and bearish |
+| **Forums** | More polarised — strong opinions, both bullish and bearish |
 | **Twitter** | Wide range — depends on author type and context |
 | **LinkedIn** | Generally more neutral and professional |
 | **Media** | Typically neutral — factual reporting tone |

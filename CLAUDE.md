@@ -2,9 +2,7 @@
 
 ## Tech Stack
 - **Framework**: Docusaurus 3.9.2
-- **CMS**: Decap CMS (Netlify CMS) with Git Gateway
-- **Hosting**: Netlify
-- **Auth**: Netlify Identity
+- **Hosting**: Vercel
 - **Support Widget**: Outseta
 
 ## Math Formulas with KaTeX
@@ -77,9 +75,7 @@ image: /img/feature-screenshot.png  # Optional featured image
 4. **How to Enable** or **Where to Find It** - Steps to access
 5. **Technical Details** (optional) - Formulas, API details
 
-## CMS Access
 
-Admin panel: `/admin/`
 
 ### Collections
 - Getting Started (`docs/getting-started/`)

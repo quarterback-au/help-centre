@@ -23,7 +23,7 @@ The people page shows all authors across every monitored platform, with aggregat
 | **Sentiment** | Average sentiment across all their posts |
 | **Activities** | Total activity count |
 | **Last Active** | Most recent activity date |
-| **Stock Held** | Whether the author holds stock (HotCopper disclosure) |
+| **Stock Held** | Whether the author holds stock (forum disclosure) |
 | **Average ▲** | Average share price change on days when this author posted |
 
 ### Toolbar
@@ -40,7 +40,7 @@ The sidebar panel provides filters to narrow your view:
 
 | Filter | Options |
 |--------|---------|
-| **Source** | Filter by platform (HotCopper, Twitter, LinkedIn, etc.) |
+| **Source** | Filter by platform (Twitter, LinkedIn, Reddit, etc.) |
 | **Frequency** | Frequent authors vs Occasional |
 | **Reach** | High Reach vs Standard |
 | **Flagged** | Show only flagged people |

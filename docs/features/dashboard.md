@@ -98,7 +98,7 @@ Click any author bubble to open their profile panel with full activity history a
 
 ## Average Sentiment
 
-Sentiment distribution across all platforms — showing the balance of positive, neutral, and negative sentiment by source (HotCopper, LinkedIn, Twitter/X, Reddit, etc.).
+Sentiment distribution across all platforms — showing the balance of positive, neutral, and negative sentiment by source (LinkedIn, Twitter/X, Reddit, etc.).
 
 <img src="/img/docs/dashboard/source-sentiment.png" alt="Source sentiment chart" className="img-half" />
 

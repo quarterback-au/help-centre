@@ -26,7 +26,7 @@ You'll first choose a format, then fill in the details.
 
 | Format | Description |
 |--------|-------------|
-| **Activity** | A social media post — select from 50+ platforms (Twitter/X, LinkedIn, HotCopper, Reddit, etc.) |
+| **Activity** | A social media post — select from 50+ platforms (Twitter/X, LinkedIn, Reddit, etc.) |
 | **Media** | A news article or blog post — search for the publisher |
 | **Phone Call** | An investor or stakeholder phone call |
 | **Meeting** | An in-person or virtual meeting |
@@ -40,7 +40,7 @@ You'll first choose a format, then fill in the details.
 
 ### Social Posts (Activity)
 
-After selecting **Activity**, you'll choose a platform from the full source list — Twitter/X, LinkedIn, HotCopper, Reddit, Facebook, YouTube, and 30+ more.
+After selecting **Activity**, you'll choose a platform from the full source list — Twitter/X, LinkedIn, Reddit, Facebook, YouTube, and 30+ more.
 
 | Field | Required | Notes |
 |-------|----------|-------|

@@ -16,7 +16,7 @@ An activity is any tracked communication event related to your company. Activiti
 
 <div className="definition-box">
 
-*Every piece of attention your company receives is an activity. A HotCopper forum post, a LinkedIn mention, a news article, an ASX announcement, a Mailchimp campaign — each one flows in, gets scored, and connects to your share price.*
+*Every piece of attention your company receives is an activity. A forum post, a LinkedIn mention, a news article, an ASX announcement, a Mailchimp campaign — each one flows in, gets scored, and connects to your share price.*
 
 </div>
 
@@ -49,7 +49,7 @@ See [People](/features/people) for badges, flagging, and price impact analysis.
 
 ## Sources
 
-Sources are the platforms where activities originate — Twitter, HotCopper, LinkedIn, news publishers, and more. Each source provides different data (engagement metrics, threading, follower counts).
+Sources are the platforms where activities originate — Twitter, LinkedIn, Reddit, news publishers, and more. Each source provides different data (engagement metrics, threading, follower counts).
 
 ---
 
@@ -117,7 +117,7 @@ Users can override any linking decision. Edit relationships at any time to refin
 The platform collects and links:
 
 - News articles about the announcement
-- HotCopper threads and replies
+- Forum threads and replies
 - Twitter/X posts
 - LinkedIn posts
 - Reddit discussions

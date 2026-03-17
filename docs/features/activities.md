@@ -18,7 +18,7 @@ An activity is any tracked communication event related to your company. Activiti
 
 <div className="definition-box">
 
-*Think of an activity as a single unit of attention your company received. A HotCopper post, a LinkedIn mention, a news article, an ASX announcement — each one is an activity, and Quarterback scores and tracks them all.*
+*Think of an activity as a single unit of attention your company received. A forum post, a LinkedIn mention, a news article, an ASX announcement — each one is an activity, and Quarterback scores and tracks them all.*
 
 </div>
 
@@ -31,7 +31,7 @@ Quarterback tracks 50+ sources across multiple categories:
 | Category | Sources |
 |----------|---------|
 | **Social Media** | Twitter/X, LinkedIn, Facebook, Instagram, YouTube, TikTok |
-| **Forums** | HotCopper, Reddit, Discord, Telegram, Slack |
+| **Forums** | Reddit, Discord, Telegram, Slack |
 | **Official** | ASX Announcements, Mailchimp campaigns, press releases |
 | **News** | Publisher articles from thousands of outlets worldwide |
 | **Manual** | Calls, meetings, presentations, events you add yourself |
@@ -78,7 +78,7 @@ Activities can be grouped by different dimensions using the sidebar panel:
 | Grouping | What It Shows |
 |----------|---------------|
 | **Date** (default) | Activities grouped by day with share price and volume in the header |
-| **Source** | Grouped by platform (HotCopper, Twitter, LinkedIn, etc.) |
+| **Source** | Grouped by platform (Twitter, LinkedIn, Reddit, etc.) |
 | **Author** | Grouped by who posted |
 | **Format** | Grouped by Announcement, Chatter, Media, Broadcast |
 | **Linked Announcement** | Grouped by which ASX announcement they relate to, with AR(0) displayed |
@@ -139,7 +139,7 @@ Use the arrow buttons at the top of the panel to navigate between activities wit
 | **Twitter** | Likes, Views, Engagement Rate |
 | **LinkedIn** | Likes, Comments |
 | **YouTube** | Likes, Views, Comments |
-| **HotCopper** | Likes, Thread Views |
+| **Forums** | Likes, Thread Views |
 | **Reddit** | Score |
 | **Mailchimp** | Emails Sent, Open Rate, Click Rate |
 
@@ -158,7 +158,7 @@ The expanded view provides:
 - **Engagement metrics** and sentiment in a more spacious layout
 - **Navigation** between activities using the sidebar sentiment chart on the left
 
-This view is particularly useful for long-form content like news articles, ASX announcements, or HotCopper posts with extensive discussion threads.
+This view is particularly useful for long-form content like news articles, ASX announcements, or forum posts with extensive discussion threads.
 
 ---
 
@@ -178,7 +178,7 @@ Filter to a specific date range or source before generating a summary to get mor
 
 ## Threads
 
-A thread is a group of related messages in a single conversation — for example, replies to a HotCopper post, comments on a tweet, or responses in a Reddit discussion.
+A thread is a group of related messages in a single conversation — for example, replies to a forum post, comments on a tweet, or responses in a Reddit discussion.
 
 ### How Threads Display
 
@@ -305,7 +305,7 @@ The export includes all visible columns and metadata for each activity:
 - Linked announcement (if any)
 
 :::tip
-Apply filters before exporting to get exactly the data you need. For example, filter to a specific date range and source to export only HotCopper activity from the past month.
+Apply filters before exporting to get exactly the data you need. For example, filter to a specific date range and source to export only Reddit activity from the past month.
 :::
 
 ---
