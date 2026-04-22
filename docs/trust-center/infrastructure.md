@@ -17,9 +17,9 @@ Quarterback runs on Google Cloud in Sydney. This page documents the specific con
 | Component | Platform | Region |
 |-----------|----------|--------|
 | **Backend API** | Google Cloud Run (serverless containers) | `australia-southeast1` (Sydney) |
+| **Frontend** | Google Cloud Run (Next.js, containerised) | `australia-southeast1` (Sydney) |
 | **Database** | Google Cloud SQL for PostgreSQL 15 | `australia-southeast1` (Sydney) |
 | **Object storage** | Google Cloud Storage | `australia-southeast1` (Sydney) |
-| **Frontend** | Vercel | Global edge, AU origin |
 | **Job scheduling** | Google Cloud Scheduler and Pub/Sub | `australia-southeast1` (Sydney) |
 
 All customer data at rest lives in Australia. A small number of sub-processors operate outside Australia — these are listed on the [Sub-processors](/trust-center/sub-processors) page with the regions they use.

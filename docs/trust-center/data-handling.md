@@ -37,7 +37,7 @@ We ingest widely available information about listed companies to power insights,
 
 We handle public data responsibly and in line with each source's terms of use. The specific data providers and vendors we use are available under NDA as part of a security questionnaire.
 
-Where a customer authorises it, we also connect to their own Mailchimp account to ingest subscriber and campaign data. That data is scoped to the connecting organisation and is not shared across tenants.
+Where a customer authorises it, we also connect to their own Mailchimp or Campaign Monitor account to ingest subscriber and campaign data. That data is scoped to the connecting organisation and is not shared across tenants.
 
 ---
 
@@ -103,7 +103,7 @@ When a customer exits:
 - Identity data held in our authentication provider is removed in line with their data handling policy
 - Derived data (embeddings, search indexes) associated with deleted records is purged from downstream systems
 
-You can request export or deletion of your data at any time by emailing [security@qback.au](mailto:security@qback.au). We aim to acknowledge within two business days and complete within 30 days.
+You can request export or deletion of your data at any time by emailing [team@qback.au](mailto:team@qback.au). We aim to acknowledge within 12 hours and complete within 30 days.
 
 <div className="related-links">
 

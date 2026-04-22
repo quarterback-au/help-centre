@@ -14,7 +14,7 @@ This page covers how to report a security issue to Quarterback, what happens aft
 
 ## Reporting a vulnerability
 
-If you believe you have found a security vulnerability in Quarterback, please email **[security@qback.au](mailto:security@qback.au)**.
+If you believe you have found a security vulnerability in Quarterback, please email **[team@qback.au](mailto:team@qback.au)**.
 
 Please include:
 
@@ -23,11 +23,7 @@ Please include:
 - Any proof-of-concept code or screenshots
 - Your name and how you would like to be credited (optional)
 
-We acknowledge reports within **two business days** and aim to provide a fix or mitigation timeline within ten business days, depending on severity.
-
-:::info
-We do not operate a paid bug bounty at this time, but we publicly thank researchers who report valid issues in good faith. We will not pursue legal action against researchers acting within these guidelines.
-:::
+We acknowledge reports within **12 hours** and aim to provide a fix or mitigation timeline within ten business days, depending on severity.
 
 ---
 
@@ -78,7 +74,7 @@ We commit to notifying within the timeframes required by Australian law (OAIC's 
 
 ## Security questionnaires
 
-We complete standard security questionnaires — CAIQ, SIG-Lite, and bespoke — for customers that need them as part of procurement. Send your questionnaire to [security@qback.au](mailto:security@qback.au) and we will return it within five business days.
+We complete standard security questionnaires — CAIQ, SIG-Lite, and bespoke — for customers that need them as part of procurement. Send your questionnaire to [team@qback.au](mailto:team@qback.au) and we will return it within five business days.
 
 <div className="related-links">
 

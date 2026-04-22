@@ -27,9 +27,8 @@ Public market data (ASX announcements, news, social posts) is *ingested* from pu
 
 | Sub-processor | Purpose | Data processed | Region |
 |---------------|---------|----------------|--------|
-| **Google Cloud Platform** | Hosting, database, object storage, logging, job scheduling | All customer data at rest | Australia (Sydney) |
+| **Google Cloud Platform** | Hosting (frontend and backend), database, object storage, logging, job scheduling | All customer data at rest | Australia (Sydney) |
 | **Outseta** | Authentication, subscription management, billing | Name, email, organisation membership, billing details | United States |
-| **Vercel** | Frontend hosting and edge delivery | Application requests, minimal logs | Global edge, US origin |
 | **OpenAI** | AI processing for summaries, embeddings, and insights | Activity text and public market content sent for inference; DPA in place | United States |
 | **Anthropic** | AI processing for summaries and insights | Activity text and public market content sent for inference; DPA in place | United States |
 | **Resend** | Transactional and alert email delivery | Recipient email, alert content | United States / Europe |
@@ -54,11 +53,11 @@ Customer-submitted content — activity records, uploaded files, alert configura
 
 ## DPAs and documentation
 
-We provide our Data Processing Agreement, the full sub-processor register, and individual sub-processor DPAs on request. Contact [security@qback.au](mailto:security@qback.au).
+We provide our Data Processing Agreement, the full sub-processor register, and individual sub-processor DPAs on request. Contact [team@qback.au](mailto:team@qback.au).
 
 ## Notifications of change
 
-To be notified when this list changes, email [security@qback.au](mailto:security@qback.au) with the subject "Subscribe to sub-processor updates". We notify subscribed customers before adding a new sub-processor or changing how an existing one is used.
+To be notified when this list changes, email [team@qback.au](mailto:team@qback.au) with the subject "Subscribe to sub-processor updates". We notify subscribed customers before adding a new sub-processor or changing how an existing one is used.
 
 <div className="related-links">
 

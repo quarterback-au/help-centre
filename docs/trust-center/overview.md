@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
 title: Trust Center
-description: How Quarterback handles your data, secures our infrastructure, and manages the vendors we work with.
+description: How Quarterback handles your data, protects our infrastructure, and responds to security incidents.
 ---
 
 # Trust Center
 
-Quarterback is used by listed-company IR teams to manage sensitive information about their shareholders, announcements, and market activity. This Trust Center documents how we handle that data, the controls we have in place, and the vendors we rely on.
+Quarterback is an investor relations intelligence platform used by ASX-listed companies. This Trust Center explains what data we hold, how we protect it, and how we handle privacy and security.
 
 *Last updated: 22 April 2026*
 
@@ -20,9 +20,7 @@ Quarterback is used by listed-company IR teams to manage sensitive information a
 
 </div>
 
-Quarterback is built and operated by a small team in Australia. Our infrastructure runs in Google Cloud's Sydney region. The private content you create in the platform does not leave Australia except where a specific sub-processor requires it (for example, AI processing through OpenAI).
-
-We are not currently SOC 2 or ISO 27001 certified. We are happy to complete security questionnaires (CAIQ, SIG-Lite, bespoke) and to provide a Data Processing Agreement on request — contact [security@qback.au](mailto:security@qback.au).
+Quarterback is built and operated by a small team in Australia. Our infrastructure runs in Google Cloud's Sydney region. The private content you create in the platform does not leave Australia except for specific AI processing tasks, which are covered on the [Sub-processors](/trust-center/sub-processors) page.
 
 ---
 
@@ -59,13 +57,12 @@ We do not hold shareholder registry data, financial account details, identity do
 | **File storage** | Google Cloud Storage with short-lived signed URLs |
 | **Tenant isolation** | Per-organisation, enforced on every authenticated API call |
 | **AI processing** | OpenAI and Anthropic (DPAs in place) |
-| **Certifications** | None currently. SOC 2 Type II on roadmap. |
 
 ---
 
 ## Questions
 
-For security, privacy, or procurement questions, email [security@qback.au](mailto:security@qback.au). We respond within two business days.
+For security, privacy, or procurement questions, email [team@qback.au](mailto:team@qback.au). We respond within 12 hours.
 
 <div className="related-links">
 
