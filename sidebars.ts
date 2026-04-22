@@ -77,7 +77,19 @@ const sidebars: SidebarsConfig = {
                     label: 'Changelog',
                     href: '/changelog'
                 },
-                'faq'
+                'faq',
+                {
+                    type: 'category',
+                    label: 'Trust Center',
+                    collapsed: true,
+                    items: [
+                        'trust-center/overview',
+                        'trust-center/data-handling',
+                        'trust-center/infrastructure',
+                        'trust-center/sub-processors',
+                        'trust-center/incident-response'
+                    ]
+                }
             ]
         }
     ]
