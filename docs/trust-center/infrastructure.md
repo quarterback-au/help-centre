@@ -31,7 +31,7 @@ Authentication is handled by a dedicated identity provider. Every request carrie
 
 | Control | Behaviour |
 |---------|-----------|
-| **User identity** | Email and password sign-in with multi-factor authentication support |
+| **User identity** | Email and password sign-in with configurable password strength; Google SSO; enterprise SSO via OpenID Connect |
 | **Session tokens** | Short-lived signed tokens, verified on every request |
 | **Webhook verification** | All inbound webhooks from our identity provider are cryptographically signed; requests with an invalid signature are rejected |
 | **Authorisation** | Every authenticated endpoint verifies the user's organisation membership against the request parameters |
