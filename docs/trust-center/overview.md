@@ -20,7 +20,7 @@ Quarterback is an investor relations intelligence platform used by ASX-listed co
 
 </div>
 
-Quarterback is built and operated by a small team in Australia. Our infrastructure runs in Google Cloud's Sydney region. The private content you create in the platform does not leave Australia except for specific AI processing tasks, which are covered on the [Sub-processors](/trust-center/sub-processors) page.
+Quarterback is built and operated in Australia. Our infrastructure runs in Google Cloud's Sydney region. The private content you create in the platform does not leave Australia except for specific AI processing tasks, which are covered on the [Sub-processors](/trust-center/sub-processors) page.
 
 ---
 
@@ -53,7 +53,7 @@ We do not hold shareholder registry data, financial account details, identity do
 |-------|---------|
 | **Hosting region** | Google Cloud, Sydney (`australia-southeast1`) |
 | **Primary database** | PostgreSQL on Google Cloud SQL, encrypted in transit and at rest |
-| **Authentication** | Outseta (OAuth/JWT with JWKS verification) |
+| **Authentication** | Dedicated identity provider with cryptographically signed tokens on every request |
 | **File storage** | Google Cloud Storage with short-lived signed URLs |
 | **Tenant isolation** | Per-organisation, enforced on every authenticated API call |
 | **AI processing** | OpenAI and Anthropic (DPAs in place) |

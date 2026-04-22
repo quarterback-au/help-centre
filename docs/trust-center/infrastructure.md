@@ -16,9 +16,8 @@ Quarterback runs on Google Cloud in Sydney. This page documents the specific con
 
 | Component | Platform | Region |
 |-----------|----------|--------|
-| **Backend API** | Google Cloud Run (serverless containers) | `australia-southeast1` (Sydney) |
-| **Frontend** | Google Cloud Run (Next.js, containerised) | `australia-southeast1` (Sydney) |
-| **Database** | Google Cloud SQL for PostgreSQL 15 | `australia-southeast1` (Sydney) |
+| **Backend and frontend** | Google Cloud Run | `australia-southeast1` (Sydney) |
+| **Database** | Managed PostgreSQL on Google Cloud SQL | `australia-southeast1` (Sydney) |
 | **Object storage** | Google Cloud Storage | `australia-southeast1` (Sydney) |
 | **Job scheduling** | Google Cloud Scheduler and Pub/Sub | `australia-southeast1` (Sydney) |
 
@@ -28,35 +27,35 @@ All customer data at rest lives in Australia. A small number of sub-processors o
 
 ## Authentication and access
 
-Authentication is handled by **Outseta**, which issues JWTs signed with keys published via JWKS. Our backend verifies every request against those keys before any business logic runs.
+Authentication is handled by a dedicated identity provider. Every request carries a cryptographically signed token that our backend verifies against the provider's public keys before any business logic runs.
 
-| Control | Implementation |
-|---------|----------------|
-| **User identity** | Outseta, with email + password and configurable MFA |
-| **Token format** | JWT (RS256), verified against Outseta's JWKS on every request |
-| **Webhook verification** | HMAC-SHA256 signature check against the `x-hub-signature-256` header for every Outseta webhook |
+| Control | Behaviour |
+|---------|-----------|
+| **User identity** | Email and password sign-in with multi-factor authentication support |
+| **Session tokens** | Short-lived signed tokens, verified on every request |
+| **Webhook verification** | All inbound webhooks from our identity provider are cryptographically signed; requests with an invalid signature are rejected |
 | **Authorisation** | Every authenticated endpoint verifies the user's organisation membership against the request parameters |
-| **Admin role** | Granted through Outseta; cached briefly (15 minutes) and re-checked against Outseta's API |
+| **Admin role** | Privileged actions are gated by a separate admin check against the identity provider |
 
-Staff access to production follows least-privilege principles. Service credentials are issued per component, not shared, and are scoped to the specific buckets, databases, or APIs they need.
+Staff access to production follows least-privilege principles. Service credentials are issued per component, not shared, and are scoped to the specific resources they need.
 
 ---
 
 ## Database security
 
-Our primary data store is PostgreSQL 15 on Google Cloud SQL.
+Our primary data store is managed PostgreSQL on Google Cloud SQL.
 
-- **Connections**: routed through the Cloud SQL Auth Proxy over a Unix socket; encrypted in transit by Google
+- **Connections**: routed through Google's Cloud SQL Auth Proxy and encrypted in transit
 - **Encryption at rest**: Google-managed keys (AES-256)
-- **Query safety**: statement timeouts (45 seconds) and idle-transaction timeouts (15 seconds) to prevent runaway queries and connection exhaustion
-- **Health checks**: the backend monitors the connection pool, latency, and query performance, and a circuit breaker rejects traffic if the database is degraded
-- **Backups**: automated daily backups managed by Google Cloud SQL with point-in-time recovery
+- **Query safety**: statement and idle-transaction timeouts prevent runaway queries from consuming connections
+- **Health checks**: the backend monitors connection pool health and automatically sheds load if the database is degraded
+- **Backups**: automated backups managed by Google Cloud SQL with point-in-time recovery
 
 ---
 
 ## Secrets management
 
-All production secrets (API keys, webhook signing secrets, database credentials) are stored in **Pulumi's encrypted state** and injected into our Cloud Run services at deploy time as environment variables. Secrets are never checked into source control, never logged, and never exposed to the browser.
+All production secrets (API keys, webhook signing secrets, database credentials) are held in encrypted state and injected into our services at deploy time. Secrets are never checked into source control, never logged, and never exposed to the browser.
 
 ---
 
@@ -74,14 +73,13 @@ Files uploaded as part of Manual Activities are stored in Google Cloud Storage w
 
 ## Application and API safeguards
 
-| Control | Implementation |
-|---------|----------------|
+| Control | Behaviour |
+|---------|-----------|
 | **CORS** | Restricted to the production frontend origin; no wildcards |
-| **Input validation** | Zod schemas on API request bodies; invalid requests return a generic 400 |
+| **Input validation** | Strict schema validation on every request body; invalid requests are rejected |
 | **Error handling** | Stack traces, database error details, and constraint information are never returned to the client; generic error messages only |
-| **Request timeouts** | 5-minute hard timeout on all API routes, with a 408 response if exceeded |
+| **Request timeouts** | Hard timeouts on all API routes to prevent long-running requests from tying up resources |
 | **Concurrency limits** | External AI and data-ingestion calls run under strict concurrency and rate limits |
-| **Authentication** | Bearer tokens via `Authorization` header; no sensitive cookies issued by the backend |
 | **Dependency scanning** | Automated dependency audits on every deploy |
 
 ---
@@ -100,7 +98,7 @@ We do not log request bodies or file contents. The specific monitoring and analy
 
 - Code changes are deployed through an automated pipeline
 - Database schema changes use versioned migrations checked into source control
-- Infrastructure is defined as code (Pulumi) so every production change is reviewable and reversible
+- Infrastructure is defined as code, so every production change is reviewable and reversible
 
 <div className="related-links">
 

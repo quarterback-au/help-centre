@@ -67,7 +67,7 @@ We commit to notifying within the timeframes required by Australian law (OAIC's 
 ## Business continuity
 
 - **Database backups** — automated daily, with point-in-time recovery
-- **Infrastructure as code** — our production environment can be redeployed from Pulumi definitions if needed
+- **Infrastructure as code** — our production environment can be rebuilt from version-controlled definitions if needed
 - **Sub-processor redundancy** — critical paths (email, AI inference) can be rerouted to alternative providers if a sub-processor experiences an extended outage
 
 ---
