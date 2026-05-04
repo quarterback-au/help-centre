@@ -22,6 +22,10 @@ Abnormal return is the difference between your stock's actual return and its exp
 
 </div>
 
+:::warning
+**AR is not a direct comparison.** A stock can fall less than the benchmark in absolute terms and *still* post a negative AR if its sensitivity (β) to that benchmark is low. Example: a stock with β = 0.05 to gold has a very weak relationship to it — CAPM expects almost no movement when gold moves. So a -6% drop on a day when gold falls -11.4% produces an AR of about -5%, because the stock fell much more than CAPM expected given its weak link to gold. The benchmark fell harder, but that doesn't help — the model didn't expect the stock to follow gold down anyway.
+:::
+
 ---
 
 ### How AR Is Calculated
@@ -178,8 +182,25 @@ The platform calculates day-by-day returns for both your stock and the selected 
 | **-0.7 to -0.4** | Moderate negative – tends to move opposite |
 | **-1.0 to -0.7** | Strong negative – moves opposite to benchmark |
 
-**Additional metrics calculated:**
-- **Beta** – Market sensitivity (slope from regression)
+---
+
+### Beta (β) — Sensitivity
+
+Where correlation tells you how *tightly* the stock and benchmark move together, beta tells you how *much* the stock moves on average for each 1% benchmark move. It's the slope of the linear regression and is what CAPM uses to compute expected return.
+
+| Beta | Meaning |
+|------|---------|
+| **β > 1.5** | High volatility – moves more than 1.5× the benchmark |
+| **β = 1.0 to 1.5** | Above average – more volatile than the benchmark |
+| **β = 0.5 to 1.0** | Moderate – moves with the benchmark, slightly less volatile |
+| **β = 0 to 0.5** | Low volatility – relatively independent of the benchmark |
+| **β < 0** | Inverse – moves opposite to the benchmark |
+
+:::info
+**r and β answer different questions.** r tells you whether a benchmark is a meaningful reference at all (is the relationship tight, or is it noise?). β tells you how big the move should be when the benchmark does move. A stock can have low r and high β, or high r and low β — they're independent. Both are needed to interpret AR sensibly.
+:::
+
+**Additional metric calculated:**
 - **R-squared** – Variance explained by the benchmark
 
 ---
@@ -208,6 +229,12 @@ Short-term correlation can diverge significantly from long-term patterns during 
 | **Correlation** | How closely does our stock follow the benchmark over time? |
 
 Use AR for **event analysis** (what happened today). Use correlation for **market positioning** (how does the market categorise us).
+
+---
+
+### Where r and β Appear in the Platform
+
+You'll see r and β surfaced together beside each commodity and reference index in the right-hand market card. The format is `r = 0.07 · β = 0.05` — a single inline pair so both numbers are always read in the same context. Hover the values for an explanation.
 
 ---
 
